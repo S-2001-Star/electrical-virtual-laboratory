@@ -30,16 +30,46 @@ body{
 #nav_bar{
     background: black;
     overflow: auto;
+    position:fixed;
     width: 100%;
 }
 #nav-items{
     padding-left: 35vw;   
-    float: right;
+    float:right;
+}
+@media(max-width:992px){
+    #nav-items{  
+        padding-left:5vw !important; 
+        float: left;
+    }
 }
 @media(max-width:426px){
     #nav-items{  
         padding-left: 5vw; 
         float: left;
+    }
+    #items,#items-1{
+        font-size: large;
+    }
+}
+@media(max-width:402px){
+    #nav-items{  
+        padding-left: 5vw; 
+        float: left;
+        font-size:medium;
+    }
+    #items,#items-1{
+        font-size:medium;
+    }
+}
+@media(max-width:378px){
+    #nav-items{  
+        padding-left: 5vw; 
+        float: left;
+        font-size:small;
+    }
+    #items,#items-1{
+        font-size:small;
     }
 }
 .nav-link{
