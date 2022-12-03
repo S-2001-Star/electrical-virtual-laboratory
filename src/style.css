@@ -36,6 +36,12 @@ body{
     padding-left: 35vw;   
     float: right;
 }
+@media(max-width:426px){
+    #nav-items{  
+        padding-left: 5vw; 
+        float: left;
+    }
+}
 .nav-link{
     color:aliceblue !important;
     font-family: 'Zen Dots', cursive;
