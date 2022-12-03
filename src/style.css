@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+*{
+    border: 0em;
+    margin: 0em;
+    padding: 0em;
+    outline: 0em;
+}
+html{
+    scroll-behavior: smooth;
+}
+html, body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    overflow-x: hidden !important;
+}
+body{
+    background: whitesmoke !important;
+    font-family: sans-serif !important;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+/*-------------------- NAVBAR----------------------- */
+#items,#items-1{
+    color: white;
+    font-family: 'Zen Dots', cursive;
+}
+#nav_bar{
+    background: black;
+    overflow: auto;
+    width: 100%;
+}
+#nav-items{
+    padding-left: 35vw;   
+    float: right;
+}
+.nav-link{
+    color:aliceblue !important;
+    font-family: 'Zen Dots', cursive;
+}
+#nav-home :hover,#nav-labs :hover,#nav-log :hover,#nav-sign :hover{
+    background:rgb(68, 61, 61);
+}
+#nav-home,#nav-labs,#nav-log,#nav-sign{
+    padding: 1vw;
+}
+#navbarSupportedContent{
+    color:white;
+}
+#items-1{
+    border-right: 0.066vw solid white;
+    padding:1vw;
+}
+#items{
+    margin-left: 1vw;
+}
