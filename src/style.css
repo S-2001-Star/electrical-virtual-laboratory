@@ -134,11 +134,14 @@ body{
   }
 }
 /* ---------------HEADING-------------- */
+/* .heading{
+  height:auto;
+} */
   .pop-out {
     text-align: center;
     font-family: 'Aclonica', sans-serif;
     font-weight: 800;
-    /* font-size: 3vw; */
+    font-size: 3vw;
     width: 100%;
     margin-top:-32vw;
     color:white;
@@ -484,6 +487,11 @@ body{
     width:25%;
     height:50vw;
   }
+  @media(max-width:1100px){
+    .pop-out{
+      font-size: 4.5vw;
+    }
+  }
   @media(max-width:1035px){
     #banner-image{
       width:25%;
@@ -491,6 +499,7 @@ body{
     }
     .pop-out{
       margin-top:-32vw;
+      font-size: 5.5vw;
     }
   }
   @media(max-width:960px){
@@ -500,6 +509,7 @@ body{
     }
     .pop-out{
       margin-top:-40vw;
+      font-size: 5.5vw;
     }
   }
   @media(max-width:825px){
@@ -509,6 +519,7 @@ body{
     }
     .pop-out{
       margin-top:-37vw;
+      font-size: 5.5vw;
     }
   }
   @media(max-width:770px){
@@ -518,6 +529,7 @@ body{
     }
     .pop-out{
       margin-top:-40vw;
+      font-size: 6vw;
     }
   }
   @media(max-width:735px){
@@ -527,6 +539,7 @@ body{
     }
     .pop-out{
       margin-top:-40vw;
+      font-size: 6vw;
     }
   }
   @media(max-width:685px){
@@ -536,6 +549,7 @@ body{
     }
     .pop-out{
       margin-top:-47vw;
+      font-size: 6vw;
     }
   }
   @media(max-width:665px){
@@ -545,6 +559,7 @@ body{
     }
     .pop-out{
       margin-top:-50vw;
+      font-size: 6vw;
     }
   }
   @media(max-width:575px){
@@ -554,6 +569,7 @@ body{
     }
     .pop-out{
       margin-top:-53vw;
+      font-size: 6vw;
     }
   }
   @media(max-width:515px){
@@ -563,6 +579,7 @@ body{
     }
     .pop-out{
       margin-top:-60vw;
+      font-size: 7vw;
     }
   }
   @media(max-width:470px){
@@ -572,14 +589,16 @@ body{
     }
     .pop-out{
       margin-top:-70vw;
+      font-size: 8vw;
     }
   }
   @media(max-width:435px){
     #banner-image{
       width:25%;
-      height:150vw;
+      height:170vw;
     }
     .pop-out{
       margin-top:-100vw;
+      font-size: 10vw;
     }
   }
