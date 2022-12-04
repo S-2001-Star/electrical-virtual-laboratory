@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 *{
     border: 0em;
     margin: 0em;
@@ -41,47 +42,11 @@ body{
 #nav_bar{
     background: black;
     overflow: auto;
-    position:fixed;
     width: 100%;
 }
 #nav-items{
-    padding-left: 35vw;   
+    padding-left: 40vw;   
     float:right;
-}
-@media(max-width:992px){
-    #nav-items{  
-        padding-left:5vw !important; 
-        float: left;
-    }
-}
-@media(max-width:426px){
-    #nav-items{  
-        padding-left: 5vw; 
-        float: left;
-    }
-    #items,#items-1{
-        font-size: large;
-    }
-}
-@media(max-width:402px){
-    #nav-items{  
-        padding-left: 5vw; 
-        float: left;
-        font-size:medium;
-    }
-    #items,#items-1{
-        font-size:medium;
-    }
-}
-@media(max-width:378px){
-    #nav-items{  
-        padding-left: 5vw; 
-        float: left;
-        font-size:small;
-    }
-    #items,#items-1{
-        font-size:small;
-    }
 }
 .nav-link{
     color:aliceblue !important;
@@ -103,32 +68,87 @@ body{
 #items{
     margin-left: 1vw;
 }
+@media(max-width:1455px){
+  #nav-home,#nav-labs,#nav-log,#nav-sign{
+    padding:0.5vw;
+}
+}
+@media(max-width:1363px){
+  #nav-items{  
+    padding-left:38vw; 
+  }
+}
+@media(max-width:1298px){
+  #nav-items{  
+    padding-left:35vw; 
+  }
+}
+@media(max-width:1228px){
+  #nav-items{  
+    padding-left:30vw; 
+  }
+}
+@media(max-width:1137px){
+  #nav-items{  
+    padding-left:25vw; 
+  }
+}
+@media(max-width:1048px){
+  #nav-items{  
+    padding-left:20vw; 
+  }
+}
+@media(max-width:991.5px){
+  #nav-items{  
+      padding-left:5vw; 
+      float: left;
+  }
+}
+@media(max-width:426px){
+  #nav-items{  
+      padding-left: 5vw; 
+      float: left;
+  }
+  #items,#items-1{
+      font-size: large;
+  }
+}
+@media(max-width:402px){
+  #nav-items{  
+      padding-left: 5vw; 
+      float: left;
+      font-size:medium;
+  }
+  #items,#items-1{
+      font-size:medium;
+  }
+}
+@media(max-width:378px){
+  #nav-items{  
+      padding-left: 5vw; 
+      float: left;
+      font-size:small;
+  }
+  #items,#items-1{
+      font-size:small;
+  }
+}
 /* ---------------HEADING-------------- */
-/* h2{
-    color:red;
-    padding-top: 15vw;
-    text-align: center;
-}  */
-  /* clear background */
-  h2 {
+  .pop-out {
     text-align: center;
     /* font-family: 'Kenia', cursive; */
-    font-family: 'Bungee', cursive;
+    /* font-family: 'Bungee', cursive; */
     /* font-family: 'Monoton', cursive; */
+    font-family: 'Aclonica', sans-serif;
     font-weight: 800;
-  }
-  
-  /* crops animations that exceeds one line area */
-  .heading {
+    font-size: 3vw;
     width: 100%;
-    height: 4vw; 
-    overflow: hidden;
-    padding: 5vw;
-    margin-top: 20vw;
+    margin-top:-45vw;
+    color:white;
+    text-shadow: 0 0 0.39vw black, 0 0 0.52vw black;
   }
-  
   /* flipping class and key frames*/
-  .flipX {
+   .flipX {
     animation: 1s anim-flipX ease infinite;
   }
   @keyframes anim-flipX {
@@ -142,11 +162,10 @@ body{
     }
     100% { 
       /* animate nothing to pause animation at the end */
-      opacity: 1;
+       opacity: 1;
       transform: rotateX(720deg); 
     }
-  }
-  
+  }  
   /* lineup class and keyframes */
   .lineUp {
     animation: 2s anim-lineUp ease-out 1;
@@ -169,7 +188,7 @@ body{
     }
   } 
   /* flipY class and keyframes*/
-  .flipY {
+   .flipY {
     animation-name: spin, depth;
     animation-timing-function:linear;
     animation-iteration-count: 1;
@@ -192,61 +211,39 @@ body{
     }
     50% {
       text-shadow: 0 0 black;
-    }
-    /* 75% {
-      text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black,
-        -5px 0 black;
-    } */
+    } 
     100% {
       text-shadow: 0 0 black;
     }
   } 
-  
   /* subtle zoom to attention and then back */
-  .pop-out {
+   .pop-out {
     animation: 20s anim-popout ease 1;
-  }
-  
+  } 
   @keyframes anim-popout {
-    /* 0% {
+    0% {
       color: black;
       transform: scale(0);
       opacity: 0;
       text-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    } */
+    }
     25% {
       color: rgb(255, 145, 0);
-      transform: scale(2);
+      transform: scale(1.5);
       opacity: 1;
-      text-shadow: 1px 5px 5px rgba(0, 0, 0, 1);
+      text-shadow: 1px 5px 3px rgba(0, 0, 0, 1);
     }
     50% {
       color: rgb(255, 145, 0);
-      transform: scale(2);
+      transform: scale(1);
       opacity: 1;
       text-shadow: 0px 0 0 rgba(0, 0, 0, 1);
     }
     100% { 
       /* animate nothing to add pause at the end of animation */
       color: red;
-      transform: scale(2);
+      transform: scale(1);
       opacity: 1;
       text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
     }
   }
-  
-  /* .fromtop {
- animation: 2s anim-fromtop linear infinite;
-  }
-  @keyframes anim-fromtop {
-    0% { opacity: 0; transform: translateY(-100%);}
-    25% { opacity: 1; transform: translateY(0%);}
-    50% {
-    }
-    100% {
-    }
-  } */
-
-#banner-image{
-    margin-top:-35vw;
-}
