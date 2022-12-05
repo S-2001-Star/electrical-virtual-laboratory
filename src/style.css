@@ -158,7 +158,7 @@ body{
     padding: auto;
 }
   .pop-out {
-    /* position:absolute; */
+    position:sticky;
     text-align: center;
     font-family: 'Aclonica', sans-serif;
     font-weight: 800;
@@ -167,7 +167,8 @@ body{
     height: 100%; 
     margin-top:-45vw !important;
     color:white;
-    text-shadow: 0 0 0.39vw black, 0 0 0.52vw black;
+    opacity: 1;
+    text-shadow: 0 3vw 2vw black;
   }
   /* flipping class and key frames*/
    .flipX {
