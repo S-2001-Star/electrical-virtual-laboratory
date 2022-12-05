@@ -153,7 +153,7 @@ body{
     font-weight: 800;
     font-size: 3vw;
     width: 100%;
-    margin-top:-32vw;
+    margin-top:25vw;
     color:white;
     text-shadow: 0 0 0.39vw black, 0 0 0.52vw black;
   }
@@ -491,9 +491,10 @@ body{
   /*-----------BANNER-----------*/
   #image-container{
     width: 480%;
-    margin-left:-20vw;
+    /* margin-left:-20vw; */
+    background: blue !important;
   }
-  #banner-image{
+  /* #banner-image{
     width:25%;
     height:50vw;
   }
@@ -611,4 +612,4 @@ body{
       margin-top:-100vw;
       font-size: 10vw;
     }
-  }
+  } */
