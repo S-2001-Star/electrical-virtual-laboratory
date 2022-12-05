@@ -134,9 +134,7 @@ body{
   }
 }
 /* ---------------HEADING-------------- */
-/* #overlay{
-  position: fixed;
-  display: none;
+/* .overlay{
   width: 100%;
   height: 100%;
   top: 0;
@@ -145,21 +143,34 @@ body{
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.655);
   z-index: 2;
-  cursor: pointer;
-} */
-  /* .pop-out {
+  opacity:1; */
+  .overlay{ 
+    position: absolute; 
+    transition: 0.5s ease; 
+    height:100%; 
+    width: 200%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(4, 5, 5); 
+    opacity: 0.7;
+    padding: auto;
+}
+  .pop-out {
+    /* position:absolute; */
     text-align: center;
     font-family: 'Aclonica', sans-serif;
     font-weight: 800;
     font-size: 3vw;
     width: 100%;
-    height: 100%; */
-    /* margin-top:25vw; */
-    /* color:white;
+    height: 100%; 
+    margin-top:-45vw !important;
+    color:white;
     text-shadow: 0 0 0.39vw black, 0 0 0.52vw black;
-  } */
+  }
   /* flipping class and key frames*/
-   /* .flipX {
+   .flipX {
     animation: 1s anim-flipX ease infinite;
   }
   @keyframes anim-flipX {
@@ -171,14 +182,14 @@ body{
       opacity: 1;
       transform: rotateX(720deg);
     }
-    100% {  */
+    100% { 
       /* animate nothing to pause animation at the end */
-       /* opacity: 1;
+       opacity: 1;
       transform: rotateX(720deg); 
     }
-  }   */
+  }  
   /* lineup class and keyframes */
-  /* .lineUp {
+  .lineUp {
     animation: 2s anim-lineUp ease-out 1;
   }
   @keyframes anim-lineUp {
@@ -197,9 +208,9 @@ body{
       opacity: 1;
       transform: translateY(0%);
     }
-  }  */
+  } 
   /* flipY class and keyframes*/
-   /* .flipY {
+   .flipY {
     animation-name: spin, depth;
     animation-timing-function:linear;
     animation-iteration-count: 1;
@@ -227,9 +238,9 @@ body{
     100% {
       text-shadow: 0 0 black;
     }
-  }  */
+  } 
   /* subtle zoom to attention and then back */
-   /* .pop-out {
+   .pop-out {
     animation: 20s anim-popout ease 1;
   } 
   @keyframes anim-popout {
@@ -263,15 +274,15 @@ body{
       opacity: 1;
       text-shadow: 0px 0 0 rgba(0, 0, 0, 1);
     }
-    100% {  */
+    100% { 
       /* animate nothing to add pause at the end of animation */
-      /* color: red;
+      color: red;
       transform: scale(1);
       opacity: 1;
       text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
     }
-  } */
-  /* @media(max-width:1100px){
+  }
+  @media(max-width:1100px){
     @keyframes anim-popout {
       0% {
         color: black;
@@ -488,7 +499,7 @@ body{
         text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
       }
     }
-  } */
+  }
   /*-----------BANNER-----------*/
   /* #image-container{ */
     /* width: 480%; */
@@ -496,9 +507,12 @@ body{
     /* background: blue !important;
     position:relative;
   } */
-  /* #banner-image{
-    width:25%;
-    height:50vw;
+   #banner{
+    margin-bottom:1px;
+    /* position:absolute; */
+    margin-left: -15px;
+    padding: 0;
+    width: 107%;
   }
   @media(max-width:1100px){
     .pop-out{
@@ -506,48 +520,40 @@ body{
     }
   }
   @media(max-width:1035px){
-    #banner-image{
+    /* #banner{
       width:25%;
       height:55vw;
-    }
+    } */
     .pop-out{
       margin-top:-32vw;
       font-size: 5.5vw;
     }
   }
   @media(max-width:960px){
-    #banner-image{
+    /* #banner{
       width:25%;
       height:65vw;
-    }
+    } */
     .pop-out{
       margin-top:-40vw;
       font-size: 5.5vw;
     }
   }
   @media(max-width:825px){
-    #banner-image{
+    /* #banner{
       width:25%;
       height:67vw;
-    }
+    } */
     .pop-out{
       margin-top:-37vw;
       font-size: 5.5vw;
     }
   }
   @media(max-width:770px){
-    #banner-image{
-      width:25%;
-      height:70vw;
+    #banner{
+      width:105%;
     }
-    .pop-out{
-      margin-top:-40vw;
-      font-size: 6vw;
-    }
-  }
-  @media(max-width:735px){
     #banner-image{
-      width:25%;
       height:75vw;
     }
     .pop-out{
@@ -555,11 +561,25 @@ body{
       font-size: 6vw;
     }
   }
-  @media(max-width:685px){
+  @media(max-width:735px){
+    /* #banner-image{
+      height:75%;
+    } */
+    .pop-out{
+      margin-top:-40vw;
+      font-size: 6vw;
+    }
+  }
+  @media(max-width:710px){
     #banner-image{
+      height:80vw;
+    }
+  }
+  @media(max-width:685px){
+    /* #banner{
       width:25%;
       height:90vw;
-    }
+    } */
     .pop-out{
       margin-top:-47vw;
       font-size: 6vw;
@@ -567,57 +587,73 @@ body{
   }
   @media(max-width:665px){
     #banner-image{
-      width:25%;
-      height:90vw;
+      height:85vw;
     }
     .pop-out{
       margin-top:-50vw;
       font-size: 6vw;
     }
   }
+  @media(max-width:610px){
+    #banner-image{
+      height:90vw;
+    }
+  }
   @media(max-width:575px){
     #banner-image{
-      width:25%;
-      height:100vw;
+      height:95vw;
     }
     .pop-out{
-      margin-top:-53vw;
+      margin-top:-53vw !important;
       font-size: 6vw;
+    }
+  }
+  @media(max-width:550px){
+    #banner-image{
+      height:100vw;
     }
   }
   @media(max-width:515px){
     #banner-image{
-      width:25%;
       height:110vw;
     }
     .pop-out{
-      margin-top:-60vw;
+      margin-top:-60vw !important;
       font-size: 7vw;
     }
   }
   @media(max-width:470px){
-    #banner-image{
+    /* #banner{
       width:25%;
       height:120vw;
-    }
+    } */
     .pop-out{
-      margin-top:-70vw;
+      margin-top:-70vw !important;
       font-size: 8vw;
     }
   }
-  @media(max-width:435px){
+  @media(max-width:480px){
     #banner-image{
+      height:120vw;
+    }
+  }
+  @media(max-width:435px){
+    /* #banner{
       width:25%;
       height:150vw;
+    } */
+    #banner-image{
+      height:140vw;
     }
     .pop-out{
-      margin-top:-100vw;
+      margin-top:-100vw !important;
       font-size: 10vw;
     }
-  } */
+  }
   #img1{
     padding: 0px;
+    position: relative;
   }
-  #banner{
+  /* #banner{
     padding: 0px;
-  }
+  } */
