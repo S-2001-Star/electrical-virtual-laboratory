@@ -147,18 +147,19 @@ body{
   z-index: 2;
   cursor: pointer;
 } */
-  .pop-out {
+  /* .pop-out {
     text-align: center;
     font-family: 'Aclonica', sans-serif;
     font-weight: 800;
     font-size: 3vw;
     width: 100%;
-    margin-top:25vw;
-    color:white;
+    height: 100%; */
+    /* margin-top:25vw; */
+    /* color:white;
     text-shadow: 0 0 0.39vw black, 0 0 0.52vw black;
-  }
+  } */
   /* flipping class and key frames*/
-   .flipX {
+   /* .flipX {
     animation: 1s anim-flipX ease infinite;
   }
   @keyframes anim-flipX {
@@ -170,14 +171,14 @@ body{
       opacity: 1;
       transform: rotateX(720deg);
     }
-    100% { 
+    100% {  */
       /* animate nothing to pause animation at the end */
-       opacity: 1;
+       /* opacity: 1;
       transform: rotateX(720deg); 
     }
-  }  
+  }   */
   /* lineup class and keyframes */
-  .lineUp {
+  /* .lineUp {
     animation: 2s anim-lineUp ease-out 1;
   }
   @keyframes anim-lineUp {
@@ -196,9 +197,9 @@ body{
       opacity: 1;
       transform: translateY(0%);
     }
-  } 
+  }  */
   /* flipY class and keyframes*/
-   .flipY {
+   /* .flipY {
     animation-name: spin, depth;
     animation-timing-function:linear;
     animation-iteration-count: 1;
@@ -226,9 +227,9 @@ body{
     100% {
       text-shadow: 0 0 black;
     }
-  } 
+  }  */
   /* subtle zoom to attention and then back */
-   .pop-out {
+   /* .pop-out {
     animation: 20s anim-popout ease 1;
   } 
   @keyframes anim-popout {
@@ -262,15 +263,15 @@ body{
       opacity: 1;
       text-shadow: 0px 0 0 rgba(0, 0, 0, 1);
     }
-    100% { 
+    100% {  */
       /* animate nothing to add pause at the end of animation */
-      color: red;
+      /* color: red;
       transform: scale(1);
       opacity: 1;
       text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
     }
-  }
-  @media(max-width:1100px){
+  } */
+  /* @media(max-width:1100px){
     @keyframes anim-popout {
       0% {
         color: black;
@@ -487,13 +488,14 @@ body{
         text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
       }
     }
-  }
+  } */
   /*-----------BANNER-----------*/
-  #image-container{
-    width: 480%;
+  /* #image-container{ */
+    /* width: 480%; */
     /* margin-left:-20vw; */
-    background: blue !important;
-  }
+    /* background: blue !important;
+    position:relative;
+  } */
   /* #banner-image{
     width:25%;
     height:50vw;
@@ -613,3 +615,9 @@ body{
       font-size: 10vw;
     }
   } */
+  #img1{
+    padding: 0px;
+  }
+  #banner{
+    padding: 0px;
+  }
