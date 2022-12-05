@@ -610,12 +610,12 @@ body{
   }
   @media(max-width:550px){
     #banner-image{
-      height:100vw;
+      height:110vw;
     }
   }
   @media(max-width:515px){
     #banner-image{
-      height:110vw;
+      height:120vw;
     }
     .pop-out{
       margin-top:-60vw !important;
@@ -634,7 +634,7 @@ body{
   }
   @media(max-width:480px){
     #banner-image{
-      height:120vw;
+      height:130vw;
     }
   }
   @media(max-width:435px){
@@ -643,7 +643,7 @@ body{
       height:150vw;
     } */
     #banner-image{
-      height:140vw;
+      height:170vw;
     }
     .pop-out{
       margin-top:-100vw !important;
