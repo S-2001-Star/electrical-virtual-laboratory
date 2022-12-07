@@ -634,7 +634,7 @@ body{
   }
   @media(max-width:515px){
     #banner-image{
-      height:115vw;
+      height:115vw !important;
     }
     .pop-out{
       margin-top:-60vw !important;
@@ -645,25 +645,20 @@ body{
     }
   }
   @media(max-width:470px){
-    /* #banner{
-      width:25%;
-      height:120vw;
-    } */
     .pop-out{
       margin-top:-70vw !important;
       font-size: 8vw;
     }
+    .overlay{
+      height:180%;
+    }
   }
-  @media(max-width:480px){
+  @media(max-width:450px){
     #banner-image{
       height:130vw;
     }
   }
   @media(max-width:435px){
-    /* #banner{
-      width:25%;
-      height:150vw;
-    } */
     #banner-image{
       height:170vw;
     }
