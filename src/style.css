@@ -637,11 +637,11 @@ body{
       height:145vw;
     }
     .pop-out{
-      margin-top:-100vw !important;
+      margin-top:-95vw !important;
       font-size: 7vw;
     }
     .overlay{
-      height:271.5%;
+      height:248.5%;
     }
   }
   /* @media(max-width:470px){
