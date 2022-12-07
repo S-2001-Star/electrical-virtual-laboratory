@@ -634,26 +634,23 @@ body{
   }
   @media(max-width:515px){
     #banner-image{
-      height:115vw !important;
+      height:145vw;
     }
     .pop-out{
       margin-top:-60vw !important;
       font-size: 7vw;
     }
     .overlay{
-      height:182%;
+      height:155.5%;
     }
   }
-  @media(max-width:470px){
+  /* @media(max-width:470px){
     .pop-out{
       margin-top:-70vw !important;
       font-size: 8vw;
     }
-    .overlay{
-      height:180%;
-    }
   }
-  @media(max-width:450px){
+  @media(max-width:480px){
     #banner-image{
       height:130vw;
     }
@@ -666,11 +663,8 @@ body{
       margin-top:-100vw !important;
       font-size: 10vw;
     }
-  }
+  } */
   #img1{
     padding: 0px;
     position: relative;
   }
-  /* #banner{
-    padding: 0px;
-  } */
