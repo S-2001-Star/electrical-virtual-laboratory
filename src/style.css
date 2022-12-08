@@ -573,21 +573,26 @@ body{
       height:140vw;
     }
   }
+#scrolling-notice{
+    overflow: auto;
+    width: 100%;
+}
 #cssmarquee {
     height: 1.6vw;
     overflow: hidden;
     position: relative;
 }
-.notice{
+.notice-content{
     position: absolute;
     width: 100%;
     height: 100%;
     color: red;
     margin: 0;
     display: flex;
-    font-size: 1.1vw;
-    font-weight: 700;
+    /* font-size: 1.1vw;
+    font-weight: 700; */
+    text-align: center;
     white-space: nowrap;
-    transform:translateX(1%);
-    animation: cssmarquee 20s linear infinite;
+    /* transform:translateX(0%); */
+    animation: cssmarquee 2s linear infinite;
 }
