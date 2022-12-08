@@ -134,41 +134,19 @@ body{
   }
 }
 /* ---------------HEADING-------------- */
-/* .overlay{
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.655);
-  z-index: 2;
-  opacity:1; */
-  .overlay{ 
-    position: absolute; 
-    transition: 0.5s ease; 
-    height:292.1%; 
-    width: 200%; 
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgb(4, 5, 5); 
-    opacity: 0.7;
-    padding: auto;
-}
   .pop-out {
-    position:sticky;
-    text-align: center;
-    font-family: 'Aclonica', sans-serif;
-    font-weight: 800;
-    font-size: 3vw;
-    width: 100%;
-    height: 100%; 
-    margin-top:-50.5vw !important;
-    color:white;
-    opacity: 1;
-    text-shadow: 0 3vw 2vw black;
+    position: relative;
+  text-align: center;
+  font-family: 'Aclonica', sans-serif;
+  font-weight: 800;
+  font-size: 3vw;
+  width: 100%;
+  height: 100%; 
+  margin-top:20vw !important;
+  color:white;
+  opacity: 1;
+    /* text-shadow: 0vw -0.2vw 0.2vw black; */
+    text-shadow: 0 0 0.39vw black, 0 0 0.52vw black;
   }
   /* flipping class and key frames*/
    .flipX {
@@ -242,7 +220,7 @@ body{
   } 
   /* subtle zoom to attention and then back */
    .pop-out {
-    animation: 20s anim-popout ease 1;
+    animation: 13s anim-popout ease 1;
   } 
   @keyframes anim-popout {
     0% {
@@ -502,169 +480,114 @@ body{
     }
   }
   /*-----------BANNER-----------*/
-  /* #image-container{ */
-    /* width: 480%; */
-    /* margin-left:-20vw; */
-    /* background: blue !important;
-    position:relative;
-  } */
-   #banner{
-    /* margin-bottom:1px; */
-    /* position:absolute; */
-    /* margin-left: -15px; */
-    padding: 0;
-    width: 107%;
+  #banner{
+  position: relative;
+  background:url(background.jpg);
+  background-size: cover;
+  overflow: hidden;
+  height: 43vw;
   }
-  @media(max-width:1597px){
-    .overlay{
-      height:292.3%;
-    }
-  }
-  @media(max-width:1118px){
-    .overlay{
-      height:292.1%;
+  @media(max-width:1500px){
+    #banner{
+      height:70vw;
     }
   }
   @media(max-width:1100px){
     .pop-out{
       font-size: 4.5vw;
     }
-    .overlay{
-      height:272.2%;
-    }
   }
   @media(max-width:1035px){
     .pop-out{
-      margin-top:-32vw;
       font-size: 5.5vw;
     }
-    .overlay{
-      height:260.2%;
+    #banner{
+      height:55vw;
     }
   }
   @media(max-width:960px){
     .pop-out{
-      margin-top:-40vw;
+      margin-top:23vw !important;
       font-size: 5.5vw;
+    }
+    #banner{
+      height:80vw;
+    }
+  }
+  @media(max-width:870px){
+    .pop-out{
+      margin-top:25vw !important;
     }
   }
   @media(max-width:825px){
     .pop-out{
-      margin-top:-37vw;
+      margin-top:27vw !important;
       font-size: 5.5vw;
     }
   }
   @media(max-width:770px){
-    #banner{
-      width:105%;
-    }
-    #banner-image{
-      height:75vw;
-    }
     .pop-out{
-      margin-top:-40vw;
-      font-size: 6vw;
+      margin-top:30vw !important;
+      font-size: 6vw !important;
     }
-    .overlay{
-      height:237.5%;
+    #banner{
+      height:90vw;
     }
   }
   @media(max-width:735px){
     .pop-out{
-      margin-top:-40vw;
+      margin-top:30vw !important;
       font-size: 6vw;
-    }
-    .overlay{
-      height:237%;
-    }
-  }
-  @media(max-width:710px){
-    #banner-image{
-      height:80vw;
-    }
-    .overlay{
-      height:218%;
     }
   }
   @media(max-width:685px){
     .pop-out{
-      margin-top:-47vw;
+      margin-top:35vw !important;
       font-size: 6vw;
     }
   }
   @media(max-width:665px){
-    #banner-image{
-      height:85vw;
-    }
     .pop-out{
-      margin-top:-50vw;
+      margin-top:37vw !important;
       font-size: 6vw;
     }
-    .overlay{
-      height:204%;
-    }
-  }
-  @media(max-width:610px){
-    #banner-image{
-      height:90vw;
-    }
-    .overlay{
-      height:193%;
+    #banner{
+      height:100vw;
     }
   }
   @media(max-width:575px){
-    #banner-image{
-      height:95vw;
-    }
     .pop-out{
-      margin-top:-53vw !important;
+      margin-top:40vw !important;
       font-size: 6vw;
     }
-    .overlay{
-      height:193.5%;
-    }
-  }
-  @media(max-width:550px){
-    #banner-image{
-      height:108vw;
-    }
-    .overlay{
-      height:174%;
-    }
-  }
-  @media(max-width:515px){
-    #banner-image{
-      height:145vw;
-    }
-    .pop-out{
-      margin-top:-95vw !important;
-      font-size: 7vw;
-    }
-    .overlay{
-      height:248.5%;
-    }
-  }
-  /* @media(max-width:470px){
-    .pop-out{
-      margin-top:-70vw !important;
-      font-size: 8vw;
-    }
-  }
-  @media(max-width:480px){
-    #banner-image{
+    #banner{
       height:130vw;
     }
   }
-  @media(max-width:435px){
-    #banner-image{
-      height:170vw;
-    }
+  @media(max-width:515px){
     .pop-out{
-      margin-top:-100vw !important;
-      font-size: 10vw;
+      margin-top:40vw !important;
+      font-size: 7vw;
     }
-  } */
-  #img1{
-    padding: 0px;
-    position: relative;
+    #banner{
+      height:140vw;
+    }
   }
+#cssmarquee {
+    height: 1.6vw;
+    overflow: hidden;
+    position: relative;
+}
+.notice{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: red;
+    margin: 0;
+    display: flex;
+    font-size: 1.1vw;
+    font-weight: 700;
+    white-space: nowrap;
+    transform:translateX(1%);
+    animation: cssmarquee 20s linear infinite;
+}
