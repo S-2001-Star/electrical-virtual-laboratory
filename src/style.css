@@ -133,9 +133,9 @@ body{
       font-size:small;
   }
 }
-/* ---------------HEADING-------------- */
-  .pop-out {
-    position: relative;
+/* ---------------------------HEADING----------------------------- */
+.pop-out {
+  position: relative;
   text-align: center;
   font-family: 'Aclonica', sans-serif;
   font-weight: 800;
@@ -146,27 +146,27 @@ body{
   color:white;
   opacity: 1;
     /* text-shadow: 0vw -0.2vw 0.2vw black; */
-    text-shadow: 0 0 0.39vw black, 0 0 0.52vw black;
+  text-shadow: 0 0 0.39vw black, 0 0 0.52vw black;
   }
   /* flipping class and key frames*/
-   .flipX {
-    animation: 1s anim-flipX ease infinite;
+.flipX {
+  animation: 1s anim-flipX ease infinite;
+}
+@keyframes anim-flipX {
+  0% {
+    opacity: 0;
+    transform: rotateX(90def);
   }
-  @keyframes anim-flipX {
-    0% {
-      opacity: 0;
-      transform: rotateX(90def);
-    }
-    50% {
-      opacity: 1;
-      transform: rotateX(720deg);
-    }
-    100% { 
-      /* animate nothing to pause animation at the end */
-       opacity: 1;
-      transform: rotateX(720deg); 
-    }
-  }  
+  50% {
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+  100% { 
+    /* animate nothing to pause animation at the end */
+    opacity: 1;
+    transform: rotateX(720deg); 
+  }
+}  
   /* lineup class and keyframes */
   .lineUp {
     animation: 2s anim-lineUp ease-out 1;
@@ -479,7 +479,7 @@ body{
       }
     }
   }
-  /*-----------BANNER-----------*/
+/*-------------------------BANNER----------------------*/
   #banner{
   position: relative;
   background:url(background2.jpg);
@@ -573,14 +573,18 @@ body{
       height:140vw;
     }
   }
+/*--------------SCROLLING NOTICE----------------*/
 #scrolling-notice{
+  background: yellow !important;
     overflow: auto;
     width: 100%;
+    padding: 3px;
 }
 #cssmarquee {
-    height: 1.6vw;
+    height: 2vw;
     overflow: hidden;
     position: relative;
+    padding: 0;
 }
 .notice-content{
     position: absolute;
@@ -588,11 +592,93 @@ body{
     height: 100%;
     color: red;
     margin: 0;
+    padding: 0;
     display: flex;
-    /* font-size: 1.1vw;
-    font-weight: 700; */
+    font-weight: 700;
     text-align: center;
     white-space: nowrap;
-    /* transform:translateX(0%); */
     animation: cssmarquee 2s linear infinite;
+}
+@media(max-width:980px){
+  .notice-content{
+    margin-top: -1vw;
+  }
+}
+@media(max-width:867px){
+  .notice-content{
+    margin-top: -1.1vw;
+  }
+}
+@media(max-width:861px){
+  #cssmarquee {
+    height: 3vw;
+}
+  .notice-content{
+    margin-top: -0.2vw;
+  }
+}
+@media(max-width:627px){
+  #cssmarquee {
+    height: 3.1vw;
+}
+  .notice-content{
+    margin-top: -1vw;
+  }
+}
+@media(max-width:565px){
+  #cssmarquee {
+    height: 3.2vw;
+}
+  .notice-content{
+    margin-top: -1vw;
+  }
+}
+@media(max-width:543px){
+  #cssmarquee {
+    height: 3.2vw;
+}
+  .notice-content{
+    margin-top: -1.2vw;
+  }
+}
+@media(max-width:535px){
+  #cssmarquee {
+    height: 3.3vw;
+}
+  .notice-content{
+    margin-top: -1.2vw;
+  }
+}
+@media(max-width:521px){
+  #cssmarquee {
+    height: 3.4vw;
+}
+  .notice-content{
+    margin-top: -1.2vw;
+  }
+}
+@media(max-width:515px){
+  #cssmarquee {
+    height: 3.4vw;
+}
+  .notice-content{
+    margin-top: -1.3vw;
+  }
+}
+@media(max-width:509px){
+  #cssmarquee {
+    height: 3.5vw;
+}
+  .notice-content{
+    margin-top: -1.3vw;
+  }
+}
+@media(max-width:501px){
+  #cssmarquee {
+    height: 3.5vw;
+}
+  .notice-content{
+    font-size: 3vw;
+    margin-top: -1vw;
+  }
 }
