@@ -7,6 +7,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@font-face{
+  font-family: 'MechanismoRegular-p7ywa';
+  font-style: normal;
+  font-weight: normal;
+  src:url('MechanismoRegular-p7ywa.woff') format('woff');
+}
 *{
     border: 0em;
     margin: 0em;
@@ -694,10 +700,10 @@ body{
   padding:2vw 2vw 1vw;
   color:black;
   /* font-weight:900 !important; */
-  font-family: 'Macondo', cursive;
-  background: linear-gradient(to right, #cf23cf, #eedd44);
+  font-family: 'MechanismoRegular-p7ywa';
+  /* background: black;
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; */
 }
 .about-content{
   padding: 0vw 2vw 2vw 2vw;
@@ -742,7 +748,10 @@ body{
   font-weight: 900;
   position:relative;
   z-index: 2;
-  margin-left: -2px;
+  margin-left: -2.5px;
+  margin-top: -3px;
+  margin-bottom: -2.3px;
+  padding: 4px;
 }
 .lab-notice:after{
   position: absolute;
@@ -752,5 +761,14 @@ body{
   border-top: 28px solid transparent;
   border-right: 20px solid transparent;
   border-bottom: 21px solid transparent;
-  top: -3px;
+  top: -0.5px;
+}
+@media(max-width:427px){
+  .lab-notice{
+    height:50px !important;
+  }
+  .scrolling-notice{
+    height:50px;
+    margin-left: -2px;
+  }
 }
