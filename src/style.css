@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 *{
     border: 0em;
     margin: 0em;
@@ -574,30 +578,33 @@ body{
     }
   }
 /*--------------SCROLLING NOTICE----------------*/
-#scrolling-notice{
-  background: yellow !important;
-    overflow: auto;
-    width: 100%;
-    padding: 3px;
-}
-#cssmarquee {
-    height: 2vw;
-    overflow: hidden;
-    position: relative;
-    padding: 0;
-}
-.notice-content{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    color: red;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    font-weight: 700;
-    text-align: center;
-    white-space: nowrap;
-    animation: cssmarquee 2s linear infinite;
+/* #scrolling-notice{
+  background:linear-gradient(to top,rgba(45, 45, 45, 0.425),white);
+  overflow: auto;
+  width: 100%;
+  padding: 3px;
+} */
+/* #cssmarquee {
+  height: 2vw;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  display: flex;
+} */
+/* .notice-content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: red;
+  font-family: 'Yatra One', cursive;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex:nowrap;  
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  animation: cssmarquee 2s linear infinite;
 }
 @media(max-width:980px){
   .notice-content{
@@ -681,4 +688,69 @@ body{
     font-size: 3vw;
     margin-top: -1vw;
   }
+} */
+/*-----------ABOUT US-----------------*/
+.about{
+  padding:2vw 2vw 1vw;
+  color:black;
+  /* font-weight:900 !important; */
+  font-family: 'Macondo', cursive;
+  background: linear-gradient(to right, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.about-content{
+  padding: 0vw 2vw 2vw 2vw;
+  text-align: justify;
+}
+.scrolling-notice {
+  overflow: hidden; 
+  background:linear-gradient(to top,rgba(45, 45, 45, 0.425),white);
+  width: 100%;
+  padding: 3px;
+}
+.move {
+  position: relative;
+  padding: 0;
+  display: flex;
+  }
+.notice {
+  color:black;
+  font-weight: bold;
+  /* font-family: 'Yatra One', cursive; */
+  /* font-family: 'Merriweather', serif; */
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  animation: cssmarquee 50s linear infinite;
+}
+@keyframes cssmarquee {
+  0% { transform: translate3d(100%, 0, 0); }
+  100% { transform: translate3d(-400%, 0, 0); }
+}
+.move:hover { 
+  animation-play-state: paused;
+}
+.lab-notice{
+  background:lightskyblue;
+  display: flex;
+  align-items: center;
+  color:red;
+  text-align: center;
+  font-weight: 900;
+  position:relative;
+  z-index: 2;
+  margin-left: -2px;
+}
+.lab-notice:after{
+  position: absolute;
+  content: "";
+  left:100%;
+  border-left: 20px solid lightskyblue;
+  border-top: 28px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 21px solid transparent;
+  top: -3px;
 }
