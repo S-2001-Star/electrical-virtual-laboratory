@@ -584,131 +584,6 @@ body{
     }
   }
 /*--------------SCROLLING NOTICE----------------*/
-/* #scrolling-notice{
-  background:linear-gradient(to top,rgba(45, 45, 45, 0.425),white);
-  overflow: auto;
-  width: 100%;
-  padding: 3px;
-} */
-/* #cssmarquee {
-  height: 2vw;
-  overflow: hidden;
-  position: relative;
-  padding: 0;
-  display: flex;
-} */
-/* .notice-content{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  color: red;
-  font-family: 'Yatra One', cursive;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex:nowrap;  
-  font-weight: 500;
-  text-align: center;
-  white-space: nowrap;
-  animation: cssmarquee 2s linear infinite;
-}
-@media(max-width:980px){
-  .notice-content{
-    margin-top: -1vw;
-  }
-}
-@media(max-width:867px){
-  .notice-content{
-    margin-top: -1.1vw;
-  }
-}
-@media(max-width:861px){
-  #cssmarquee {
-    height: 3vw;
-}
-  .notice-content{
-    margin-top: -0.2vw;
-  }
-}
-@media(max-width:627px){
-  #cssmarquee {
-    height: 3.1vw;
-}
-  .notice-content{
-    margin-top: -1vw;
-  }
-}
-@media(max-width:565px){
-  #cssmarquee {
-    height: 3.2vw;
-}
-  .notice-content{
-    margin-top: -1vw;
-  }
-}
-@media(max-width:543px){
-  #cssmarquee {
-    height: 3.2vw;
-}
-  .notice-content{
-    margin-top: -1.2vw;
-  }
-}
-@media(max-width:535px){
-  #cssmarquee {
-    height: 3.3vw;
-}
-  .notice-content{
-    margin-top: -1.2vw;
-  }
-}
-@media(max-width:521px){
-  #cssmarquee {
-    height: 3.4vw;
-}
-  .notice-content{
-    margin-top: -1.2vw;
-  }
-}
-@media(max-width:515px){
-  #cssmarquee {
-    height: 3.4vw;
-}
-  .notice-content{
-    margin-top: -1.3vw;
-  }
-}
-@media(max-width:509px){
-  #cssmarquee {
-    height: 3.5vw;
-}
-  .notice-content{
-    margin-top: -1.3vw;
-  }
-}
-@media(max-width:501px){
-  #cssmarquee {
-    height: 3.5vw;
-}
-  .notice-content{
-    font-size: 3vw;
-    margin-top: -1vw;
-  }
-} */
-/*-----------ABOUT US-----------------*/
-.about{
-  padding:2vw 2vw 1vw;
-  color:black;
-  /* font-weight:900 !important; */
-  font-family: 'MechanismoRegular-p7ywa';
-  /* background: black;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text; */
-}
-.about-content{
-  padding: 0vw 2vw 2vw 2vw;
-  text-align: justify;
-}
 .scrolling-notice {
   overflow: hidden; 
   background:linear-gradient(to top,rgba(45, 45, 45, 0.425),white);
@@ -723,8 +598,6 @@ body{
 .notice {
   color:black;
   font-weight: bold;
-  /* font-family: 'Yatra One', cursive; */
-  /* font-family: 'Merriweather', serif; */
   flex-shrink: 0;
   width: 100%;
   box-sizing: border-box;
@@ -761,7 +634,7 @@ body{
   border-top: 28px solid transparent;
   border-right: 20px solid transparent;
   border-bottom: 21px solid transparent;
-  top: -0.5px;
+  top: -3px;
 }
 @media(max-width:427px){
   .lab-notice{
@@ -770,5 +643,104 @@ body{
   .scrolling-notice{
     height:50px;
     margin-left: -2px;
+  }
+}
+/*-----------ABOUT US-----------------*/
+.about{
+  padding:2vw 2vw 1vw;
+  color:black;
+  font-family: 'MechanismoRegular-p7ywa';
+}
+.about-content{
+  padding: 0vw 2vw 2vw 2vw;
+  text-align: justify;
+}
+/*-----------LAB SECTION-------------------*/
+.lab{
+  /* padding:2vw 2vw 1vw; */
+  align-items: center !important;
+}
+/* #lab-container{
+  background: rgba(52, 27, 177, 0.501);
+  box-shadow: 0vw 0vw 0.98vw rgba(0,0,0,0.18);
+} */
+.lab-section{
+  padding:2vw 2vw 1vw;
+  margin-top: 3.26vw;
+  width: 15vw;
+  height:10vw;
+  border:1px solid black;
+  border-radius: 3.26vw;
+  /* text-align: center; */
+ 
+}
+#lab-2,#lab-4{ 
+  float:right;
+}
+#lab-3{
+  margin-top: 15vw;
+}
+#lab-4{
+  margin-top: 8vw;
+  /* padding: 0 0 0.2vw; */
+}
+.lab-bg-1{
+  /* position: relative; */
+  background: grey;
+  padding: 0 0 0.2vw;
+  /* display: flex; */
+}
+.lab-bg-2{ 
+  /* position:absolute; */
+  /* padding: 0 0 0.2vw; */
+  background: black !important;
+  opacity:0.7;
+}
+#lab-1{
+  animation: 2s ease-out 0s lab-1;
+  margin-left: 0.2vw;
+}
+@keyframes lab-1 {
+  0%{
+      transform: translateX(-100%);
+  }
+  100%{
+      transform: translateX(0);
+  }
+}
+#lab-3{
+  animation: 2s ease-out 0s lab-3;
+  margin-left: 0.2vw;
+}
+@keyframes lab-3 {
+  0%{
+      transform: translateX(-100%);
+  }
+  100%{
+      transform: translateX(0);
+  }
+}
+#lab-2{
+  animation: 2s ease-out 0s lab-2;
+  margin-right: 0.2vw;
+}
+@keyframes lab-2 {
+  0%{
+      transform: translateX(0);
+  }
+  100%{
+      transform: translateX(-100%);
+  }
+}
+#lab-4{
+  animation: 2s ease-out 0s lab-4;
+  margin-right: 0.2vw;
+}
+@keyframes lab-4 {
+  0%{
+      transform: translateX(100%);
+  }
+  100%{
+      transform: translateX(-100%);
   }
 }
