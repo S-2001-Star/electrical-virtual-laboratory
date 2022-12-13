@@ -657,13 +657,8 @@ body{
 }
 /*-----------LAB SECTION-------------------*/
 .lab{
-  /* padding:2vw 2vw 1vw; */
   align-items: center !important;
 }
-/* #lab-container{
-  background: rgba(52, 27, 177, 0.501);
-  box-shadow: 0vw 0vw 0.98vw rgba(0,0,0,0.18);
-} */
 .lab-section{
   padding:2vw 2vw 1vw;
   margin-top: 3.26vw;
@@ -671,36 +666,37 @@ body{
   height:10vw;
   border:1px solid black;
   border-radius: 3.26vw;
-  /* text-align: center; */
+}
+.animateMe{
+  opacity: 0;
+}
  
+.animateMe .animated{
+    opacity: 1;
 }
 #lab-2,#lab-4{ 
-  float:right;
+  /* float:right; */
 }
-#lab-3{
+/* #lab-3{
   margin-top: 15vw;
 }
 #lab-4{
   margin-top: 8vw;
-  /* padding: 0 0 0.2vw; */
+ 
 }
 .lab-bg-1{
-  /* position: relative; */
   background: grey;
   padding: 0 0 0.2vw;
-  /* display: flex; */
 }
 .lab-bg-2{ 
-  /* position:absolute; */
-  /* padding: 0 0 0.2vw; */
   background: black !important;
   opacity:0.7;
-}
-#lab-1{
+} */
+/* #lab-1{
   animation: 2s ease-out 0s lab-1;
   margin-left: 0.2vw;
-}
-@keyframes lab-1 {
+} */
+/* @keyframes lab-1 {
   0%{
       transform: translateX(-100%);
   }
@@ -743,4 +739,31 @@ body{
   100%{
       transform: translateX(-100%);
   }
+} */
+/*--------LOGIN SECTION-------*/
+.modal {
+  display: none;
+  position: absolute !important;
+  z-index: 2 !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%,-50%);
+  overflow-y: hidden !important;
+  background-color: rgba(0, 0, 0,0.96);
+  backdrop-filter: blur(0.33vw);
+  -webkit-backdrop-filter: blur(0.33vw);
 }
+#myModal1{
+  margin: 0.16vw auto !important;
+  padding: 1.31vw !important;
+  width: 35.81vw !important;
+  height: 39.07vw !important;
+  border-radius: 3.26vw !important;
+  border-style: ridge !important;
+  background: linear-gradient(30deg, rgba(13,110,73),#043d5a) !important;
+  position: fixed !important;
+  margin-top: 4.17vw !important;
+  margin-left: 32vw !important;
+  overflow: scroll !important;
+}
+  

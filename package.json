@@ -2,6 +2,7 @@
   "dependencies": {
     "animate": "^1.0.0",
     "animate.css": "^4.1.1",
-    "jquery": "^3.6.1"
+    "jquery": "^3.6.1",
+    "waypoint": "^0.2.8"
   }
 }

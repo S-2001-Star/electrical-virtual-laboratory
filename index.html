@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js'></script>
+    <link rel="stylesheet" href="node_modules\animate.css\animate.min.css">
+    <script type="text/javascript" src="node_modules\jquery\dist\jquery.min.js"></script>
+    <script type="text/javascript" href="js\animation.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </head>
@@ -30,21 +36,36 @@
         <ul class="navbar-nav navbar-float" id="nav-items">
           <li class="nav-item" id="nav-home"><a class="nav-link" href="#">HOME</a></li> 
           <li class="nav-item" id="nav-labs"><a class="nav-link" href="#">eV&nbsp;LABS</a></li>
-          <li class="nav-item" id="nav-log"><a class="nav-link" href="login.html">LOG&nbsp;IN</a></li>
-          <li class="nav-item" id="nav-sign"><a class="nav-link" href="#">SIGN&nbsp;UP</a></li>
+          <li class="nav-item" id="nav-log"><a class="nav-link" href="#myModal1">LOG&nbsp;IN</a></li>
+          <li class="nav-item" id="nav-sign"><a class="nav-link" href="#myModal2">SIGN&nbsp;UP</a></li>
         </ul>
       </div>
       </div>
     </nav>
   </header>
+<!---------------LOGIN SECTION------------->
+<div class="modal" id="myModal1">
+  <div class="modal-content">
+    <span class="close"></span>
+    <div class="modal-body">
+      <form id="form_design" action="#" method="post">
+        <input type="text" id="name" name="name" placeholder="  Enter Your Name" class="form-control my-3 p-2"><br>
+        <input type="email" id="email" name="email" placeholder="  Enter Your email" class="form-control my-3 p-2"><br>
+        <button class="gradient" id="gradient_submit" type="submit" name="save" value="submit">LOGIN</button>
+        <a  class="pass-font" href="forgot_password.html"> Forgot Password ?</a>
+        <div><br></div>
+      </form>
+    </div>
+  </div>
+</div>
 <!---------------BANNER------------->  
-    <!-- <div id="banner">
+<div id="banner">
   <div class="text">
     <h2 class='pop-out'>ELECTRICAL VIRTUAL LAB</h2>
+  </div>
 </div>
-</div> -->
 <!-------------NOTICE------------->
-<!-- <div class="scrolling-notice">
+<div class="scrolling-notice">
   <div class="move" id="cssmarquee">
     <span class="lab-notice">LAB&nbsp;NOTICE</span>
   <div class="notice">WELCOME TO ELECTRICAL VIRTUAL LAB</div>
@@ -52,21 +73,22 @@
   <div class="notice">Fusce dapibus turpis vel nisi malesuada sollicitudin.</div>
   <div class="notice">Pellentesque auctor molestie orci ut blandit.</div>
 </div>
-</div> -->
+</div>
 <!------------------ABOUT US------------------->
-<!-- <div class="about">
+<div class="about">
   <h1 class="display-3"><b>ABOUT US</b></h1>
 </div>
 <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repudiandae labore, accusamus odit similique recusandae nam dolor quisquam beatae eaque facere rem nobis nisi, harum nulla blanditiis eos atque sequi.
 Rem accusamus quasi, voluptate atque, commodi, corporis voluptatem nobis perspiciatis totam voluptatibus ullam illum repellendus obcaecati voluptates veritatis ut! Ipsa nemo eius similique ad dolorem atque modi quibusdam numquam fuga.
 Quae corporis voluptatibus, at quisquam neque, ea consequatur vero molestias sequi, facilis deleniti architecto. Quibusdam, ullam recusandae! Quisquam, exercitationem sapiente! Laudantium eum adipisci qui. Ipsa optio a vitae? Nostrum, autem.
 Quibusdam ratione reprehenderit unde quos nam. Vero id, voluptatem cum mollitia minima consequuntur modi repellat laboriosam illum hic? Omnis obcaecati ducimus et adipisci dolorum porro impedit atque debitis voluptatibus ratione.
-Aut itaque facilis provident eum quibusdam id veniam. Quos incidunt architecto quisquam repudiandae accusamus expedita delectus aspernatur, molestias eum amet, voluptatem nostrum rem eaque eius ipsum nam porro deleniti voluptatum!</p> -->
+Aut itaque facilis provident eum quibusdam id veniam. Quos incidunt architecto quisquam repudiandae accusamus expedita delectus aspernatur, molestias eum amet, voluptatem nostrum rem eaque eius ipsum nam porro deleniti voluptatum!</p>
 <!---------------LAB SECTION------------------->
 <div class="row">
   <div class="container-fluid" id="lab-container">
     <div class="lab">
-      <div class="lab-bg-1"><div class="lab-section" id="lab-1">BASIC ELECTRICAL ENGINEERING</div>
+      <div class="animateMe" data-animation="fadeInLeft" >
+      <div class="lab-bg-1"><div class="lab-section" id="lab-1">BASIC ELECTRICAL ENGINEERING</div></div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit doloremque in, fuga earum culpa vero omnis aperiam hic vel quaerat eligendi dolores assumenda, recusandae quisquam ex velit tenetur, corporis quibusdam?
         Quas ullam dignissimos quod aut animi. Corrupti amet cupiditate officiis adipisci reiciendis, excepturi totam inventore quaerat laboriosam libero rem repellat quo sit facilis ex qui dolores, quasi maiores ut autem.</p>
       </div>
@@ -76,7 +98,8 @@ Aut itaque facilis provident eum quibusdam id veniam. Quos incidunt architecto q
 <div class="row">
   <div class="container-fluid">
     <div class="lab-1">
-      <div class="lab-bg-2"><div class="lab-section" id="lab-2">NETWORK THEORY</div>
+      <div class="animateMe" data-animation="fadeInRight">
+      <div class="lab-bg-2"><div class="lab-section" id="lab-2">NETWORK THEORY</div></div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eveniet hic sequi, fuga debitis magnam animi voluptate saepe assumenda pariatur. Sit error corrupti harum iste doloremque laboriosam a sint cum.
       Molestias, labore iure. Veniam ratione exercitationem, adipisci doloribus quo sequi distinctio fugit deleniti et facilis iusto, mollitia sapiente dolores molestias soluta, iure velit perspiciatis? Incidunt omnis odit corporis quibusdam praesentium.</p>
     </div>
@@ -86,7 +109,8 @@ Aut itaque facilis provident eum quibusdam id veniam. Quos incidunt architecto q
 <div class="row">
   <div class="container-fluid">
     <div class="lab-2">
-      <div class="lab-bg-1"><div class="lab-section" id="lab-3">ELECTRICAL MACHINES-I</div>
+      <div class="animateMe" data-animation="fadeInLeft" >
+      <div class="lab-bg-1"><div class="lab-section" id="lab-3">ELECTRICAL MACHINES-I</div></div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eveniet hic sequi, fuga debitis magnam animi voluptate saepe assumenda pariatur. Sit error corrupti harum iste doloremque laboriosam a sint cum.
       Molestias, labore iure. Veniam ratione exercitationem, adipisci doloribus quo sequi distinctio fugit deleniti et facilis iusto, mollitia sapiente dolores molestias soluta, iure velit perspiciatis? Incidunt omnis odit corporis quibusdam praesentium.</p>
     </div>
@@ -96,7 +120,8 @@ Aut itaque facilis provident eum quibusdam id veniam. Quos incidunt architecto q
 <div class="row">
   <div class="container-fluid">
     <div class="lab-3">
-      <div class="lab-bg-2"><div class="lab-section" id="lab-4">ELECTRICAL MACHINES-II</div>
+      <div class="animateMe" data-animation="fadeInRight">
+      <div class="lab-bg-2"><div class="lab-section" id="lab-4">ELECTRICAL MACHINES-II</div></div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eveniet hic sequi, fuga debitis magnam animi voluptate saepe assumenda pariatur. Sit error corrupti harum iste doloremque laboriosam a sint cum.
       Molestias, labore iure. Veniam ratione exercitationem, adipisci doloribus quo sequi distinctio fugit deleniti et facilis iusto, mollitia sapiente dolores molestias soluta, iure velit perspiciatis? Incidunt omnis odit corporis quibusdam praesentium.</p>
     </div>
