@@ -662,24 +662,25 @@ body{
 .animateMe .animated{
     opacity: 1;
 }
-.lab{
+.lab-2,.lab-4{
   border:0.1vw solid white;
   border-radius: 3vw;
   text-align: center !important;
   align-items: center !important;
-  padding:2.5vw;
+  padding-top:3vw;
   width:40%;
   height:13vw;
+  float: right;
   box-shadow: 0 0 0.39vw white;
 }
 .lab-class{
   font-size: 2vw !important;
 }
-#lab-id{
+.lab-1,.lab-3{
   border:0.1vw solid black;
   border-radius: 3vw;
   text-align: center !important;
-  padding:2.5vw;
+  padding-top:3vw;
   width:40%;
   height:13vw;
   box-shadow: 0 0 0.39vw black;
@@ -689,14 +690,23 @@ body{
   padding: 2vw;
 }
 #lab-section-2{
-  background: linear-gradient(to right,#ffffff,#2c3e50);
+  background: linear-gradient(to right,#080808,#2c3e50);
   padding: 2vw;
+}
+#lab_label-1,.lab_label-3{
+  color: black;
 }
 #lab1,#lab3{
   color:black;
+  text-align: justify;
+  /* border: 0.33vw solid black; */
+  margin-left: -15vw;
 }
 #lab2,#lab4{
   color:white;
+  text-align: justify;
+  /* border: 0.33vw solid white; */
+  margin-right: -15vw;
 }
 /*--------LOGIN SECTION-------*/
 .modal {
