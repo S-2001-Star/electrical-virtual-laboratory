@@ -27,7 +27,7 @@ html, body{
     height:100%;
     margin:0;
     padding:0;
-    overflow-x: hidden !important;
+    /* overflow-x: hidden !important; */
 }
 body{
     background: white !important;
@@ -656,90 +656,48 @@ body{
   text-align: justify;
 }
 /*-----------LAB SECTION-------------------*/
-.lab{
-  align-items: center !important;
-}
-.lab-section{
-  padding:2vw 2vw 1vw;
-  margin-top: 3.26vw;
-  width: 15vw;
-  height:10vw;
-  border:1px solid black;
-  border-radius: 3.26vw;
-}
 .animateMe{
   opacity: 0;
 }
- 
 .animateMe .animated{
     opacity: 1;
 }
-#lab-2,#lab-4{ 
-  /* float:right; */
+.lab{
+  border:0.1vw solid white;
+  border-radius: 3vw;
+  text-align: center !important;
+  align-items: center !important;
+  padding:2.5vw;
+  width:40%;
+  height:13vw;
+  box-shadow: 0 0 0.39vw white;
 }
-/* #lab-3{
-  margin-top: 15vw;
+.lab-class{
+  font-size: 2vw !important;
 }
-#lab-4{
-  margin-top: 8vw;
- 
+#lab-id{
+  border:0.1vw solid black;
+  border-radius: 3vw;
+  text-align: center !important;
+  padding:2.5vw;
+  width:40%;
+  height:13vw;
+  box-shadow: 0 0 0.39vw black;
 }
-.lab-bg-1{
-  background: grey;
-  padding: 0 0 0.2vw;
+#lab-section-1{
+  background: linear-gradient(to right,#F0F2F0,#000C40);
+  padding: 2vw;
 }
-.lab-bg-2{ 
-  background: black !important;
-  opacity:0.7;
-} */
-/* #lab-1{
-  animation: 2s ease-out 0s lab-1;
-  margin-left: 0.2vw;
-} */
-/* @keyframes lab-1 {
-  0%{
-      transform: translateX(-100%);
-  }
-  100%{
-      transform: translateX(0);
-  }
+#lab-section-2{
+  background: linear-gradient(to right,#ffffff,#2c3e50);
+  padding: 2vw;
 }
-#lab-3{
-  animation: 2s ease-out 0s lab-3;
-  margin-left: 0.2vw;
+#lab1,#lab3{
+  color:black;
 }
-@keyframes lab-3 {
-  0%{
-      transform: translateX(-100%);
-  }
-  100%{
-      transform: translateX(0);
-  }
+#lab2,#lab4{
+  color:white;
 }
-#lab-2{
-  animation: 2s ease-out 0s lab-2;
-  margin-right: 0.2vw;
-}
-@keyframes lab-2 {
-  0%{
-      transform: translateX(0);
-  }
-  100%{
-      transform: translateX(-100%);
-  }
-}
-#lab-4{
-  animation: 2s ease-out 0s lab-4;
-  margin-right: 0.2vw;
-}
-@keyframes lab-4 {
-  0%{
-      transform: translateX(100%);
-  }
-  100%{
-      transform: translateX(-100%);
-  }
-} */
 /*--------LOGIN SECTION-------*/
 .modal {
   display: none;
