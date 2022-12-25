@@ -23,8 +23,8 @@
       <div class="container-fluid">
         <div href="#" class="navbar-brand">
           <img src="src\nav-logo.png" width="70" alt="" class="d-inline-block align-middle">
-          <span class="text font-weight-bold" id="items-1" href="#">eV LAB</span>
-          <span class="text-uppercase font-weight-bold" id="items" href="#">ABOUT US</span>
+          <a class="text font-weight-bold" id="items-1" href="#">eV LAB</a>
+          <a class="text-uppercase font-weight-bold" id="items" href="#about-us">ABOUT US</a>
         </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
               <span class="navbar-toggler-icon"></span>
@@ -42,19 +42,33 @@
   </header>
 <!---------------LOGIN SECTION------------->
 <div class="modal" id="myModal1">
-  <div class="modal-content">
-    <span class="close"></span>
+  <div class="modal-content" id="login-body">
+    <!-- <span class="close"></span> -->
     <div class="modal-body">
       <form id="form_design" action="#" method="post">
-        <input type="text" id="name" name="name" placeholder="  Enter Your Name" class="form-control my-3 p-2"><br>
+        <div class="form-row">
+          <div class="col">
+             <input type="email" placeholder="Email Id" class="form-control">
+          </div>
+        </div>
+      <div class="form-row">
+        <div class="col">
+           <input type="password" placeholder="Password" class="form-control">
+        </div>
+      </div>
+        <!-- <input type="text" id="name" name="name" placeholder="  Enter Your Name" class="form-control my-3 p-2"><br>
         <input type="email" id="email" name="email" placeholder="  Enter Your email" class="form-control my-3 p-2"><br>
-        <button class="gradient" id="gradient_submit" type="submit" name="save" value="submit">LOGIN</button>
+        <input type="text" id="name" name="name" placeholder="  Enter Your Name" class="form-control my-3 p-2"><br>
+        <input type="email" id="email" name="email" placeholder="  Enter Your email" class="form-control my-3 p-2"><br> -->
+        <button class="gradient" id="gradient_submit" type="submit" name="save" value="submit">LOGIN</button><br>
+        <a  class="pass-font" href="forgot_password.html"> Sign In with Google</a><br>
         <a  class="pass-font" href="forgot_password.html"> Forgot Password ?</a>
         <div><br></div>
       </form>
     </div>
   </div>
 </div>
+<script  src="js/lightbox.js"></script>
 <!---------------BANNER------------->  
 <div id="banner">
   <div class="text">
@@ -72,7 +86,7 @@
 </div>
 </div>
 <!------------------ABOUT US------------------->
-<div class="about">
+<div class="about" id="about-us">
   <h1 class="display-3"><b>ABOUT US</b></h1>
 </div>
 <p class="about-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repudiandae labore, accusamus odit similique recusandae nam dolor quisquam beatae eaque facere rem nobis nisi, harum nulla blanditiis eos atque sequi.
@@ -81,25 +95,6 @@ Quae corporis voluptatibus, at quisquam neque, ea consequatur vero molestias seq
 Quibusdam ratione reprehenderit unde quos nam. Vero id, voluptatem cum mollitia minima consequuntur modi repellat laboriosam illum hic? Omnis obcaecati ducimus et adipisci dolorum porro impedit atque debitis voluptatibus ratione.
 Aut itaque facilis provident eum quibusdam id veniam. Quos incidunt architecto quisquam repudiandae accusamus expedita delectus aspernatur, molestias eum amet, voluptatem nostrum rem eaque eius ipsum nam porro deleniti voluptatum!</p>
 <!---------------LAB SECTION------------------->
-<!-- <div class="container-fluid">
-<div class="row">
-  <div class="col-lg-6 col-md-6 col-12 image">
-    <img alt="Image" src="src/banner-wood.jpg" />
-  </div>
-  <div class="col-lg-6 col-md-6 col-12 image-1">
-    <div class="image">
-      <img alt="Image" src="src/banner-wood.jpg" />
-    </div>
-  </div>
-</div>
-</div>   -->
-
-
-
-
-
-
-
 <section class="datashow" id="lab-section-1">
   <div class="container-fluid">
     <div class="row">
@@ -122,12 +117,6 @@ Aut itaque facilis provident eum quibusdam id veniam. Quos incidunt architecto q
     </div>
   </div>
 </section>
-<!-- <hr> -->
-
-
-
-
-
 
 <section class="datashow" id="lab-section-2">
   <div class="container-fluid">
@@ -151,12 +140,6 @@ Aut itaque facilis provident eum quibusdam id veniam. Quos incidunt architecto q
     </div>
   </div>
 </section>
-<!-- <hr> -->
-
-
-
-
-
 
 <section class="datashow" id="lab-section-1">
   <div class="container-fluid">
@@ -180,11 +163,6 @@ Aut itaque facilis provident eum quibusdam id veniam. Quos incidunt architecto q
     </div>
   </div>
 </section>
-<!-- <hr> -->
-
-
-
-
 
 <section class="datashow" id="lab-section-2">
   <div class="container-fluid">
@@ -208,10 +186,5 @@ Aut itaque facilis provident eum quibusdam id veniam. Quos incidunt architecto q
     </div>
   </div>
 </section>
-
-
-
-
-
 </body>
 </html>
