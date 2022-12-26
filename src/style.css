@@ -716,7 +716,7 @@ height: 43vw;
   margin-right: -15vw;
 }
 /*--------LOGIN SECTION-------*/
-.modal {
+/* .modal {
   display: none;
   position: absolute !important;
   z-index: 2 !important;
@@ -724,23 +724,27 @@ height: 43vw;
   top: 50% !important;
   transform: translate(-50%,-50%);
   overflow-y: hidden !important;
-  /* background-color: rgba(0, 0, 0,0.96);
+  background-color: rgba(0, 0, 0,0.96);
   backdrop-filter: blur(0.33vw);
-  -webkit-backdrop-filter: blur(0.33vw); */
-}
-#myModal1 .modal-content {
+  -webkit-backdrop-filter: blur(0.33vw);
+} */
+/* #myModal1 .modal-content {
   margin: 0.16vw auto !important;
   padding: 1.31vw !important;
   width: 60.81vw !important;
   height: 37.07vw !important;
   border-radius: 3.26vw !important;
-  border-style: ridge !important;
+  border-style: ridge !important; */
   /* background-size: cover !important;
   position: absolute !important; */
   /* margin-top: 4.17vw !important;
   margin-left: 20vw !important; */
-  overflow-y: hidden !important;
+  /* overflow-y: hidden !important;
   align-items: center !important;
+} */
+.login-head{
+  color:orange !important;
+  font-family: 'Zen Dots', cursive;
 }
 @-webkit-keyframes animatetop {
   from {top:-300px; opacity:0}
@@ -753,17 +757,18 @@ height: 43vw;
 #form_design input{
   width: 25vw;
   height: 2.5vw;
-  font-size: 1.2vw;
   background:none;
-  border-bottom: 0.2vw solid #233c79!important;
-  -moz-box-shadow: 0 0.5vw 1vw rgba(47, 21, 149, 0.733);
-  -webkit-box-shadow: 0 0.5vw 1vw rgba(47, 21, 149, 0.733);
-  box-shadow: 0 0.5vw 1vw rgba(47, 21, 149, 0.733);
+  /* border-bottom: 0.2vw solid black!important; */
+  -moz-box-shadow: 0 0.5vw 1vw black;
+  -webkit-box-shadow: 0 0.5vw 1vw black;
+  box-shadow: 0 0.5vw 1vw black;
   margin-bottom: 2vw;
-  border-radius: 1vw;
+  border-radius: 0%;
+}
+#form_design{
+  text-align: center !important;
 }
 ::placeholder {
-  font-size: 1.1vw;
   color: black;
   opacity: 70%;
 }
@@ -777,14 +782,13 @@ height: 43vw;
   position: relative;
   z-index: 0;
   border-radius: 0.66vw;
-  border: 0.2vw solid #7a00ff;
+  border: 0.2vw solid orange;
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.5vw;
   letter-spacing: 0.1vw;
 }
 .gradient:before {
   content: '';
-  background: linear-gradient(45deg,#002bff, #7a00ff, #ff00c8, #ff0000, #7a00ff,#002bff);
+  background: linear-gradient(45deg,white, yellow, orange, #ff0000, yellow,white);
   position: absolute;
   top: -0.13vw;
   left:-0.13vw;
@@ -823,9 +827,13 @@ height: 43vw;
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
 }
-/* #login-body{
-  text-align: center;
-} */
 .modal-body{
   text-align: center;
 }
+#myModal1,#myModal{
+  top:18%;
+  
+}
+/* #place{
+  text-align: center;
+} */
