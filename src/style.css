@@ -754,7 +754,7 @@ height: 43vw;
   from {top:-300px; opacity:0}
   to {top:0; opacity:1}
 }
-#form_design input{
+#place{
   width: 25vw;
   height: 2.5vw;
   background:none;
@@ -830,10 +830,13 @@ height: 43vw;
 .modal-body{
   text-align: center;
 }
-#myModal1,#myModal{
+/* #myModal1,#myModal{
   top:18%;
   
-}
-/* #place{
-  text-align: center;
 } */
+.form_place{
+  padding-left: 2.5vw;
+}
+#google_login,#google_captcha{
+align-items: center;
+}

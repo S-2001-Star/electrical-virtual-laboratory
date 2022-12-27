@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
   <title>ELECTRICAL VLAB</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
   <link rel="stylesheet" href="src/style.css">
@@ -15,6 +16,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <script  src="js/script.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
@@ -44,76 +47,11 @@
     </nav>
   </header>
 <!---------------LOGIN SECTION------------->
-<!-- <div class="modal" id="myModal1">
-  <div class="modal-content" id="login-body"> -->
-    <!-- <span class="close"></span> -->
-    <!-- <div class="modal-body">
-      <form id="form_design" action="#" method="post">
-        <div class="form-row">
-          <div class="col">
-             <input type="email" placeholder="Email Id" class="form-control">
-          </div>
-        </div>
-      <div class="form-row">
-        <div class="col">
-           <input type="password" placeholder="Password" class="form-control">
-        </div>
-      </div> -->
-        <!-- <input type="text" id="name" name="name" placeholder="  Enter Your Name" class="form-control my-3 p-2"><br>
-        <input type="email" id="email" name="email" placeholder="  Enter Your email" class="form-control my-3 p-2"><br>
-        <input type="text" id="name" name="name" placeholder="  Enter Your Name" class="form-control my-3 p-2"><br>
-        <input type="email" id="email" name="email" placeholder="  Enter Your email" class="form-control my-3 p-2"><br> -->
-        <!-- <button class="gradient" id="gradient_submit" type="submit" name="save" value="submit">LOGIN</button><br>
-        <a  class="pass-font" href="forgot_password.html"> Sign In with Google</a><br>
-        <a  class="pass-font" href="forgot_password.html"> Forgot Password ?</a>
-        <div><br></div>
-      </form>
-    </div>
-  </div>
-</div>
-<script  src="js/lightbox.js"></script> -->
-
-
-<!-- Modal -->
 <div class="modal fade" id="myModal" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
-      <!-- <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
-      </div> -->
       <div class="modal-body">
        <h2 class="login-head">LOGIN</h2><br>
-        <form id="form_design" action="#" method="post">
-        <div class="form-row" id="place">
-          <input type="email" placeholder="Email Id" class="form-control">
-        </div>
-        <div class="form-row" id="place">
-          <input type="password" placeholder="Password" class="form-control">
-        </div>
-        <button class="gradient" id="gradient_submit" type="submit" name="save" value="submit">LOGIN</button><br>
-        <a class="pass-font" href="forgot_password.html"> Sign In with Google</a><br>
-        <a class="pass-font" href="forgot_password.html"> Forgot Password ?</a>
-       <div><br></div>
-    </form>
-      </div>
-      <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div> -->
-    </div>
-  </div>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="myModal1" role="dialog">
-  <div class="modal-dialog">
-  
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-        <!-- <h4 class="modal-title">Modal Header</h4> -->
-      </div>
-      <div class="modal-body">
         <form id="form_design" action="#" method="post">
           <div class="form-row" id="place">
             <input type="email" placeholder="Email Id" class="form-control">
@@ -121,15 +59,85 @@
           <div class="form-row" id="place">
             <input type="password" placeholder="Password" class="form-control">
           </div>
+          <form id="google_captcha" action="?" method="POST">
+            <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+            <br/>
+            <input type="submit" value="Submit">
+          </form>
+          <button class="gradient" id="gradient_submit" type="submit" name="sign-in" value="Sign In">LOGIN</button><br>
+          <a class="pass-font" href="forgot_password.html"> Sign In with Google</a><br>
+           <div class="g-signin2"id="google_login" data-onsuccess="onSignIn"></div>
+          <a class="pass-font" href="forgot_password.html"> Forgot Password ?</a>
+         <div><br></div>
+       </form>
+     </div>
+   </div>
+  </div>
+</div>
+<!------------SIGN UP SECTION------------------->
+<div class="modal fade" id="myModal1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h2 class="login-head">SIGN UP</h2><br>
+        <form id="form_design" action="#" method="post">
+          <div class="form-row" id="place">
+            <input type="name" placeholder="Name" class="form-control">
+          </div>
+          <div class="form-row" id="place">
+            <input type="number" placeholder="Registration number" class="form-control">
+          </div>
+          <div class="form-row" id="place">
+            <input type="number" placeholder="Contact Number" class="form-control">
+          </div>
+          <div class="form-row" id="place">
+            <input type="email" placeholder="Email Id" class="form-control">
+          </div>
+          <!-- <div class="form-check" id="place">
+            <input type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="Male" class="form-check-input">
+            <label class="form-check-label" for="flexRadioDefault1">Male</label>
+          </div>
+          <div class="form-check" id="place">
+            <input type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="Female" class="form-check-input">
+            <label  class="form-check-label" for="flexRadioDefault2">Female</label>
+          </div>
+          <div class="form-check" id="place">
+            <input type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="Other" class="form-check-input">
+            <label class="form-check-label" for="flexRadioDefault3">Other</label>
+          </div> -->
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+             Male
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+              Female
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+            <label class="form-check-label" for="flexRadioDefault3">
+              Others
+            </label>
+          </div>
+          <div class="form-row" id="place">
+            <input type="text" placeholder="Branch/Stream" class="form-control">
+          </div>
+          <div class="form-row" id="place">
+            <input type="password" id="inputPassword6" placeholder="Password" class="form-control" aria-describedby="passwordHelpInline">
+          </div>
+          <div class="form-row" id="place">
+            <input type="password" placeholder="Confirm Password" class="form-control">
+          </div>
           <button class="gradient" id="gradient_submit" type="submit" name="save" value="submit">SIGN UP</button><br>
           <a class="pass-font" href="forgot_password.html"> Sign In with Google</a><br>
           <a class="pass-font" href="forgot_password.html"> Forgot Password ?</a>
          <div><br></div>
-      </form>
+       </form>
       </div>
-      <!-- <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div> -->
     </div>
   </div>
 </div>
@@ -252,9 +260,5 @@ Aut itaque facilis provident eum quibusdam id veniam. Quos incidunt architecto q
     </div>
   </div>
 </section>
-
-
-
-
 </body>
 </html>
