@@ -53,20 +53,27 @@
       <div class="modal-body">
        <h2 class="login-head">LOGIN</h2><br>
         <form id="form_design" action="#" method="post">
+          <div class="container-fluid">
           <div class="form-row" id="place">
             <input type="email" placeholder="Email Id" class="form-control">
           </div>
+        </div>
+        <div class="container-fluid">
           <div class="form-row" id="place">
             <input type="password" placeholder="Password" class="form-control">
           </div>
-          <form id="google_captcha" action="?" method="POST">
-            <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-            <br/>
-            <input type="submit" value="Submit">
-          </form>
+          </div>
+          <div class="container-fluid" id="go-captcha">
+           <form id="google_captcha" action="?" method="POST">
+             <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+           </form>
+           <br>
+          </div>
           <button class="gradient" id="gradient_submit" type="submit" name="sign-in" value="Sign In">LOGIN</button><br>
+          <div class="container-fluid">
           <a class="pass-font" href="forgot_password.html"> Sign In with Google</a><br>
-           <div class="g-signin2"id="google_login" data-onsuccess="onSignIn"></div>
+          <div class="g-signin2"id="google_login" data-onsuccess="onSignIn"></div>
+          </div>
           <a class="pass-font" href="forgot_password.html"> Forgot Password ?</a>
          <div><br></div>
        </form>

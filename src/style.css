@@ -660,7 +660,7 @@ height: 43vw;
   opacity: 0;
 }
 .animateMe .animated{
-    opacity: 1;
+  opacity: 1;
 }
 .lab-2,.lab-4{
   border:0.1vw solid white;
@@ -755,8 +755,8 @@ height: 43vw;
   to {top:0; opacity:1}
 }
 #place{
-  width: 25vw;
-  height: 2.5vw;
+  /* width: 25vw;
+  height: 2.5vw; */
   background:none;
   /* border-bottom: 0.2vw solid black!important; */
   -moz-box-shadow: 0 0.5vw 1vw black;
@@ -838,5 +838,8 @@ height: 43vw;
   padding-left: 2.5vw;
 }
 #google_login,#google_captcha{
-align-items: center;
+  text-align: center;
+}
+#go-captcha{
+  text-align: center;
 }

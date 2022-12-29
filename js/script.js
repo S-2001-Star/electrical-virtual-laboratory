@@ -41,7 +41,7 @@ function onSignIn(googleUser) {
   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 }
 
-//reCAPTCHA
-var onloadCallback = function() {
-  alert("grecaptcha is ready!");
-};
+// //reCAPTCHA
+// var onloadCallback = function() {
+//   alert("grecaptcha is ready!");
+// };
