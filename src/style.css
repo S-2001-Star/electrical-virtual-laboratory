@@ -755,16 +755,28 @@ height: 43vw;
   to {top:0; opacity:1}
 }
 #place{
-  /* width: 25vw;
-  height: 2.5vw; */
+  /* width: 25vw; */
+  /* height: 2.5vw; */
   background:none;
   /* border-bottom: 0.2vw solid black!important; */
   -moz-box-shadow: 0 0.5vw 1vw black;
   -webkit-box-shadow: 0 0.5vw 1vw black;
   box-shadow: 0 0.5vw 1vw black;
   margin-bottom: 2vw;
-  border-radius: 0%;
+  border-radius: 20%;
 }
+#floatingInput,#floatingPassword{
+  height: 3vw;
+}
+#place1{
+  margin-bottom: 2.5vw;
+}
+#label-id{
+  margin-top:-0.5vw;
+}
+/* #place1 label{
+  margin-top:-1vw;
+} */
 #form_design{
   text-align: center !important;
 }
@@ -772,9 +784,20 @@ height: 43vw;
   color: black;
   opacity: 70%;
 }
+/* #rd-form{
+  align-items: center !important;
+} */
+.rd-body{
+  text-align: center !important;
+}
+#rd-btn1,#rd-btn2,#rd-btn3{
+  padding-left:3vw;
+  padding-bottom:1vw;
+  padding-right:2vw;
+}
 .gradient {
-  width: 14.32vw;
-  height: 3.25vw;
+  /* width: 14.32vw;
+  height: 3.25vw; */
   outline: none;
   color: #fff;
   background: #111;
@@ -785,6 +808,11 @@ height: 43vw;
   border: 0.2vw solid orange;
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 0.1vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  font-size:x-large;
 }
 .gradient:before {
   content: '';
@@ -841,5 +869,8 @@ height: 43vw;
   text-align: center;
 }
 #go-captcha{
-  text-align: center;
+  align-items: center !important;
+  text-align: center !important;
 }
+
+

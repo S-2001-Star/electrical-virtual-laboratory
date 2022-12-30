@@ -53,27 +53,39 @@
       <div class="modal-body">
        <h2 class="login-head">LOGIN</h2><br>
         <form id="form_design" action="#" method="post">
-          <div class="container-fluid">
-          <div class="form-row" id="place">
-            <input type="email" placeholder="Email Id" class="form-control">
+
+        <div class="container-fluid">
+          <div class="form-floating" id="place1">
+            <input type="email" placeholder="name@example.com" class="form-control" id="floatingInput">
+            <label for="floatingInput" id="label-id">Your email address</label>
           </div>
         </div>
+
         <div class="container-fluid">
-          <div class="form-row" id="place">
-            <input type="password" placeholder="Password" class="form-control">
+          <div class="form-floating" id="place1">
+            <input type="password" placeholder="Password" class="form-control" id="floatingPassword">
+            <label for="floatingPassword" id="label-id">Password</label>
           </div>
-          </div>
-          <div class="container-fluid" id="go-captcha">
+        </div>
+
+        <div class="container-fluid" id="go-captcha">
            <form id="google_captcha" action="?" method="POST">
              <div class="g-recaptcha" data-sitekey="your_site_key"></div>
            </form>
            <br>
-          </div>
+        </div>
+
+        <div class="container-fluid">
           <button class="gradient" id="gradient_submit" type="submit" name="sign-in" value="Sign In">LOGIN</button><br>
-          <div class="container-fluid">
+        </div>
+
+        <div id="go-captcha">
+        <div class="container-fluid">
           <a class="pass-font" href="forgot_password.html"> Sign In with Google</a><br>
           <div class="g-signin2"id="google_login" data-onsuccess="onSignIn"></div>
-          </div>
+        </div>
+      </div>
+
           <a class="pass-font" href="forgot_password.html"> Forgot Password ?</a>
          <div><br></div>
        </form>
@@ -88,58 +100,60 @@
       <div class="modal-body">
         <h2 class="login-head">SIGN UP</h2><br>
         <form id="form_design" action="#" method="post">
-          <div class="form-row" id="place">
-            <input type="name" placeholder="Name" class="form-control">
+          <div class="container-fluid">
+            <div class="form-row" id="place">
+              <input type="name" placeholder="Name" class="form-control">
+            </div>
           </div>
-          <div class="form-row" id="place">
-            <input type="number" placeholder="Registration number" class="form-control">
+          <div class="container-fluid">
+            <div class="form-row" id="place">
+              <input type="number" placeholder="Registration number" class="form-control">
+            </div>
+          </div>  
+          <div class="container-fluid">
+            <div class="form-row" id="place">
+              <input type="number" placeholder="Contact Number" class="form-control">
+            </div>
           </div>
-          <div class="form-row" id="place">
-            <input type="number" placeholder="Contact Number" class="form-control">
-          </div>
-          <div class="form-row" id="place">
-            <input type="email" placeholder="Email Id" class="form-control">
-          </div>
-          <!-- <div class="form-check" id="place">
-            <input type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="Male" class="form-check-input">
-            <label class="form-check-label" for="flexRadioDefault1">Male</label>
-          </div>
-          <div class="form-check" id="place">
-            <input type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="Female" class="form-check-input">
-            <label  class="form-check-label" for="flexRadioDefault2">Female</label>
-          </div>
-          <div class="form-check" id="place">
-            <input type="radio" name="flexRadioDefault" id="flexRadioDefault3" value="Other" class="form-check-input">
-            <label class="form-check-label" for="flexRadioDefault3">Other</label>
-          </div> -->
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
-             Male
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-            <label class="form-check-label" for="flexRadioDefault2">
+          <div class="container-fluid">  
+            <div class="form-row" id="place">
+              <input type="email" placeholder="Email Id" class="form-control">
+            </div>
+          </div>  
+          <div class="container-fluid">
+            <div class="form-check" id="rd-form">
+              <label class="form-check-label" id="rd-btn1" for="flexRadioDefault1">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              Male
+              </label>
+              <label class="form-check-label" id="rd-btn2" for="flexRadioDefault2">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
               Female
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-            <label class="form-check-label" for="flexRadioDefault3">
+              </label>
+              <label class="form-check-label" id="rd-btn3" for="flexRadioDefault3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
               Others
-            </label>
+              </label>
+            </div>
           </div>
-          <div class="form-row" id="place">
-            <input type="text" placeholder="Branch/Stream" class="form-control">
+          <div class="container-fluid">
+            <div class="form-row" id="place">
+              <input type="text" placeholder="Branch/Stream" class="form-control">
+            </div>
           </div>
-          <div class="form-row" id="place">
-            <input type="password" id="inputPassword6" placeholder="Password" class="form-control" aria-describedby="passwordHelpInline">
-          </div>
-          <div class="form-row" id="place">
-            <input type="password" placeholder="Confirm Password" class="form-control">
-          </div>
-          <button class="gradient" id="gradient_submit" type="submit" name="save" value="submit">SIGN UP</button><br>
+          <div class="container-fluid">  
+            <div class="form-row" id="place">
+              <input type="password" id="inputPassword6" placeholder="Password" class="form-control" aria-describedby="passwordHelpInline">
+            </div>
+          </div> 
+          <div class="container-fluid"> 
+            <div class="form-row" id="place">
+              <input type="password" placeholder="Confirm Password" class="form-control">
+            </div>
+         </div>
+         <div class="container-fluid">
+           <button class="gradient" id="gradient_submit" type="submit" name="save" value="submit">SIGN UP</button><br>
+         </div>
           <a class="pass-font" href="forgot_password.html"> Sign In with Google</a><br>
           <a class="pass-font" href="forgot_password.html"> Forgot Password ?</a>
          <div><br></div>
