@@ -638,11 +638,18 @@ height: 43vw;
 }
 @media(max-width:427px){
   .lab-notice{
-    height:50px !important;
+    height:43px !important;
   }
   .scrolling-notice{
-    height:50px;
+    height:43px;
     margin-left: -2px;
+  }
+  .lab-notice:after{
+    border-left: 20px solid lightskyblue;
+    border-top: 26px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 21px solid transparent;
+    top: -3px;
   }
 }
 /*-----------ABOUT US-----------------*/
@@ -737,7 +744,11 @@ height: 43vw;
   margin-bottom: 2vw;
   border-radius: 20%;
 }
-#floatingInput,#floatingPassword{
+#floatingInput,#floatingPassword,
+#floatingName,#floatingRegistration,
+#floatingContact,#floatingBranch,
+#floatingPass,#floatingConfirm,
+#floatingEmail{
   height: 3vw;
 }
 #place1{
@@ -856,7 +867,11 @@ height: 43vw;
   }
 }
 @media(max-width:1170px){
-  #floatingInput,#floatingPassword{
+  #floatingInput,#floatingPassword,
+  #floatingName,#floatingRegistration,
+  #floatingContact,#floatingBranch,
+  #floatingPass,#floatingConfirm,
+  #floatingEmail{
     height: 4vw;
   }
   #label-id{
@@ -864,7 +879,11 @@ height: 43vw;
   }
 }
 @media(max-width:1105px){
-  #floatingInput,#floatingPassword{
+  #floatingInput,#floatingPassword,
+  #floatingName,#floatingRegistration,
+  #floatingContact,#floatingBranch,
+  #floatingPass,#floatingConfirm,
+  #floatingEmail{
     height: 4.5vw;
   }
   #label-id{
@@ -872,7 +891,11 @@ height: 43vw;
   }
 }
 @media(max-width:895px){
-  #floatingInput,#floatingPassword{
+  #floatingInput,#floatingPassword,
+  #floatingName,#floatingRegistration,
+  #floatingContact,#floatingBranch,
+  #floatingPass,#floatingConfirm,
+  #floatingEmail{
     height: 4.7vw;
   }
   #label-id{
@@ -880,7 +903,11 @@ height: 43vw;
   }
 }
 @media(max-width:778px){
-  #floatingInput,#floatingPassword{
+  #floatingInput,#floatingPassword,
+  #floatingName,#floatingRegistration,
+  #floatingContact,#floatingBranch,
+  #floatingPass,#floatingConfirm,
+  #floatingEmail{
     height: 4.9vw;
   }
   #label-id{
@@ -888,7 +915,11 @@ height: 43vw;
   }
 }
 @media(max-width:735px){
-  #floatingInput,#floatingPassword{
+  #floatingInput,#floatingPassword,
+  #floatingName,#floatingRegistration,
+  #floatingContact,#floatingBranch,
+  #floatingPass,#floatingConfirm,
+  #floatingEmail{
     height: 5.2vw;
   }
   #label-id{
@@ -896,7 +927,11 @@ height: 43vw;
   }
 }
 @media(max-width:685px){
-  #floatingInput,#floatingPassword{
+  #floatingInput,#floatingPassword,
+  #floatingName,#floatingRegistration,
+  #floatingContact,#floatingBranch,
+  #floatingPass,#floatingConfirm,
+  #floatingEmail{
     height: 6vw;
   }
   #label-id{
@@ -904,7 +939,11 @@ height: 43vw;
   }
 }
 @media(max-width:650px){
-  #floatingInput,#floatingPassword{
+  #floatingInput,#floatingPassword,
+  #floatingName,#floatingRegistration,
+  #floatingContact,#floatingBranch,
+  #floatingPass,#floatingConfirm,
+  #floatingEmail{
     height: 6.5vw;
   }
   #label-id{
@@ -912,7 +951,11 @@ height: 43vw;
   }
 }
 @media(max-width:560px){
-  #floatingInput,#floatingPassword{
+  #floatingInput,#floatingPassword,
+  #floatingName,#floatingRegistration,
+  #floatingContact,#floatingBranch,
+  #floatingPass,#floatingConfirm,
+  #floatingEmail{
     height: 6.5vw;
   }
   #label-id{
@@ -920,7 +963,11 @@ height: 43vw;
   }
 }
 @media(max-width:545px){
-  #floatingInput,#floatingPassword{
+  #floatingInput,#floatingPassword,
+  #floatingName,#floatingRegistration,
+  #floatingContact,#floatingBranch,
+  #floatingPass,#floatingConfirm,
+  #floatingEmail{
     height: 7vw;
   }
   #label-id{
@@ -928,7 +975,11 @@ height: 43vw;
   }
 }
 @media(max-width:515px){
-  #floatingInput,#floatingPassword{
+  #floatingInput,#floatingPassword,
+  #floatingName,#floatingRegistration,
+  #floatingContact,#floatingBranch,
+  #floatingPass,#floatingConfirm,
+  #floatingEmail{
     height: 9vw;
   }
   #label-id{
@@ -936,7 +987,11 @@ height: 43vw;
   }
 }
 @media(max-width:500px){
-  #floatingInput,#floatingPassword{
+  #floatingInput,#floatingPassword,
+  #floatingName,#floatingRegistration,
+  #floatingContact,#floatingBranch,
+  #floatingPass,#floatingConfirm,
+  #floatingEmail{
     height: 10vw;
   }
   #label-id{
