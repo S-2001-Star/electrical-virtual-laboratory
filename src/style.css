@@ -680,13 +680,14 @@ height: 43vw;
   float: right;
   box-shadow: 0 0 0.39vw white;
 }
-.lab-class{
+.lab-class-be,.lab-class-nt,.lab-class-em1,.lab-class-em2{
   font-size: 2vw !important;
 }
 .lab-1,.lab-3{
   border:0.1vw solid black;
   border-radius: 3vw;
   text-align: center !important;
+  align-items: center !important;
   padding-top:3vw;
   width:40%;
   height:13vw;
@@ -720,6 +721,118 @@ height: 43vw;
   text-align: justify;
   margin-right: -15vw;
 }
+@media(max-width:1265px){
+  #lab1,#lab3{
+    margin-top: -1vw;
+  }
+  #lab2,#lab4{
+    margin-top: -1vw;
+  }
+  .lab-1,.lab-3{
+    padding-top:4vw;
+    width:45%;
+    height:15vw;
+  }
+  .lab-2,.lab-4{
+    width:45%;
+    height:15vw;
+  }
+  .lab-class-em2{
+    padding-top:1vw;
+  }
+  .lab-class-nt{
+    padding-top:2.3vw;
+  }
+}
+@media(max-width:1110px){
+  #lab1,#lab3{
+    margin-top: -1vw;
+  }
+  #lab2,#lab4{
+    margin-top: -1vw;
+  }
+  .lab-1,.lab-3{
+    width:45%;
+    height:15vw;
+  }
+  .lab-2,.lab-4{
+    width:45%;
+    height:15vw;
+  }
+  #lab-container{
+    padding-top: 2vw;
+  }
+}
+@media(max-width:1065px){
+  #lab1,#lab3{
+    margin-top: -1vw;
+  }
+  #lab2,#lab4{
+    margin-top: -1vw;
+  }
+  .lab-1,.lab-3{
+    padding:3vw;
+    width:50%;
+    height:16vw;
+  }
+  .lab-2,.lab-4{
+    padding:3vw;
+    width:50%;
+    height:16vw;
+  }
+  #lab-container{
+    padding-top: 2vw;
+  }
+  .lab-class-be{
+    padding-top: 1vw;
+  }
+  .lab-class-em1{
+    padding-top: 2vw;
+  }
+}
+@media(max-width:1015px){
+  #lab1,#lab3{
+    margin-top: -1vw;
+  }
+  #lab2,#lab4{
+    margin-top: -1vw;
+  }
+  .lab-1,.lab-3{
+    padding:3vw;
+    width:60%;
+    height:17vw;
+  }
+  .lab-2,.lab-4{
+    padding:3vw;
+    width:60%;
+    height:17vw;
+  }
+  #lab-container{
+    padding-top: 2vw;
+  }
+  .lab-class-be{
+    padding-top: 1vw;
+  }
+  .lab-class-nt{
+    padding-top: 3vw;
+  }
+  .lab-class-em1{
+    padding-top: 2vw;
+  }
+  .lab-class-em2{
+    padding-top: 2vw;
+  }
+}
+@media(max-width:945px){
+  #lab-container{
+    padding-top: 3vw;
+  }
+}
+@media(max-width:910px){
+  #lab-container{
+    padding-top: 5vw;
+  }
+}
 /*--------LOGIN SECTION-------*/
 .login-head{
   color:orange !important;
@@ -734,10 +847,7 @@ height: 43vw;
   to {top:0; opacity:1}
 }
 #place{
-  /* width: 25vw; */
-  /* height: 2.5vw; */
   background:none;
-  /* border-bottom: 0.2vw solid black!important; */
   -moz-box-shadow: 0 0.5vw 1vw black;
   -webkit-box-shadow: 0 0.5vw 1vw black;
   box-shadow: 0 0.5vw 1vw black;
@@ -763,9 +873,6 @@ height: 43vw;
 #label-id{
   margin-top:-0.5vw;
 }
-/* #place1 label{
-  margin-top:-1vw;
-} */
 #form_design{
   text-align: center !important;
 }
@@ -773,9 +880,6 @@ height: 43vw;
   color: black;
   opacity: 70%;
 }
-/* #rd-form{
-  align-items: center !important;
-} */
 .rd-body{
   text-align: center !important;
 }
@@ -785,8 +889,6 @@ height: 43vw;
   padding-right:2vw;
 }
 .gradient {
-  /* width: 14.32vw;
-  height: 3.25vw; */
   outline: none;
   color: #fff;
   background: #111;
@@ -847,10 +949,6 @@ height: 43vw;
 .modal-body{
   text-align: center;
 }
-/* #myModal1,#myModal{
-  top:18%;
-  
-} */
 .form_place{
   padding-left: 2.5vw;
 }
