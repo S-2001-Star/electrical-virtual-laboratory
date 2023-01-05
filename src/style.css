@@ -832,7 +832,28 @@ height: 43vw;
   #lab-container{
     padding-top: 5vw;
   }
+}@media(max-width:850px){
+  #lab-container{
+    padding-top: 5vw;
+  }
+  .lab-1,.lab-3{
+    padding:3vw;
+    width:60%;
+    height:18vw;
+  }
+  .lab-2,.lab-4{
+    padding:3vw;
+    width:60%;
+    height:18vw;
+  }
+  .lab-class-be{
+    padding-top: 3vw;
+  }
+  .lab-class-nt{
+    padding-top: 4vw;
+  }
 }
+
 /*--------LOGIN SECTION-------*/
 .login-head{
   color:orange !important;
@@ -858,7 +879,7 @@ height: 43vw;
 #floatingName,#floatingRegistration,
 #floatingContact,#floatingBranch,
 #floatingPass,#floatingConfirm,
-#floatingEmail{
+#floatingEmail,#floatingInstitute{
   height: 3vw;
 }
 #place1{
@@ -952,8 +973,17 @@ height: 43vw;
 .form_place{
   padding-left: 2.5vw;
 }
-#google_login,#google_captcha{
+/* #google_login,#google_captcha{
   text-align: center;
+} */
+#google_login{
+  align-items: center;
+}
+#google_captcha_1{
+  width: 10vw;
+}
+#google_captcha_1{
+  
 }
 #go-captcha{
   align-items: center !important;
@@ -969,7 +999,7 @@ height: 43vw;
   #floatingName,#floatingRegistration,
   #floatingContact,#floatingBranch,
   #floatingPass,#floatingConfirm,
-  #floatingEmail{
+  #floatingEmail,#floatingInstitute{
     height: 4vw;
   }
   #label-id{
@@ -981,7 +1011,7 @@ height: 43vw;
   #floatingName,#floatingRegistration,
   #floatingContact,#floatingBranch,
   #floatingPass,#floatingConfirm,
-  #floatingEmail{
+  #floatingEmail,#floatingInstitute{
     height: 4.5vw;
   }
   #label-id{
@@ -993,7 +1023,7 @@ height: 43vw;
   #floatingName,#floatingRegistration,
   #floatingContact,#floatingBranch,
   #floatingPass,#floatingConfirm,
-  #floatingEmail{
+  #floatingEmail,#floatingInstitute{
     height: 4.7vw;
   }
   #label-id{
@@ -1005,7 +1035,7 @@ height: 43vw;
   #floatingName,#floatingRegistration,
   #floatingContact,#floatingBranch,
   #floatingPass,#floatingConfirm,
-  #floatingEmail{
+  #floatingEmail,#floatingInstitute{
     height: 4.9vw;
   }
   #label-id{
@@ -1017,7 +1047,7 @@ height: 43vw;
   #floatingName,#floatingRegistration,
   #floatingContact,#floatingBranch,
   #floatingPass,#floatingConfirm,
-  #floatingEmail{
+  #floatingEmail,#floatingInstitute{
     height: 5.2vw;
   }
   #label-id{
@@ -1029,7 +1059,7 @@ height: 43vw;
   #floatingName,#floatingRegistration,
   #floatingContact,#floatingBranch,
   #floatingPass,#floatingConfirm,
-  #floatingEmail{
+  #floatingEmail,#floatingInstitute{
     height: 6vw;
   }
   #label-id{
@@ -1041,7 +1071,7 @@ height: 43vw;
   #floatingName,#floatingRegistration,
   #floatingContact,#floatingBranch,
   #floatingPass,#floatingConfirm,
-  #floatingEmail{
+  #floatingEmail,#floatingInstitute{
     height: 6.5vw;
   }
   #label-id{
@@ -1053,7 +1083,7 @@ height: 43vw;
   #floatingName,#floatingRegistration,
   #floatingContact,#floatingBranch,
   #floatingPass,#floatingConfirm,
-  #floatingEmail{
+  #floatingEmail,#floatingInstitute{
     height: 6.5vw;
   }
   #label-id{
@@ -1065,7 +1095,7 @@ height: 43vw;
   #floatingName,#floatingRegistration,
   #floatingContact,#floatingBranch,
   #floatingPass,#floatingConfirm,
-  #floatingEmail{
+  #floatingEmail,#floatingInstitute{
     height: 7vw;
   }
   #label-id{
@@ -1077,7 +1107,7 @@ height: 43vw;
   #floatingName,#floatingRegistration,
   #floatingContact,#floatingBranch,
   #floatingPass,#floatingConfirm,
-  #floatingEmail{
+  #floatingEmail,#floatingInstitute{
     height: 9vw;
   }
   #label-id{
@@ -1089,12 +1119,28 @@ height: 43vw;
   #floatingName,#floatingRegistration,
   #floatingContact,#floatingBranch,
   #floatingPass,#floatingConfirm,
-  #floatingEmail{
+  #floatingEmail,#floatingInstitute{
     height: 10vw;
   }
   #label-id{
     margin-top:-2vw;
   }
 }
+/*----------FOOTER SECTION-------------*/
 
-
+#footer-section{
+  background-color:black;
+  color:aliceblue;
+}
+.links{
+  text-decoration: none;
+  color: white;
+}
+.text{
+  text-decoration: none;
+  color: white;
+}
+.mail{
+  text-decoration: none;
+  color: white;
+}
