@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @font-face{
   font-family: 'MechanismoRegular-p7ywa';
   font-style: normal;
@@ -1144,6 +1145,15 @@ height: 43vw;
   text-decoration: none;
   color: white;
 }
+.footer-heading{
+  margin-bottom: 2vw;
+  text-transform: uppercase;
+  font-family: 'Libre Baskerville', serif;
+  color: rgb(205, 184, 50);
+}
+#contact-icon{
+  margin-bottom: 2vw;
+}
 .clock {
   /* background: #2d5171; */
    width: 13rem;
@@ -1268,5 +1278,6 @@ height: 43vw;
   background: blue;
   width: 45%;
   height: 2px;
+  z-index: 2;
 }
  
