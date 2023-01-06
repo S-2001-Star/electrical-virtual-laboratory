@@ -1131,7 +1131,7 @@ height: 43vw;
 
 #footer-section{
   background-color:black;
-  color:aliceblue;
+  color:white;
 }
 .links{
   text-decoration: none;
@@ -1153,6 +1153,13 @@ height: 43vw;
 }
 #contact-icon{
   margin-bottom: 2vw;
+}
+#map-link{
+  text-decoration: none;
+  color: white;
+}
+#map-link:hover{
+  color: blue;
 }
 .clock {
   /* background: #2d5171; */
@@ -1176,13 +1183,11 @@ height: 43vw;
   height: 100%;
   border-radius: 100%;
 }
- 
 .outer-clock-face::after {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   transform: rotate(90deg)
 }
- 
 .outer-clock-face::after,
 .outer-clock-face::before,
 .outer-clock-face .marking{
@@ -1204,19 +1209,16 @@ height: 43vw;
   -moz-transform: rotate(30deg);
   transform: rotate(30deg)
 }
- 
 .outer-clock-face .marking.marking-two {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
   transform: rotate(60deg)
 }
- 
 .outer-clock-face .marking.marking-three {
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
   transform: rotate(120deg)
 }
- 
 .outer-clock-face .marking.marking-four {
   -webkit-transform: rotate(150deg);
   -moz-transform: rotate(150deg);
@@ -1233,9 +1235,7 @@ height: 43vw;
   -moz-border-radius: 100%;
   border-radius: 100%;
   z-index: 1;
-  
 }
- 
 .inner-clock-face::before {
   content: '';
   position: absolute;
@@ -1262,18 +1262,15 @@ height: 43vw;
   transform: rotate(90deg);
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
- 
 .hand.hour-hand {
   width: 30%;
   z-index: 3;
 }
- 
 .hand.min-hand {
   height: 2px;
   z-index: 10;
   width: 40%;
 }
- 
 .hand.second-hand {
   background: blue;
   width: 45%;
