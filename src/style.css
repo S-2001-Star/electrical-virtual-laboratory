@@ -15,70 +15,80 @@
   src:url('MechanismoRegular-p7ywa.woff') format('woff');
 }
 *{
-    border: 0em;
-    margin: 0em;
-    padding: 0em;
-    outline: 0em;
+  border: 0em;
+  margin: 0em;
+  padding: 0em;
+  outline: 0em;
 }
 html{
     scroll-behavior: smooth;
 }
 html, body{
-    width:100%;
-    height:100%;
-    margin:0;
-    padding:0;
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
 }
 body{
-    background: white !important;
-    font-family: sans-serif !important;
-    position: relative;
+  background: white !important;
+  font-family: sans-serif !important;
+  position: relative;
 }
 ::-webkit-scrollbar{
-    width: 0;
+  width: 0;
 }
 /*-------------------- NAVBAR----------------------- */
-#items,#items-1{
-    color: white;
-    font-family: 'Zen Dots', cursive;
-    text-decoration: none;
+#items{
+  color: white;
+  text-decoration: none;
 }
 #items-1{
   font-size:larger;
   color: yellow;
+  font-family: 'Zen Dots', cursive;
   text-decoration: none;
 }
 #items{
   font-size: large;
 }
 #nav_bar{
-    background: black;
-    overflow: auto;
-    width: 100%;
+  background: black;
+  overflow: auto;
+  width: 100%;
 }
 #nav-items{
-    padding-left: 40vw;   
-    float:right;
+  padding-left: 40vw;   
+  float:right;
 }
 .nav-link{
-    color:aliceblue !important;
-    font-family: 'Zen Dots', cursive;
+  color:aliceblue !important;
+  font-family: 'Zen Dots', cursive;
 }
 #nav-home :hover,#nav-labs :hover,#nav-log :hover,#nav-sign :hover{
-    background:rgb(68, 61, 61);
+  background:rgb(68, 61, 61);
 }
 #nav-home,#nav-labs,#nav-log,#nav-sign{
-    padding: 1vw;
+  padding: 1vw;
 }
 #navbarSupportedContent{
-    color:white;
+  color:white;
 }
 #items-1{
-    border-right: 0.066vw solid white;
-    padding:1vw;
+  border-right: 0.066vw solid white;
+  padding:1vw;
 }
 #items{
-    margin-left: 1vw;
+  margin-left: 1vw;
+}
+#nav-items-1{
+  padding-left: 52vw;   
+  float:right;
+}
+#items-2{
+  font-size:larger;
+  color: yellow;
+  font-family: 'Zen Dots', cursive;
+  text-decoration: none;
 }
 @media(max-width:1455px){
   #nav-home,#nav-labs,#nav-log,#nav-sign{
@@ -671,7 +681,8 @@ height: 43vw;
   opacity: 1;
 }
 .lab-2,.lab-4{
-  border:0.1vw solid white;
+  /* border:0.1vw solid white; */
+  border:0.1vw solid black;
   border-radius: 3vw;
   text-align: center !important;
   align-items: center !important;
@@ -679,7 +690,8 @@ height: 43vw;
   width:40%;
   height:13vw;
   float: right;
-  box-shadow: 0 0 0.39vw white;
+  /* box-shadow: 0 0 0.39vw white; */
+  box-shadow: 0 0 0.39vw black;
 }
 .lab-class-be,.lab-class-nt,.lab-class-em1,.lab-class-em2{
   font-size: 2vw !important;
@@ -695,15 +707,19 @@ height: 43vw;
   box-shadow: 0 0 0.39vw black;
 }
 #lab-section-1{
-  background: linear-gradient(to bottom,white,#000c40c8);
+  /* background: linear-gradient(to bottom,white,#000c40c8); */
+  /* background: rgba(255, 166, 0, 0.229); */
+
+  background: linear-gradient(to top,rgba(255, 166, 0, 0.229),rgba(255, 255, 255, 0.347));
   padding: 2vw;
 }
 #lab-section-2{
   /* background: linear-gradient(to bottom,#000C40, rgba(196, 228, 255, 0.312)); */
   /* background: linear-gradient(to top,#757F9A,#D7DDE8); */
   /* background: linear-gradient(to bottom,#080808,#2c3e50); */
-  background: linear-gradient(to top,white,#000c40c8);
-
+  /* background: linear-gradient(to top,white,#000c40c8); */
+  /* background: rgba(128, 128, 128, 0.19); */
+  background: linear-gradient(to bottom,rgba(128, 128, 128, 0.19),rgba(255, 255, 255, 0.293));
   padding: 2vw;
 }
 #lab_label-1,.lab_label-3{
@@ -715,12 +731,18 @@ height: 43vw;
   margin-left: -15vw;
 }
 #lab_label-2,#lab_label-4{
-  color:white;
+  /* color:white; */
+  color: #000;
 }
 #lab2,#lab4{
-  color:white;
+  /* color:white; */
+  color: #000;
   text-align: justify;
   margin-right: -15vw;
+}
+#be-lab{
+  text-decoration: none;
+  color:#000;
 }
 @media(max-width:1265px){
   #lab1,#lab3{
@@ -1136,10 +1158,12 @@ height: 43vw;
 .links{
   text-decoration: none;
   color: white;
+  align-items: center !important;
 }
 .text{
   text-decoration: none;
   color: white;
+  text-align: center !important;
 }
 .mail{
   text-decoration: none;
@@ -1150,6 +1174,7 @@ height: 43vw;
   text-transform: uppercase;
   font-family: 'Libre Baskerville', serif;
   color: rgb(205, 184, 50);
+
 }
 #contact-icon{
   margin-bottom: 2vw;
@@ -1162,35 +1187,31 @@ height: 43vw;
   color: blue;
 }
 .clock {
-  /* background: #2d5171; */
-   width: 13rem;
-   height: 13rem;
-   position: relative;
-   padding: 1vw;
-   /* border: 7px solid #16344f; */
-   box-shadow: -4px -4px 10px rgba(67,67,67,0.5),
-                /* inset 4px 4px 10px rgba(0,0,0,0.5), */
-                inset -4px -4px 10px rgba(67, 67, 67, 0.5),
-                4px 4px 10px rgba(0,0,0,0.3);
-   border-radius: 5%;
-   margin:2vw auto;
-}
-.outer-clock-face {
+  width: 13rem;
+  height: 13rem;
   position: relative;
-  /* background: #2d5171; */
+  padding: 1vw;
+  box-shadow: -4px -4px 10px rgba(67,67,67,0.5),
+              inset -4px -4px 10px rgba(67, 67, 67, 0.5),
+              4px 4px 10px rgba(0,0,0,0.3);
+  border-radius: 5%;
+  margin:2vw auto;
+}
+.outer-face {
+  position: relative;
   overflow: hidden;
   width: 100%;
   height: 100%;
   border-radius: 100%;
 }
-.outer-clock-face::after {
+.outer-face::after {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   transform: rotate(90deg)
 }
-.outer-clock-face::after,
-.outer-clock-face::before,
-.outer-clock-face .marking{
+.outer-face::after,
+.outer-face::before,
+.outer-face .marking{
   content: '';
   position: absolute;
   width: 5px;
@@ -1199,32 +1220,30 @@ height: 43vw;
   z-index: 0;
   left: 49%;
 }
-.outer-clock-face .marking {
-  /* background: #6391bb; */
+.outer-face .marking {
   width: 3px;
 }
- 
-.outer-clock-face .marking.marking-one {
+.outer-face .marking.marking-one {
   -webkit-transform: rotate(30deg);
   -moz-transform: rotate(30deg);
   transform: rotate(30deg)
 }
-.outer-clock-face .marking.marking-two {
+.outer-face .marking.marking-two {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
   transform: rotate(60deg)
 }
-.outer-clock-face .marking.marking-three {
+.outer-face .marking.marking-three {
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
   transform: rotate(120deg)
 }
-.outer-clock-face .marking.marking-four {
+.outer-face .marking.marking-four {
   -webkit-transform: rotate(150deg);
   -moz-transform: rotate(150deg);
   transform: rotate(150deg)
 }
-.inner-clock-face {
+.inner-face {
   position: absolute;
   top: 10%;
   left: 10%;
@@ -1236,7 +1255,7 @@ height: 43vw;
   border-radius: 100%;
   z-index: 1;
 }
-.inner-clock-face::before {
+.inner-face::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -1276,5 +1295,26 @@ height: 43vw;
   width: 45%;
   height: 2px;
   z-index: 2;
+} 
+/*--------------------LAB PAGES------------------*/
+#lab-bg{
+  position: relative;
+  background:url(lab-bg.jpg);
+  /* background-size: cover; */
+  /* overflow: hidden; */
+  width: 100%;
+  height: 100vh;
 }
- 
+.bg{
+  padding-right: -5vw;
+  padding-left: 10vw;
+  /* padding: auto; */
+  text-align: center;
+  /* top:20%;
+  left:50%; */
+}
+.bg-container{
+  width: 90%;
+  height:100vh;
+  background: blue;
+}
