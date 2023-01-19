@@ -38,6 +38,7 @@
           <ul class="navbar-nav navbar-float" id="nav-items-1">
             <li class="nav-item" id="nav-home"><a class="nav-link" href="index.html">HOME</a></li> 
             <li class="nav-item" id="nav-labs"><a class="nav-link" href="#">eV&nbsp;LABS</a></li>
+            <li class="nav-item" id="nav-log"><a class="nav-link" id="cust_btn">LOG&nbsp;IN</a></li>
           </ul>
         </div>
         </div>
@@ -48,13 +49,42 @@
   <div class="bg">
   <div class="bg-container">
     <div class="lab">
-      <h2 class=''>BASIC ELECTRICAL LAB</h2>
+      <h2 class='lab-title'>BASIC ELECTRICAL LAB</h2>
       <div class="exp-button">
         <button class="btn btn-primary ml-3" id="be-button" onclick="intro_body()">INTRODUCTION</button>
         <button class="btn btn-primary ml-5" id="be-button"onclick="object_body()">OBJECTIVE</button>
         <button class="btn btn-primary ml-3" id="be-button" onclick="list_body()">LIST OF EXPERIMENTS</button>
       </div>
-      <p id="para"></p>
+<div id="lab-border" class="container">
+  <div class="container-fluid" id="be-lab-box">
+    <!----------INTRODUCTION------------->
+          <div id="para">
+            <h4>INTRODUCTION</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ratione fugit sit inventore explicabo commodi similique? Repellendus libero deserunt, nemo necessitatibus est quod quam dolorem nam optio odio? Rerum, laudantium?
+          </div>
+    <!----------OBJECTIVE------------->
+          <div id="para1">
+            <h4>OBJECTIVE</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ratione fugit sit inventore explicabo commodi similique? Repellendus libero deserunt, nemo necessitatibus est quod quam dolorem nam optio odio? Rerum, laudantium?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea est placeat, alias magni incidunt excepturi hic similique in ab sunt corporis odio quidem dolores vel. Veniam voluptates molestiae accusantium veritatis.
+            Quaerat doloremque repudiandae perspiciatis vel tempora. Quasi veritatis nobis dolore alias beatae nostrum voluptas eum repellendus quibusdam ipsam, culpa dolor itaque nisi sunt sequi non reiciendis quod quae aliquid repellat!
+          </div>
+    <!----------LIST OF EXPERIMENTS------------->
+    <div id="para2">
+      <h4>LIST OF EXPERIMENTS</h4>
+        <ul>
+            <li>Familiarization with electrical components and equipments.</li>
+            <li>Power and phase measurements in the three phase system by two wattmeter method.</li>
+            <li>Verification of Superposition Theorem</li>
+            <li>Verification of Thevenin Theorem</li>
+            <li>Verification of Norton Theorem</li>
+            <li>Plotting of B-H curve of magnetic material and Calculation of hysterisis loss.</li>
+            <li>Series RLC circuit (Power measurement, Phasor Diagram)</li>
+            <li>OC and SC test of single-phase transformer.</li>
+        </ul>
+          </div>
+    </div>
+</div>
       <script src="js/lab-section.js"></script>
     </div>
   </div>

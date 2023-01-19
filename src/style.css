@@ -8,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
 @font-face{
   font-family: 'MechanismoRegular-p7ywa';
   font-style: normal;
@@ -41,15 +42,14 @@ body{
 #items{
   color: white;
   text-decoration: none;
+  font-family: 'Zen Dots', cursive;
+  font-size: large;
 }
 #items-1{
   font-size:larger;
   color: yellow;
   font-family: 'Zen Dots', cursive;
   text-decoration: none;
-}
-#items{
-  font-size: large;
 }
 #nav_bar{
   background: black;
@@ -681,7 +681,6 @@ height: 43vw;
   opacity: 1;
 }
 .lab-2,.lab-4{
-  /* border:0.1vw solid white; */
   border:0.1vw solid black;
   border-radius: 3vw;
   text-align: center !important;
@@ -690,11 +689,11 @@ height: 43vw;
   width:40%;
   height:13vw;
   float: right;
-  /* box-shadow: 0 0 0.39vw white; */
   box-shadow: 0 0 0.39vw black;
 }
 .lab-class-be,.lab-class-nt,.lab-class-em1,.lab-class-em2{
-  font-size: 2vw !important;
+  font-size: 2.3vw !important;
+  font-family: 'Changa', sans-serif;
 }
 .lab-1,.lab-3{
   border:0.1vw solid black;
@@ -707,19 +706,25 @@ height: 43vw;
   box-shadow: 0 0 0.39vw black;
 }
 #lab-section-1{
-  /* background: linear-gradient(to bottom,white,#000c40c8); */
-  /* background: rgba(255, 166, 0, 0.229); */
-
+  /* background: linear-gradient(to bottom,white,rgba(255, 166, 0, 0.229),rgba(255, 166, 0, 0.229),rgba(255, 255, 255, 0.347)); */
   background: linear-gradient(to top,rgba(255, 166, 0, 0.229),rgba(255, 255, 255, 0.347));
+  background-image: url("grad_1.jpg");
   padding: 2vw;
 }
 #lab-section-2{
-  /* background: linear-gradient(to bottom,#000C40, rgba(196, 228, 255, 0.312)); */
-  /* background: linear-gradient(to top,#757F9A,#D7DDE8); */
-  /* background: linear-gradient(to bottom,#080808,#2c3e50); */
-  /* background: linear-gradient(to top,white,#000c40c8); */
-  /* background: rgba(128, 128, 128, 0.19); */
-  background: linear-gradient(to bottom,rgba(128, 128, 128, 0.19),rgba(255, 255, 255, 0.293));
+  /* background: linear-gradient(to top,rgba(128, 128, 128, 0.19),rgba(255, 255, 255, 0.293)); */
+  /* background: linear-gradient(to bottom,rgba(128, 128, 128, 0.19),rgba(255, 255, 255, 0.293)); */
+  background-image: url("grad_2.jpg");
+  padding: 2vw;
+}
+#lab-section-3{
+  /* background: linear-gradient(to bottom,rgba(255, 166, 0, 0.229),rgba(255, 166, 0, 0.229),rgba(255, 255, 255, 0.347)); */
+  /* background: linear-gradient(to top,rgba(255, 166, 0, 0.229),rgba(255, 255, 255, 0.347)); */
+  padding: 2vw;
+}
+#lab-section-4{
+  /* background: linear-gradient(to top,rgba(128, 128, 128, 0.19),rgba(255, 255, 255, 0.293)); */
+  /* background: linear-gradient(to bottom,rgba(128, 128, 128, 0.19),rgba(255, 255, 255, 0.293)); */
   padding: 2vw;
 }
 #lab_label-1,.lab_label-3{
@@ -731,11 +736,9 @@ height: 43vw;
   margin-left: -15vw;
 }
 #lab_label-2,#lab_label-4{
-  /* color:white; */
   color: #000;
 }
 #lab2,#lab4{
-  /* color:white; */
   color: #000;
   text-align: justify;
   margin-right: -15vw;
@@ -1297,34 +1300,32 @@ height: 43vw;
   z-index: 2;
 } 
 /*--------------------LAB PAGES------------------*/
-/* #lab-bg{
-  position: relative;
-  background:url(lab-bg.jpg);
-  width: 100%;
-  height: 100vh;
-}
-.bg{
-  padding-right: -5vw;
-  padding-left: 10vw;
-  text-align: center;
-}
-.bg-container{
-  width: 90%;
-  height:100vh;
-  background: blue;
-} */
 .lab{
   padding-top: 2vw;
   text-align: center;
 }
+.lab-title{
+  font-family: 'Changa', sans-serif;
+  font-size: 3vw;
+}
 .exp-button{
   padding-top: 2vw;
+  padding-bottom: 2vw;
 }
-#para{
-  padding-top: 2vw;
+#para,#para1,#para2{
+  padding: 2vw;
+  display: none;
+  text-align: justify;
 }
 #be-button{
   background: black;
   border: none;
   color: yellow;
+}
+#lab-border{
+  border: 0.1vw solid black;
+  border-radius: 1vw;
+  height: 35vw;
+  width: 70vw;
+  background: rgba(255, 255, 0, 0.337);
 }
