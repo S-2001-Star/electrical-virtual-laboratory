@@ -1317,7 +1317,7 @@ height: 43vw;
   display: none;
   text-align: justify;
 }
-#be-button{
+#be-button,#be-button-1,#be-button-2{
   background: black;
   border: none;
   color: yellow;
@@ -1328,4 +1328,171 @@ height: 43vw;
   height: 35vw;
   width: 70vw;
   background: rgba(255, 255, 0, 0.337);
+}
+.be-heading{
+  font-family: 'Merriweather', serif;
+  font-weight: bolder;
+  color:rgb(124, 34, 18);
+}
+#exp-list{
+  text-decoration: none;
+  color:#000;
+}
+#exp-list :hover{
+  color:blue;
+}
+@media(max-width:1340px){
+  #lab-border{
+    height: 40vw;
+    width: 70vw;
+  }
+}
+@media(max-width:1250px){
+  #lab-border{
+    height: 45vw;
+    width: 70vw;
+  }
+}
+@media(max-width:1110px){
+  #lab-border{
+    height: 50vw;
+    width: 73vw;
+  }
+}
+@media(max-width:965px){
+  #lab-border{
+    height: 53vw;
+    width: 73vw;
+  }
+}
+@media(max-width:900px){
+  #lab-border{
+    height: 55vw;
+    width: 75vw;
+  }
+}
+@media(max-width:840px){
+  #lab-border{
+    height: 60vw;
+    width: 80vw;
+  }
+}
+@media(max-width:800px){
+  #lab-border{
+    height: 65vw;
+    width: 85vw;
+  }
+}
+@media(max-width:675px){
+  #lab-border{
+    height: 80vw;
+    width: 85vw;
+  }
+}
+@media(max-width:615px){
+  #lab-border{
+    height: 85vw;
+    width: 90vw;
+  }
+}
+@media(max-width:580px){
+  #lab-border{
+    height: 95vw;
+    width: 90vw;
+  }
+}
+@media(max-width:540px){
+  #lab-border{
+    height: 100vw;
+    width: 91vw;
+  }
+}
+@media(max-width:490px){
+  #lab-border{
+    height: 110vw;
+    width: 91vw;
+  }
+}
+@media(max-width:471.5px){
+  #be-button-2{
+    margin-top: 1vw;
+  }
+}
+@media(max-width:456px){
+  #lab-border{
+    height: 117vw;
+    width: 91vw;
+  }
+}
+@media(max-width:440px){
+  #lab-border{
+    height: 125vw;
+    width: 91vw;
+  }
+}
+@media(max-width:435px){
+  #lab-border{
+    height: 135vw;
+    width: 91vw;
+  }
+}
+@media(max-width:390px){
+  #lab-border{
+    height: 145vw;
+    width: 91vw;
+  }
+}
+@media(max-width:365px){
+  #lab-border{
+    height: 165vw;
+    width: 91vw;
+  }
+}
+@media(max-width:355px){
+  #lab-border{
+    height: 185vw;
+    width: 91vw;
+  }
+}
+@media(max-width:340px){
+  #lab-border{
+    height: 195vw;
+    width: 91vw;
+  }
+}
+@media(max-width:325px){
+  #lab-border{
+    height: 205vw;
+    width: 91vw;
+  }
+}
+@media(max-width:315px){
+  #lab-border{
+    height: 215vw;
+    width: 91vw;
+  }
+}
+@media(max-width:305px){
+  #lab-border{
+    height: 235vw;
+    width: 91vw;
+  }
+}
+@media(max-width:295px){
+  #lab-border{
+    height: 255vw;
+    width: 91vw;
+  }
+}
+@media(max-width:290px){
+  #lab-border{
+    height: 285vw;
+    width: 91vw;
+  }
+}
+@media(max-width:285px){
+  #lab-border{
+    height: 290vw;
+    width: 91vw;
+  }
 }
