@@ -1511,16 +1511,20 @@ height: 43vw;
   font-family: 'Amaranth', sans-serif;
 }
 #theory-btn{
-  padding-top: -2vw;
-  border-right: 2px solid orange;
-  /* background-color: #ff0000; */
-  /* width:-1vw; */
-  padding-bottom: 2vw;
+  padding-top: 1vw;
 }
-#theory-btn1{
-  padding-top: 2vw;
+#theory-cont{
+  border-right:2px solid black;
+}
+#toolbox{
+  
 }
 #side-btn{
-  width:15vw;
-  height:3vw;
+  background: rgb(221, 220, 220);
+  color:#000;
+  border:none;
+  margin: 0.7vw;
+}
+#diagram{
+  padding-top: 2vw;
 }
