@@ -1516,9 +1516,6 @@ height: 43vw;
 #theory-cont{
   border-right:2px solid black;
 }
-#toolbox{
-  
-}
 #side-btn{
   background: rgb(221, 220, 220);
   color:#000;
@@ -1527,4 +1524,7 @@ height: 43vw;
 }
 #diagram{
   padding-top: 2vw;
+}
+.exp-cont{
+  text-align: justify;
 }
