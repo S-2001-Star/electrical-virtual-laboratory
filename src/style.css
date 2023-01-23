@@ -100,15 +100,28 @@ body{
   #nav-items{  
     padding-left:38vw; 
   }
+  #nav-items-1{
+    padding-left: 55vw;
+  }
 }
 @media(max-width:1298px){
   #nav-items{  
     padding-left:35vw; 
   }
 }
+@media(max-width:1231px){
+  #nav-items-1{
+    padding-left: 50vw;
+  }
+}
 @media(max-width:1228px){
   #nav-items{  
     padding-left:30vw; 
+  }
+}
+@media(max-width:1101px){
+  #nav-items-1{  
+    padding-left:45vw; 
   }
 }
 @media(max-width:1137px){
@@ -126,6 +139,10 @@ body{
       padding-left:5vw; 
       float: left;
   }
+  #nav-items-1{  
+    padding-left:5vw; 
+    float: left;
+}
 }
 @media(max-width:426px){
   #nav-items{  
@@ -1524,6 +1541,11 @@ height: 43vw;
 }
 #diagram{
   padding-top: 2vw;
+  display: block;
+}
+#diagram1,#diagram2,#diagram3,#diagram4,#diagram5,#diagram6,#diagram7,#diagram8{
+  padding-top: 2vw;
+  display:none;
 }
 .exp-cont{
   text-align: justify;
