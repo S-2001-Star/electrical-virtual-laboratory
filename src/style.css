@@ -1538,6 +1538,7 @@ height: 43vw;
   color:#000;
   border:none;
   margin: 0.7vw;
+  border-radius: 0.3vw;
 }
 #diagram{
   padding-top: 2vw;
