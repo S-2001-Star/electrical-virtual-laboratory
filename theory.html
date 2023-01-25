@@ -19,6 +19,7 @@
   <script src="js/lab-section.js"></script>
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
     <header>
@@ -42,8 +43,53 @@
         </nav>
     </header>
     <div class="exp-bg">
-        <h1 class="exp-heading">Verification of Thevenin Theorem</h1>
+        <h1 class="exp-heading"><span class="material-symbols-outlined" id="hidden-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            sort
+        </span>Verification of Thevenin Theorem</h1>
     </div>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <!-- <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdroped with scrolling</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div> -->
+        <div class="offcanvas-body">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="btn-group-vertical" id="theory-btn1">
+                <!-- <div class="container-fluid" id="theory-btn1"> -->
+                    <button class="btn btn-secondary" id="side-btn" onclick="exp_intro_body()">INTRODUCTION</button>
+                <!-- </div> -->
+                <!-- <div class="container-fluid" id="theory-btn1"> -->
+                    <button class="btn btn-secondary" id="side-btn" onclick="exp_ob_body()">OBJECTIVE</button>
+                <!-- </div> -->
+                <!-- <div class="container-fluid" id="theory-btn1"> -->
+                    <button class="btn btn-secondary" id="side-btn" onclick="exp_app_body()">APPARATUS</button>
+                <!-- </div> -->
+                <!-- <div class="container-fluid" id="theory-btn1"> -->
+                    <button class="btn btn-secondary" id="side-btn" onclick="exp_pre_body()">PRE-LAB</button>
+                <!-- </div> -->
+                <!-- <div class="container-fluid" id="theory-btn1"> -->
+                    <button class="btn btn-secondary" id="side-btn" onclick="exp_theory_body()">THEORY</button>
+                <!-- </div> -->
+                <!-- <div class="container-fluid" id="theory-btn1"> -->
+                    <button class="btn btn-secondary" id="side-btn" onclick="exp_pr_body()">PROCEDURE</button>
+                <!-- </div> -->
+                <!-- <div class="container-fluid" id="theory-btn1"> -->
+                    <button class="btn btn-secondary" id="side-btn"onclick="exp_sim_body()">SIMULATOR</button>
+                <!-- </div> -->
+                <!-- <div class="container-fluid" id="theory-btn1"> -->
+                    <button class="btn btn-secondary" id="side-btn" onclick="exp_post_body()">POST-LAB</button>
+                <!-- </div> -->
+                <!-- <div class="container-fluid" id="theory-btn1"> -->
+                    <button class="btn btn-secondary" id="side-btn"onclick="exp_vd_body()">VIDEO LECTURE</button>
+                <!-- </div> -->
+                <!-- <div class="container-fluid" id="theory-btn1"> -->
+                    <button class="btn btn-secondary" id="side-btn">DOWNLOAD</button>
+                <!-- </div> -->
+            </div>
+        </div>
+      </div>
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-2" id="theory-cont">
@@ -82,7 +128,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-9">
+        <div class="col-lg-9" id="side-cont">
 <!-----------INTRODUCTION--------------->            
             <div id="diagram">
                 <h4 class="exp-head">INTRODUCTION</h4>

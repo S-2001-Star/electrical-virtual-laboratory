@@ -1363,7 +1363,7 @@ height: 43vw;
 #exp-list :hover{
   color:blue;
 }
-@media(max-width:1340px){
+/* @media(max-width:1340px){
   #lab-border{
     height: 40vw;
     width: 70vw;
@@ -1429,6 +1429,12 @@ height: 43vw;
     width: 91vw;
   }
 }
+@media(max-width:494px){
+  #lab-border{
+    height: 105vw;
+    width: 91vw;
+  }
+}
 @media(max-width:490px){
   #lab-border{
     height: 110vw;
@@ -1440,9 +1446,21 @@ height: 43vw;
     margin-top: 1vw;
   }
 }
+@media(max-width:466px){
+  #lab-border{
+    height: 115vw;
+    width: 91vw;
+  }
+}
 @media(max-width:456px){
   #lab-border{
     height: 117vw;
+    width: 91vw;
+  }
+}
+@media(max-width:450px){
+  #lab-border{
+    height: 123vw;
     width: 91vw;
   }
 }
@@ -1517,7 +1535,7 @@ height: 43vw;
     height: 290vw;
     width: 91vw;
   }
-}
+} */
 /******************* THEORY SECTION ***************************/
 .exp-bg{
   background: rgb(75, 75, 28);
@@ -1550,4 +1568,32 @@ height: 43vw;
 }
 .exp-cont{
   text-align: justify;
+}
+@media(max-width:1245px){
+  #theory-cont{
+    width:19vw;
+  }
+}
+@media(max-width:1055px){
+  #theory-cont{
+    width:22vw;
+  }
+}
+#hidden-btn{
+  float:left;
+  font-size: 3vw;
+  /* display:none; */
+  border:2px solid black;
+  box-shadow:2vw 2vw 2vw white;
+}
+@media(max-width:991.5px){
+  #hidden-btn{
+    display:block;
+  }
+  #theory-btn{
+    display:none;
+  }
+  #theory-btn1{
+    display: block;
+  }
 }
