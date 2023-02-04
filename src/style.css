@@ -1363,7 +1363,7 @@ height: 43vw;
 #exp-list :hover{
   color:blue;
 }
-/* @media(max-width:1340px){
+@media(max-width:1340px){
   #lab-border{
     height: 40vw;
     width: 70vw;
@@ -1454,88 +1454,118 @@ height: 43vw;
 }
 @media(max-width:456px){
   #lab-border{
-    height: 117vw;
+    height: 125vw;
     width: 91vw;
   }
 }
 @media(max-width:450px){
   #lab-border{
-    height: 123vw;
+    height: 127vw;
     width: 91vw;
   }
 }
-@media(max-width:440px){
+@media(max-width:442px){
   #lab-border{
-    height: 125vw;
+    height: 130vw;
     width: 91vw;
   }
 }
 @media(max-width:435px){
   #lab-border{
-    height: 135vw;
+    height: 140vw;
     width: 91vw;
   }
 }
-@media(max-width:390px){
+@media(max-width:420px){
   #lab-border{
-    height: 145vw;
+    height: 155vw;
     width: 91vw;
   }
 }
-@media(max-width:365px){
+@media(max-width:411px){
   #lab-border{
     height: 165vw;
     width: 91vw;
   }
 }
-@media(max-width:355px){
+@media(max-width:399px){
   #lab-border{
-    height: 185vw;
+    height: 175vw;
     width: 91vw;
   }
 }
-@media(max-width:340px){
+@media(max-width:370px){
   #lab-border{
-    height: 195vw;
+    height: 190vw;
     width: 91vw;
   }
 }
-@media(max-width:325px){
+@media(max-width:363px){
   #lab-border{
-    height: 205vw;
+    height: 200vw;
     width: 91vw;
   }
 }
-@media(max-width:315px){
+@media(max-width:353px){
   #lab-border{
-    height: 215vw;
+    height: 210vw;
+    width: 91vw;
+  }
+}
+@media(max-width:350px){
+  #lab-border{
+    height: 220vw;
+    width: 91vw;
+  }
+}
+@media(max-width:342px){
+  #lab-border{
+    height: 240vw;
+    width: 91vw;
+  }
+}
+@media(max-width:335px){
+  #lab-border{
+    height: 250vw;
+    width: 91vw;
+  }
+}
+@media(max-width:320px){
+  #lab-border{
+    height: 260vw;
+    width: 91vw;
+  }
+}
+@media(max-width:313px){
+  #lab-border{
+    height: 280vw;
     width: 91vw;
   }
 }
 @media(max-width:305px){
   #lab-border{
-    height: 235vw;
+    height: 300vw;
     width: 91vw;
   }
 }
 @media(max-width:295px){
   #lab-border{
-    height: 255vw;
+    height: 310vw;
     width: 91vw;
   }
 }
 @media(max-width:290px){
   #lab-border{
-    height: 285vw;
+    height: 320vw;
     width: 91vw;
   }
 }
 @media(max-width:285px){
   #lab-border{
-    height: 290vw;
+    height: 335vw;
     width: 91vw;
   }
-} */
+}
 /******************* THEORY SECTION ***************************/
 .exp-bg{
   background: rgb(75, 75, 28);
@@ -1566,8 +1596,20 @@ height: 43vw;
   padding-top: 2vw;
   display:none;
 }
-.exp-cont{
+.row-height{
+  height: 100vh;
+}
+.left1,.left2,.left3,.left4,.left5,.left6,.left7,.left8,.left9{
   text-align: justify;
+  height: 100%;
+  overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+* {
+  -ms-overflow-style: none !important;
 }
 @media(max-width:1245px){
   #theory-cont{
@@ -1579,12 +1621,19 @@ height: 43vw;
     width:22vw;
   }
 }
+#offcanvasWithBothOptions{
+  margin-top:8.4rem;
+}
 #hidden-btn{
   float:left;
-  font-size: 3vw;
-  /* display:none; */
-  border:2px solid black;
-  box-shadow:2vw 2vw 2vw white;
+  font-size: 3rem;
+  border:2px solid rgb(84, 84, 29);
+  border-radius: 0.2rem;
+  /* box-shadow:2vw 2vw 2vw white; */
+  display:none;
+}
+#close-btn{
+  float:right !important;
 }
 @media(max-width:991.5px){
   #hidden-btn{
@@ -1595,5 +1644,51 @@ height: 43vw;
   }
   #theory-btn1{
     display: block;
+    text-align: left;
+  }
+  #offcanvasWithBothOptions{
+    width:30vw;
+    height:-5vw !important;
+  }
+  .offcanvas{
+    height:110vw;
+  }
+}
+@media(max-width:625px){
+  #offcanvasWithBothOptions{
+    width:35vw;
+  }
+}
+@media(max-width:570px){
+  #offcanvasWithBothOptions{
+    width:45vw;
+  }
+}
+@media(max-width:454px){
+  #offcanvasWithBothOptions{
+    margin-top:10rem;
+  } 
+  #hidden-btn{
+    margin-top: 0.8rem;;
+  }
+}
+@media(max-width:420px){
+  #offcanvasWithBothOptions{
+    width:50vw;
+  }
+}
+@media(max-width:375px){
+  #offcanvasWithBothOptions{
+    width:55vw;
+  }
+}
+@media(max-width:340px){
+  #offcanvasWithBothOptions{
+    width:60vw;
+  }
+}
+@media(max-width:310px){
+  #offcanvasWithBothOptions{
+    width:65vw;
   }
 }
