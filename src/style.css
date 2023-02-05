@@ -1692,3 +1692,61 @@ height: 43vw;
     width:65vw;
   }
 }
+
+/**********LAB-SECTION(MOBILE SCREEN)*************/
+#cards{
+  display: none;
+}
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.lab-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 20%;
+  align-items: baseline;
+  height: 400px;
+  border-radius: 20px;
+  border:2px solid black;
+}
+#card-title{
+  font-family: 'Jost', sans-serif;
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 400;
+  text-align:center;
+}
+#card-body{
+  font-family: 'Jost', sans-serif;
+  text-align: justify;
+  padding: 1.2vw;
+  font-weight: 300;
+}
+.flex-card{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px auto;
+}
+@media(max-width:800px){
+  #evlabs{
+    display:none;
+  }
+  #cards{
+    display: block;
+  }
+  .lab-card{
+    width: 43%;
+    margin-top: 20px;
+  }
+}
+@media(max-width:600px){
+  .lab-card{
+    width: 73%;
+  }
+}
