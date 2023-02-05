@@ -1720,12 +1720,47 @@ height: 43vw;
   font-size: 26px;
   font-weight: 400;
   text-align:center;
+  display:inline-block;
+  /* border-bottom: 5px solid black; */
 }
 #card-body{
   font-family: 'Jost', sans-serif;
   text-align: justify;
   padding: 1.2vw;
   font-weight: 300;
+  /* display:inline-block; */
+  /* border-bottom: 2px solid black; */
+}
+/* .card-line{
+  height:1vw;
+  width:10vw;
+  border-radius: 2vw;
+  background: #777d79;
+}
+.card-line-1{
+  width:10vw;
+  height:1vw;
+  border-radius: 2vw;
+  background:rgba(157, 108, 18, 0.537);
+}
+.card-line:hover{
+  width:50vw;
+}
+.card-line-1:hover{
+  width:50vw;
+} */
+#card-title:after{
+  display:block;
+  content: '';
+  border-bottom: solid 3px black;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+#card-title:hover:after { 
+  transform: scaleX(1); 
+}
+#card-title.fromLeft:after{
+  transform-origin:  0% 50%; 
 }
 .flex-card{
   display: flex;
@@ -1749,4 +1784,21 @@ height: 43vw;
   .lab-card{
     width: 73%;
   }
+}
+
+#card-1{
+  background: #f9fbfa;
+  box-shadow: 4px 4px 4px #99a49d;
+}
+#card-2{
+  background: #f5f0ec;
+  box-shadow: 4px -2px 1px rgba(255, 166, 0, 0.229);
+}
+#card-3{
+  background: #f9fbfa;
+  box-shadow: 4px 4px 4px #99a49d;
+}
+#card-4{
+  background: #fdf8f3;
+  box-shadow: 4px -2px 1px #ffa60041;
 }
