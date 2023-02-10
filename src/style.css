@@ -1807,6 +1807,9 @@ height: 43vw;
 
 
 /****EXTRA******/
+#ph-card{
+  display: none;
+}
 @media (max-width: 800px){
 #evlabs{
     display: none;
