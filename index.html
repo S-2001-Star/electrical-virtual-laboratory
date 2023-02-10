@@ -32,11 +32,7 @@
           <a class="text-uppercase font-weight-bold" id="items" href="#about-us">ABOUT US</a>
         </div>
 
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          </button>
-          
-        </div>
+      
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
               <span class="navbar-toggler-icon"></span>
@@ -45,14 +41,22 @@
         <ul class="navbar-nav navbar-float" id="nav-items">
           <li class="nav-item" id="nav-home"><a class="nav-link" href="index.html">HOME</a></li> 
           <li class="nav-item" id="nav-labs"><a class="nav-link" href="#evlabs">eV&nbsp;LABS</a></li>
-          <li class="nav-item" id="nav-log"><a class="nav-link" id="cust_btn">LOG&nbsp;IN</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul></li>
+          <li class="nav-item" id="nav-log"><a class="nav-link" id="cust_btn">LOG&nbsp;IN</a></li>
           <li class="nav-item" id="nav-sign"><a class="nav-link" id="cust_btn1">SIGN&nbsp;UP</a></li>
         </ul>
+
+
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            Log In
+          </a>
+        
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
       </div>
       </div>
     </nav>
@@ -364,9 +368,10 @@ Aut itaque facilis provident eum quibusdam id veniam. Quos incidunt architecto q
   </div>
 </div> -->
 
-<div class="mobile-card">
+<div class="container-fluid">
+  <div class="row" style="justify-content: center;">
 <div id="ph-card">
-  <div class="card d-flex position-relative flex-column">
+  <div class="card d-flex position-relative flex-column" id="card-1">
       <div class='imgContainer'>
           <h3>BASIC ELECTRICAL LAB</h3>
         </div>
@@ -374,15 +379,15 @@ Aut itaque facilis provident eum quibusdam id veniam. Quos incidunt architecto q
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget velit tristique, sollicitudin leo viverra, suscipit neque. Aliquam ut facilisis urna, in pretium nibh.  Morbi in leo in eros commodo volutpat ac sed dolor.</p>
       </div>
   </div>
-  <div class="card d-flex position-relative flex-column">
+  <div class="card d-flex position-relative flex-column" id="card-2">
     <div class='imgContainer'>
         <h3>NETWORK THEORY</h3>
       </div>
     <div class="content">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget velit tristique, sollicitudin leo viverra, suscipit neque. Aliquam ut facilisis urna, in pretium nibh.  Morbi in leo in eros commodo volutpat ac sed dolor.</p>
     </div>
-</div>
-  <div class="card d-flex position-relative flex-column">
+  </div>
+  <div class="card d-flex position-relative flex-column" id="card-3">
       <div class='imgContainer'>
         <h3>ELECTRICAL MACHINES-I</h3>  
       </div>
@@ -390,7 +395,7 @@ Aut itaque facilis provident eum quibusdam id veniam. Quos incidunt architecto q
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget velit tristique, sollicitudin leo viverra, suscipit neque. Aliquam ut facilisis urna, in pretium nibh.  Morbi in leo in eros commodo volutpat ac sed dolor.</p>
       </div>
   </div>
-    <div class="card d-flex position-relative flex-column">
+    <div class="card d-flex position-relative flex-column" id="card-4">
       <div class='imgContainer'>
         <h3>ELECTRICAL MACHINES-II</h3>  
       </div>
@@ -398,6 +403,7 @@ Aut itaque facilis provident eum quibusdam id veniam. Quos incidunt architecto q
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget velit tristique, sollicitudin leo viverra, suscipit neque. Aliquam ut facilisis urna, in pretium nibh.  Morbi in leo in eros commodo volutpat ac sed dolor.</p>
       </div>
   </div>
+</div>
 </div>
 </div>
 

@@ -686,6 +686,7 @@ height: 43vw;
   padding:2vw 2vw 1vw;
   color:black;
   font-family: 'MechanismoRegular-p7ywa';
+  /* text-align: center; */
 }
 .about-content{
   padding: 0vw 2vw 2vw 2vw;
@@ -1806,15 +1807,14 @@ height: 43vw;
 
 
 /****EXTRA******/
-.mobile-card{
-  justify-content: center;
+@media (max-width: 800px){
+#evlabs{
+    display: none;
 }
 #ph-card{
-  display:none;
-  /* flex:wrap; */
-  /* position:relative; */
+  display:block;
+  width:300px; 
   justify-content:center;
-  /* align-items:center; */
 }
 #ph-card .card
 {
@@ -1825,8 +1825,9 @@ height: 43vw;
     border-radius: 2vw;
     box-shadow: 0 5px 20px rgba(0,0,0,0.5);
     transition: 0.3s ease-in-out;
-    /* justify-content:center; */
-    align-items:center;
+}
+#card-1{
+  /* align-items: center !important; */
 }
 #ph-card .card:hover
 {
@@ -1882,14 +1883,4 @@ height: 43vw;
     }
 } */
 
-@media (max-width: 800px){
-  #ph-card{
-      display: block;
-  }
-  #evlabs{
-    display: none;
-  }
-  #ph-card .card .imgContainer{
-    left: -2px;
-  }
 }
