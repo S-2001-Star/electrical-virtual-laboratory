@@ -726,24 +726,47 @@ height: 43vw;
 }
 #lab-section-1{
   /* background: linear-gradient(to bottom,white,rgba(255, 166, 0, 0.229),rgba(255, 166, 0, 0.229),rgba(255, 255, 255, 0.347)); */
-  background: linear-gradient(to left,rgba(0, 102, 255, 0.229),rgba(255, 255, 255, 0.347));
+  
+  /* background: linear-gradient(to left,rgba(0, 102, 255, 0.229),rgba(255, 255, 255, 0.347)); */
+
+  /* background: linear-gradient(to left,rgba(204, 255, 0, 0.229),rgba(255, 255, 255, 0.347)); */
+
+
+  /* background-color: #EDEDED; */
+
+  background: linear-gradient(to left,rgba(255, 228, 196, 0.478),rgba(255, 255, 255, 0.347));
   /* background-image: url("grad_1.jpg"); */
   padding: 2vw;
 }
 #lab-section-2{
   /* background: linear-gradient(to top,rgba(128, 128, 128, 0.19),rgba(255, 255, 255, 0.293)); */
-  background: linear-gradient(to right,rgba(160, 163, 171, 0.19),rgba(255, 255, 255, 0.293));
+
+  /* background: linear-gradient(to right,rgba(160, 163, 171, 0.19),rgba(255, 255, 255, 0.293)); */
+
+  background: linear-gradient(to right,rgba(205, 204, 204, 0.19),rgba(255, 255, 255, 0.293));
+
+
+  /* background-color: #fff; */
   /* background-image: url("grad_2.jpg"); */
   padding: 2vw;
 }
 #lab-section-3{
   /* background: linear-gradient(to bottom,rgba(255, 166, 0, 0.229),rgba(255, 166, 0, 0.229),rgba(255, 255, 255, 0.347)); */
-  background: linear-gradient(to left,rgba(0, 102, 255, 0.229),rgba(255, 255, 255, 0.347));
+
+  /* background: linear-gradient(to left,rgba(0, 102, 255, 0.229),rgba(255, 255, 255, 0.347)); */
+
+  /* background-color: #EDEDED; */
+
+  background: linear-gradient(to left,rgba(255, 228, 196, 0.478),rgba(255, 255, 255, 0.347));
+
   padding: 2vw;
 }
 #lab-section-4{
   /* background: linear-gradient(to top,rgba(128, 128, 128, 0.19),rgba(255, 255, 255, 0.293)); */
-  background: linear-gradient(to right,rgba(128, 128, 128, 0.19),rgba(255, 255, 255, 0.293));
+
+  background: linear-gradient(to right,rgba(205, 204, 204, 0.19),rgba(255, 255, 255, 0.293));
+
+  /* background-color: white; */
   padding: 2vw;
 }
 #lab_label-1,.lab_label-3{
@@ -1196,6 +1219,8 @@ height: 43vw;
   text-transform: uppercase;
   font-family: 'Libre Baskerville', serif;
   color: rgb(205, 184, 50);
+  /* color:rgb(50, 205, 140); */
+  /* color:rgb(47, 141, 255); */
 
 }
 #contact-icon{
@@ -1344,18 +1369,20 @@ height: 43vw;
   background: black;
   border: none;
   color: yellow;
+  /* color:rgb(0, 217, 255); */
 }
 #lab-border{
   border: 0.1vw solid black;
   border-radius: 1vw;
   height: 35vw;
   width: 70vw;
-  background: rgba(255, 255, 0, 0.337);
+  background:rgba(255, 255, 0, 0.374);
 }
 .be-heading{
   font-family: 'Merriweather', serif;
   font-weight: bolder;
   color:rgb(124, 34, 18);
+  /* color:rgb(230, 33, 33); */
 }
 #exp-list{
   text-decoration: none;
