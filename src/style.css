@@ -1694,7 +1694,7 @@ height: 43vw;
 }
 
 /**********LAB-SECTION(MOBILE SCREEN)*************/
-#cards{
+/* #cards{
   display: none;
 }
 .flexbox {
@@ -1721,16 +1721,15 @@ height: 43vw;
   font-weight: 400;
   text-align:center;
   display:inline-block;
-  /* border-bottom: 5px solid black; */
 }
 #card-body{
   font-family: 'Jost', sans-serif;
   text-align: justify;
   padding: 1.2vw;
   font-weight: 300;
-  /* display:inline-block; */
-  /* border-bottom: 2px solid black; */
-}
+} */
+
+
 /* .card-line{
   height:1vw;
   width:10vw;
@@ -1749,7 +1748,9 @@ height: 43vw;
 .card-line-1:hover{
   width:50vw;
 } */
-#card-title:after{
+
+
+/* #card-title:after{
   display:block;
   content: '';
   border-bottom: solid 3px black;  
@@ -1801,4 +1802,94 @@ height: 43vw;
 #card-4{
   background: #fdf8f3;
   box-shadow: 4px -2px 1px #ffa60041;
+} */
+
+
+/****EXTRA******/
+.mobile-card{
+  justify-content: center;
+}
+#ph-card{
+  display:none;
+  /* flex:wrap; */
+  /* position:relative; */
+  justify-content:center;
+  /* align-items:center; */
+}
+#ph-card .card
+{
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    border-radius: 2vw;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+    /* justify-content:center; */
+    align-items:center;
+}
+#ph-card .card:hover
+{
+    height: 450px;
+}
+.card:hover .imgContainer{
+  border-bottom: 2px solid black;
+}
+#ph-card .card .imgContainer
+{
+    /* position: relative;
+    width:250px;
+    height:250px;
+    top:-50px;
+    left:10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2); */
+    text-align: center;
+}
+#ph-card .card .imgContainer h3
+{
+    max-width: 100%;
+    /* border:0.2vw solid black; */
+    border-radius: 1vw;
+    text-align: center;
+    align-items: center;
+    padding:2vw;
+}
+#ph-card .card .content
+{
+    position: relative;
+    margin-top: -140px;
+    /* padding: 10px 15px; */
+    padding-top: 12vw;
+    text-align: justify;
+    color:#111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+#ph-card .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+/* @media (max-width: 330px){
+    .container .card .imgContainer{
+        left: -2px;
+    }
+} */
+
+@media (max-width: 800px){
+  #ph-card{
+      display: block;
+  }
+  #evlabs{
+    display: none;
+  }
+  #ph-card .card .imgContainer{
+    left: -2px;
+  }
 }
