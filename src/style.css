@@ -1654,11 +1654,11 @@ height: 43vw;
 }
 #hidden-btn{
   float:left;
-  font-size: 3rem;
-  border:2px solid rgb(84, 84, 29);
-  border-radius: 0.2rem;
-  /* box-shadow:2vw 2vw 2vw white; */
+  font-size: 2rem;
+  border:2px solid rgb(68, 68, 60);
+  border-radius: 1.2rem;
   display:none;
+  margin-top: 1.5vw;
 }
 #close-btn{
   float:right !important;
