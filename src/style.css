@@ -1861,7 +1861,7 @@ height: 43vw;
 }
 #ph-card .card:hover
 {
-    height: 450px;
+    height: 500px;
 }
 .card:hover .imgContainer{
   border-bottom: 2px solid black;
@@ -1906,11 +1906,4 @@ height: 43vw;
     margin-top: -40px;
     transition-delay: 0.3s;
 }
-
-/* @media (max-width: 330px){
-    .container .card .imgContainer{
-        left: -2px;
-    }
-} */
-
 }
