@@ -1907,3 +1907,15 @@ height: 43vw;
     transition-delay: 0.3s;
 }
 }
+/*****************EXPERIMENTS************/
+.note{
+  border:2px solid black;
+  padding:1vw;
+}
+#exp-3-img{
+  width:40vw;
+  height:20vw;
+  /* align-items: center !important; */
+  /* justify-content: center !important; */
+  text-align: center !important;
+}
