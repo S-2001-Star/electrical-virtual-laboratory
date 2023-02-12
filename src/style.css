@@ -1896,7 +1896,7 @@ height: 43vw;
     color:#111;
     visibility: hidden;
     opacity: 0;
-    pointer-events: none;
+    /* pointer-events: none; */
     transition: 0.3s ease-in-out;
 }
 #ph-card .card:hover .content
