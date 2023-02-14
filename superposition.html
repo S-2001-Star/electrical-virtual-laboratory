@@ -139,54 +139,59 @@
             </div>
 <!--------------------APPARATUS----------------------->            
             <div id="diagram2">
-                <h4 class="exp-head">APPARATUS REQUIRED</h4>
-                <hr>
-                <div id="table-mob" class = "container-fluid">
-                    <div class = "row row-height">
-                      <div class = "col left3" style="text-align:justify">
-                        <table>
-                            <tr>
-                                <th>SL.NO</th>
-                                <th>DEVICE/COMPONENT</th>
-                                <th>RANGE/RATING</th>
-                                <th>QUANTITY</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>1N4001 diode</td>
-                                <td>Refer the datasheet</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Voltage source</td>
-                                <td>0-5 V (FB)<br>0-30 V (RB)</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Resistor</td>
-                                <td>1KΩ,1/2 W</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Voltmeter</td>
-                                <td>0-100 V</td>
-                                <td>1</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>Ammeter</td>
-                                <td>0-100mA (FB)<br>0-100μA (FB)</td>
-                                <td>1</td>
-                            </tr>
-                        </table>
-                      
-                      </div>
+              <h4 class="exp-head">APPARATUS REQUIRED</h4>
+              <hr>
+              <div id="table-mob" class = "container-fluid">
+                  <div class = "row row-height">
+                    <div class = "col left3" style="text-align:justify">
+                      <table>
+                          <tr>
+                              <th>SL.NO</th>
+                              <th>EQUIPMENTS</th>
+                              <th>RANGE</th>
+                              <th>TYPE</th>
+                              <th>QUANTITY</th>
+                          </tr>
+                          <tr>
+                              <td>1</td>
+                              <td>Resistor</td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <td>2</td>
+                              <td>DC Power Supply</td>
+                              <td>(0-30)V</td>
+                              <td></td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <td>3</td>
+                              <td>Voltmeter</td>
+                              <td>(0-600)V</td>
+                              <td>MC</td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <td>4</td>
+                              <td>Ammeter</td>
+                              <td>(0-10A)</td>
+                              <td>MI</td>
+                              <td></td>
+                          </tr>
+                          <tr>
+                              <td>5</td>
+                              <td>Wires</td>
+                              <td></td>
+                              <td>Copper</td>
+                              <td></td>
+                          </tr>
+                      </table>
                     </div>
-                </div>
-            </div>   
+                  </div>
+              </div>
+            </div>
 <!-----------PRE-LAB--------------->            
             <div id="diagram3">
                 <h4 class="exp-head">PRE-LAB</h4>
@@ -497,42 +502,51 @@
                           <li>For superposition theorem, it is not required that only one independent source to be considered at a time, any number of independent sources may be considered simultaneously.</li>
                           <div id="options">
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="qs1_op1">
+                              <input class="form-check-input" type="radio" name="qs1" id="qs1_op1">
                               <label class="form-check-label" for="qs1_op1">
                                 True
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="qs1_op2">
+                              <input class="form-check-input" type="radio" name="qs1" id="qs1_op2">
                               <label class="form-check-label" for="qs1_op2">
                                 False
                               </label>
                             </div>
                           </div>
-
+                          <div id="answer-content" class="container-fluid">
+                            <input id="ans1" class="form-control" readonly>
+                          </div>
                           <li>The superposition theorem principle applies to power calculation.</li>
                           <div id="options">
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="qs2_op1">
+                              <input class="form-check-input" type="radio" name="qs2" id="qs2_op1">
                               <label class="form-check-label" for="qs2_op1">
                                 True
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="qs2_op2">
+                              <input class="form-check-input" type="radio" name="qs2" id="qs2_op2">
                               <label class="form-check-label" for="qs2_op2">
                                 False
                               </label>
                             </div>
                           </div>
-
+                          <div id="answer-content" class="container-fluid">
+                            <input id="ans2" class="form-control" readonly>
+                          </div>
                           <li>What is the major advantage of implementing this theorem ?</li>
                           <div id="answer-area">
                             <div class="form-group blue-border-focus">
-                              <textarea class="form-control" id="exampleFormControlTextarea5" rows="3"></textarea>
+                              <textarea class="form-control" id="text-area1" rows="3"></textarea>
                             </div>
                           </div>
-
+                          <div id="answer-area">
+                            <div class="form-group blue-border-focus">
+                              <textarea class="form-control" id="ans3" rows="3" readonly></textarea>
+                            </div>
+                          </div>
+                          
                           <li>Using superposition theorem, find current I across 5Ω from the below figure</li>
                           <div class="container-fluid">
                             <div class="row" style="justify-content: center;">
@@ -541,38 +555,44 @@
                           </div>
                           <div id="options">
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="qs4_op1">
+                              <input class="form-check-input" type="radio" name="qs4" id="qs4_op1">
                               <label class="form-check-label" for="qs4_op1">
                                 -0.65
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="qs4_op2">
+                              <input class="form-check-input" type="radio" name="qs4" id="qs4_op2">
                               <label class="form-check-label" for="qs4_op2">
                                 -0.625
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="qs4_op3">
+                              <input class="form-check-input" type="radio" name="qs4" id="qs4_op3">
                               <label class="form-check-label" for="qs4_op3">
                                 -0.256
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="qs4_op4">
+                              <input class="form-check-input" type="radio" name="qs4" id="qs4_op4">
                               <label class="form-check-label" for="qs4_op4">
                                 +0.652
                               </label>
                             </div>
                           </div>
-
+                          <div id="answer-content" class="container-fluid">
+                            <input id="ans4" class="form-control" readonly>
+                          </div>
                           <li>Why dependent sources are not killed ?</li>
                           <div id="answer-area">
                             <div class="form-group blue-border-focus">
-                              <textarea class="form-control" id="exampleFormControlTextarea5" rows="3"></textarea>
+                              <textarea class="form-control" id="text-area2" rows="3"></textarea>
                             </div>
                           </div>
-
+                          <div id="answer-area">
+                            <div class="form-group blue-border-focus">
+                              <textarea class="form-control" id="ans5" rows="3" readonly></textarea>
+                            </div>
+                          </div>
                           <li>Use superposition theorem to calculate the voltage drop across the 2Ω resistor from the below circuit</li>
                           <div class="container-fluid">
                             <div class="row" style="justify-content: center;">
@@ -581,29 +601,32 @@
                           </div>
                           <div id="options">
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="qs4_op1">
+                              <input class="form-check-input" type="radio" name="qs6" id="qs6_op1">
                               <label class="form-check-label" for="qs4_op1">
                                 16 V
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="qs4_op2">
+                              <input class="form-check-input" type="radio" name="qs6" id="qs6_op2">
                               <label class="form-check-label" for="qs4_op2">
                                 -16 V
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="qs4_op3">
+                              <input class="form-check-input" type="radio" name="qs6" id="qs6_op3">
                               <label class="form-check-label" for="qs4_op3">
                                 18 V
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="qs4_op4">
+                              <input class="form-check-input" type="radio" name="qs6" id="qs6_op4">
                               <label class="form-check-label" for="qs4_op4">
                                 -18 V
                               </label>
                             </div>
+                          </div>
+                          <div id="answer-content" class="container-fluid">
+                            <input id="ans6" class="form-control" readonly>
                           </div>
                         </ol>
                       </div>

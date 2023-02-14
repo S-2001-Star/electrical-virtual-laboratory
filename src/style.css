@@ -1948,3 +1948,11 @@ tr:nth-child(even) {
 #answer-area{
   padding:1vw;
 }
+#answer-content{
+  margin-bottom: 1vw;
+  margin-left: 1vw;
+}
+#ans1,#ans2,#ans3,#ans4,#ans5,#ans6{
+  font-weight: bold;
+  color: green;
+}
