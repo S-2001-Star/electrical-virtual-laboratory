@@ -59,7 +59,7 @@
         </nav>
     </header>
     <div class="exp-bg" style="overflow:hidden;">
-        <h1 class="exp-heading">Verification of Superposition Theorem</h1>
+        <h1 class="exp-heading">Verification of Thevenin's Theorem</h1>
     </div>
 
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -112,15 +112,14 @@
     <div class = "container-fluid">
         <div class = "row row-height">
           <div class = "col left1">
-            Superposition theorem is a fundamental principle in electrical 
-            engineering that states that the response (current or voltage) of a 
-            linear circuit to multiple input sources can be determined by adding
-            up the individual responses to each source acting alone. This means that 
-            the total response is equal to the sum of the responses due to each individual
-            source, while all other sources are turned off. The theorem is based on the principle 
-            of linearity, which holds that the behavior of a circuit is proportional to the applied input. 
-            The superposition theorem is a powerful tool for analyzing complex circuits, as it simplifies the
-            analysis by breaking down a complex circuit into smaller, more manageable parts.
+            Thevenin's theorem is a fundamental concept in electrical circuit analysis that states any 
+            linear electrical network can be replaced with an equivalent circuit consisting of a single 
+            voltage source and a single series resistor. The voltage source, known as the Thevenin voltage, 
+            is equal to the open-circuit voltage at the terminals of the network, while the series resistor, 
+            known as the Thevenin resistance, is equal to the ratio of the open-circuit voltage to the short-circuit 
+            current at the terminals of the network. This equivalent circuit can be used to analyze the behavior of the 
+            original network in various operating conditions. Thevenin's theorem is widely used in electronic design and 
+            troubleshooting, and is an important tool for understanding the behavior of complex circuits
         </div>
         </div>
     </div>
@@ -132,7 +131,7 @@
                 <div class = "container-fluid">
                     <div class = "row row-height">
                       <div class = "col left2" style="text-align:justify">
-                        To verify Thevenin'S Theorem
+                        To verify Thevenin's Theorem
                       </div>
                     </div>
                 </div>
@@ -194,13 +193,12 @@
                 <div class = "container-fluid">
                     <div class = "row row-height">
                       <div class = "col left4"style="text-align:justify">
-                        <p>Read the lab over and answer the following questions. </p>
+                        <p>Read the lab over and answer the following questions.</p>
                         <ol>
-                            <li>The output of the circuits in Figures 1.1, 2.1 and 3.1 is predicted in equations 1.1, 1.2, 1.3, 2.1, 2.2, 2.3, 3.1, 3.2, 3.3 respectively.</li>
+                            <li>The output of the circuits in Figures 1.1 and 2.1is predicted in equations 1.1, 1.2, 1.3, 1.4, 2.1, 2.2, 2.3, 2.4, and 2.5 respectively.</li>
                             <ul>
-                                <li>Calculate the value of current across R<sub>4</sub> in Figure 1.1 in the same format or students can use any circuit analysis method.</li>
-                                <li>Calculate the value of current across R<sub>4</sub> in Figure 2.1 in the same format or students can use any circuit analysis method.</li>
-                                <li>Calculate the value of current across R<sub>4</sub> in Figure 3.1 in the same format or students can use any circuit analysis method.</li>
+                                <li>Calculate the load current 'I<sub>L</sub>' in Figure 1.1 in the same format or students can use any circuit analysis method.</li>
+                                <li>Calculate the load current 'I<sub>L</sub>' in Figure 2.1 in the same format or students can use any circuit analysis method.</li>
                             </ul>
                         </ol>
                       </div>
@@ -214,65 +212,73 @@
                 <div class = "container-fluid">
                     <div class = "row row-height">
                       <div class = "col left5" style="text-align:justify">
-                        <h1>Superposition Theorem :</h1>
-                        <p>According to superposition theorem, in any linear bilateral multisource network, the current or voltages across any branch can be determined by taking algebric sum of values calculated by selecting one source at a time and replacing other active sources by their internal resistances.</p>
-                        <h3>Steps to solve :</h3>
-                        <ol>
-                            <li>Identify the branch and quantity to be calculated along with the presence of more than one active source.</li>
-                            <li>Consider any one active source and replace the other sources by their internal resistances. Calculate the required electrical quantity for that particular source.</li>
-                            <li>Repeat the last two steps for all active source.</li>
-                            <li>The required electrical quantity for all the sources functioning together will equal the algebraic sum of all these individual values.</li>
-                        </ol>
+                        <h1>Thevenin Theorem: :</h1>
+                        <p>According to Thevenin's theorem any linear* bilateral* network irrespective of its complexity, can be simplified into a Thevenin's equivalent circuit consisting of a Thevenin's Voltage V<sub>Th</sub> in series with the Thevenin's equivalent resistance R<sub>Th</sub> connected to a load resistor R<sub>L</sub></p>
                         <br>
+                        <img class="img-fluid" src="assets/EXPT-4/th1.png">
+                        <h4>Steps to solve :</h4>
+                        <ol>
+                            <li>Identify the load resistor <sub>l</sub>.</li>
+                            <li>
+                                <ul>
+                                    <li>remove the load resistor and replace all the active sources by their internal resistances.</li>
+                                    <li>Calculate the equivalent resistance across the open ends. This will be the equivalent resistance R<sub>th</sub>.</li>
+                                </ul>
+                            </li>
+                            <li>Again Remove the load resistor and calculate the open circuit potential across two open ends. This will be thevenin's voltage V<sub>th</sub>.</li>
+                            <li>
+                                <ul>
+                                    <li>Draw the Thevenin's equivalent circuit for given network.</li>
+                                    <li>Calculate the load current I<sub>L</sub> by using the formula
+                                        <br>
+                                        $${I_{L=}\frac{V_{Th}}{R_{Th}+R_L}}$$
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
 <!----------------TEST SYSTEM-1----------------------->                        
                         <div>
                           <h1>Test System-1</h1>
                           <br>
-                          <h5><b>Superposition Theorem with two independent voltage source :-</b></h5>
+                          <h5><b>Thevenin's theorem with dependent source :-</b></h5>
                           <br>
-                          <p>Computing current through R<sub>4</sub>, denoted by I.</p>
                           <div class="container-fluid">
                             <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(1).png">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\th2.png">
                             </div>
                           </div>
                           <br>
                           <br>
-                          <p style="text-align: center;">[Fig.1.1: Main circuit Diagram]</p>
+                          <p style="text-align: center;">[Fig.1.1: Circuit diagram for Thevenin's circuit]</p>
                           <br>
                           <br>
-                          <p><b>Step 1:</b> compute I from the main circuit by any circuit analysis method.</p>
+                          <p><b>Step 1:</b> calculate the load current I<sub>L</sub> from the main circuit.</p>
                           <div class="container-fluid">
                             <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(2).png">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\th3.png">
                             </div>
                           </div>
                           <br>
-                          <p style="text-align: center;">[Fig.1.2: circuit dig. With ammeter]</p>
+                          <p style="text-align: center;">[Fig.1.2: Circuit with source V<sub>s</sub> and load R<sub>L</sub>]</p>
                           <br>
                           <span style="font-size: 1rem;">
                               <p style="float:right;">(1.1)</p>
-                              $$ {I\ =\ \frac{V_{s1-V_{s2}}}{R_4}} $$                             
+                              $$ {I_L= \frac{V_S-V_X}{R_3+R_L}} $$                             
                           </span>
                           <br>
                           <br>
-                          <p><b>Step 2:</b> compute I<sub>1</sub>,when V<sub>s1</sub>is short circuited and V<sub>s2</sub> is acting alone. </p>
-                          <br>
-                          <span style="font-size: 1rem;">
-                              <p style="float:right;">(1.2)</p>
-                                $$ {I_1 = \frac{0-V_{s2}}{R_4}= \frac{{-V}_{s2}}{R_4}} $$                             
-                            </span>                            
+                          <p><b>Step 2:</b> Calculate R<sub>Th</sub> by replacing Voltage source V<sub>s</sub> by short circuit, removing R<sub>L</sub> and connecting V<sub>DC</sub> and finding its corresponding I<sub>DC</sub> and dependent source remains as it is.</p>                            
                           <br>
                           <div class="container-fluid">
                             <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(3).png">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\th4.png">
                             </div>
                           </div>
                           <br>
                           <br>
-                          <p style="text-align: center;">[Fig.1.3: Circuit diagram with V<sub>s1</sub> short circuited]</p>
+                          <p style="text-align: center;">[Fig.1.3: Circuit with V<sub>s</sub> and R<sub>L</sub> removed.]</p>
                           <br>
-                          <br>
+<!-- ------------------------------------------------------------------------------------ -->
                           <p><b>Step 3:</b> Compute I<sub>2</sub> , when V<sub>s2</sub> is short circuited and V<sub>s1</sub> is acting alone.</p>
                           <div class="container-fluid">
                             <div class="row" style="justify-content: center;">
