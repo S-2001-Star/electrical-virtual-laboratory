@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+  <title>ELECTRICAL VLAB</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+  <link rel="stylesheet" href="src/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js'></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/lab-section.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){ 
+      $("#table-id").DataTable()({
+        "autoWidth": false, // might need this
+          "columns": [{ "width": "20%" }, null, null]
+      });
+    });
+  </script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body> 
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" id="nav_bar">
+            <div class="container-fluid">
+                <div href="#" class="navbar-brand">
+                    <img src="src\nav-logo.png" width="100" alt="" class="d-inline-block align-middle">
+                    <a class="text font-weight-bold" id="items-2" href="#">eV LAB</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav navbar-float" id="nav-items-1">
+                        <li class="nav-item" id="nav-home"><a class="nav-link" href="index.html">HOME</a></li> 
+                        <li class="nav-item" id="nav-labs"><a class="nav-link" href="index.html">eV&nbsp;LABS</a></li>
+                        <li class="nav-item" id="nav-log"><a class="nav-link" id="cust_btn">LOG&nbsp;IN</a></li>
+                        <li class="nav-item" id="nav-sign"><a class="nav-link" id="cust_btn1">SIGN&nbsp;UP</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="exp-bg" style="overflow:hidden;">
+        <h1 class="exp-heading">Verification of Superposition Theorem</h1>
+    </div>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-body">
+            <div class="off-canvas-close">
+                <button id="close-btn" type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="btn-group-vertical" id="theory-btn1">
+                    <button class="btn btn-secondary" id="side-btn" onclick="exp_intro_body()">INTRODUCTION</button>
+                    <button class="btn btn-secondary" id="side-btn" onclick="exp_ob_body()">OBJECTIVE</button>
+                    <button class="btn btn-secondary" id="side-btn" onclick="exp_app_body()">APPARATUS</button>
+                    <button class="btn btn-secondary" id="side-btn" onclick="exp_pre_body()">PRE-LAB</button>
+                    <button class="btn btn-secondary" id="side-btn" onclick="exp_theory_body()">THEORY</button>
+                    <button class="btn btn-secondary" id="side-btn" onclick="exp_pr_body()">PROCEDURE</button>
+                    <button class="btn btn-secondary" id="side-btn"onclick="exp_sim_body()">SIMULATOR</button>
+                    <button class="btn btn-secondary" id="side-btn" onclick="exp_post_body()">POST-LAB</button>
+                    <button class="btn btn-secondary" id="side-btn"onclick="exp_vd_body()">VIDEO LECTURE</button>
+                    <button class="btn btn-secondary" id="side-btn">DOWNLOAD</button>
+            </div>
+        </div>
+    </div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2" id="theory-cont" style="overflow:hidden;">
+            <div id="toolbox" class="justify-content-center">
+                <div class="btn-group-vertical" id="theory-btn">
+                        <button class="btn btn-secondary" id="side-btn" onclick="exp_intro_body()">INTRODUCTION</button>
+                        <button class="btn btn-secondary" id="side-btn" onclick="exp_ob_body()">OBJECTIVE</button>
+                        <button class="btn btn-secondary" id="side-btn" onclick="exp_app_body()">APPARATUS</button>
+                        <button class="btn btn-secondary" id="side-btn" onclick="exp_pre_body()">PRE-LAB</button>
+                        <button class="btn btn-secondary" id="side-btn" onclick="exp_theory_body()">THEORY</button>
+                        <button class="btn btn-secondary" id="side-btn" onclick="exp_pr_body()">PROCEDURE</button>
+                        <button class="btn btn-secondary" id="side-btn"onclick="exp_sim_body()">SIMULATOR</button>
+                        <button class="btn btn-secondary" id="side-btn" onclick="exp_post_body()">POST-LAB</button>
+                        <button class="btn btn-secondary" id="side-btn"onclick="exp_vd_body()">VIDEO LECTURE</button>
+                        <button class="btn btn-secondary" id="side-btn">DOWNLOAD</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9" id="side-cont">
+            <div class="hidden-btn1"><span class="material-symbols-outlined" id="hidden-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                menu
+                </span>
+            </div>
+<!-----------INTRODUCTION--------------->            
+<div id="diagram">
+    <h4 class="exp-head">INTRODUCTION</h4>
+    <hr>
+    <div class = "container-fluid">
+        <div class = "row row-height">
+          <div class = "col left1">
+            Superposition theorem is a fundamental principle in electrical 
+            engineering that states that the response (current or voltage) of a 
+            linear circuit to multiple input sources can be determined by adding
+            up the individual responses to each source acting alone. This means that 
+            the total response is equal to the sum of the responses due to each individual
+            source, while all other sources are turned off. The theorem is based on the principle 
+            of linearity, which holds that the behavior of a circuit is proportional to the applied input. 
+            The superposition theorem is a powerful tool for analyzing complex circuits, as it simplifies the
+            analysis by breaking down a complex circuit into smaller, more manageable parts.
+        </div>
+        </div>
+    </div>
+</div>
+<!----------------------OBJECTIVE----------------------->            
+            <div id="diagram1">
+                <h4 class="exp-head">OBJECTIVE</h4>
+                <hr>
+                <div class = "container-fluid">
+                    <div class = "row row-height">
+                      <div class = "col left2" style="text-align:justify">
+                        To verify Superposition Theorem
+                      </div>
+                    </div>
+                </div>
+            </div>
+<!--------------------APPARATUS----------------------->            
+            <div id="diagram2">
+                <h4 class="exp-head">APPARATUS REQUIRED</h4>
+                <hr>
+                <div id="table-mob" class = "container-fluid">
+                    <div class = "row row-height">
+                      <div class = "col left3" style="text-align:justify">
+                        <table>
+                            <tr>
+                                <th>SL.NO</th>
+                                <th>DEVICE/COMPONENT</th>
+                                <th>RANGE/RATING</th>
+                                <th>QUANTITY</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1N4001 diode</td>
+                                <td>Refer the datasheet</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Voltage source</td>
+                                <td>0-5 V (FB)<br>0-30 V (RB)</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Resistor</td>
+                                <td>1KΩ,1/2 W</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Voltmeter</td>
+                                <td>0-100 V</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Ammeter</td>
+                                <td>0-100mA (FB)<br>0-100μA (FB)</td>
+                                <td>1</td>
+                            </tr>
+                        </table>
+                      
+                      </div>
+                    </div>
+                </div>
+            </div>   
+<!-----------PRE-LAB--------------->            
+            <div id="diagram3">
+                <h4 class="exp-head">PRE-LAB</h4>
+                <hr>
+                <div class = "container-fluid">
+                    <div class = "row row-height">
+                      <div class = "col left4"style="text-align:justify">
+                        <p>Read the lab over and answer the following questions. </p>
+                        <ol>
+                            <li>The output of the circuits in Figures 1.1, 2.1 and 3.1 is predicted in equations 1.1, 1.2, 1.3, 2.1, 2.2, 2.3, 3.1, 3.2, 3.3 respectively.</li>
+                            <ul>
+                                <li>Calculate the value of current across R<sub>4</sub> in Figure 1.1 in the same format or students can use any circuit analysis method.</li>
+                                <li>Calculate the value of current across R<sub>4</sub> in Figure 2.1 in the same format or students can use any circuit analysis method.</li>
+                                <li>Calculate the value of current across R<sub>4</sub> in Figure 3.1 in the same format or students can use any circuit analysis method.</li>
+                            </ul>
+                        </ol>
+                      </div>
+                    </div>
+                </div>
+            </div>
+<!-----------THEORY--------------->            
+            <div id="diagram4">
+                <h4 class="exp-head">THEORY</h4>
+                <hr>
+                <div class = "container-fluid">
+                    <div class = "row row-height">
+                      <div class = "col left5" style="text-align:justify">
+                        <h1>Superposition Theorem :</h1>
+                        <p>According to superposition theorem, in any linear bilateral multisource network, the current or voltages across any branch can be determined by taking algebric sum of values calculated by selecting one source at a time and replacing other active sources by their internal resistances.</p>
+                        <h3>Steps to solve :</h3>
+                        <ol>
+                            <li>Identify the branch and quantity to be calculated along with the presence of more than one active source.</li>
+                            <li>Consider any one active source and replace the other sources by their internal resistances. Calculate the required electrical quantity for that particular source.</li>
+                            <li>Repeat the last two steps for all active source.</li>
+                            <li>The required electrical quantity for all the sources functioning together will equal the algebraic sum of all these individual values.</li>
+                        </ol>
+                        <br>
+<!----------------TEST SYSTEM-1----------------------->                        
+                        <div>
+                          <h1>Test System-1</h1>
+                          <br>
+                          <h5><b>Superposition Theorem with two independent voltage source :-</b></h5>
+                          <br>
+                          <p>Computing current through R<sub>4</sub>, denoted by I.</p>
+                          <div class="container-fluid">
+                            <div class="row" style="justify-content: center;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(1).png">
+                            </div>
+                          </div>
+                          <br>
+                          <br>
+                          <p style="text-align: center;">[Fig.1.1: Main circuit Diagram]</p>
+                          <br>
+                          <br>
+                          <p><b>Step 1:</b> compute I from the main circuit by any circuit analysis method.</p>
+                          <div class="container-fluid">
+                            <div class="row" style="justify-content: center;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(2).png">
+                            </div>
+                          </div>
+                          <br>
+                          <p style="text-align: center;">[Fig.1.2: circuit dig. With ammeter]</p>
+                          <br>
+                          <span style="font-size: 1rem;">
+                              <p style="float:right;">(1.1)</p>
+                              $$ {I\ =\ \frac{V_{s1-V_{s2}}}{R_4}} $$                             
+                          </span>
+                          <br>
+                          <br>
+                          <p><b>Step 2:</b> compute I<sub>1</sub>,when V<sub>s1</sub>is short circuited and V<sub>s2</sub> is acting alone. </p>
+                          <br>
+                          <span style="font-size: 1rem;">
+                              <p style="float:right;">(1.2)</p>
+                                $$ {I_1 = \frac{0-V_{s2}}{R_4}= \frac{{-V}_{s2}}{R_4}} $$                             
+                            </span>                            
+                          <br>
+                          <div class="container-fluid">
+                            <div class="row" style="justify-content: center;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(3).png">
+                            </div>
+                          </div>
+                          <br>
+                          <br>
+                          <p style="text-align: center;">[Fig.1.3: Circuit diagram with V<sub>s1</sub> short circuited]</p>
+                          <br>
+                          <br>
+                          <p><b>Step 3:</b> Compute I<sub>2</sub> , when V<sub>s2</sub> is short circuited and V<sub>s1</sub> is acting alone.</p>
+                          <div class="container-fluid">
+                            <div class="row" style="justify-content: center;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(4).png">
+                            </div>
+                          </div>
+                          <br>
+                          <br>
+                          <p style="text-align: center;">[Fig.1.4: Circuit diagram with V<sub>s2</sub> is short circuited]</p>
+                          <br>
+                          <span style="font-size: 1rem;">
+                            <p style="float:right;">(1.3)</p>
+                            $$ {I_2=\frac{\ V_{s1}-0}{R_4} = \frac{V_{s1}}{R_4}} $$
+                          </span>
+                          <br>
+                          <br>
+                          <p><b>Step 4:</b> As per superposition theorem,</p>
+                          <br>
+                          <span style="font-size: 1rem;">
+                            $$ {I\ =\ I_1+I_2} $$                             
+                          </span>
+                          <br>
+                        </div>
+<!----------------TEST SYSTEM-2----------------------->                        
+                        <div>
+                          <h1>Test System-2</h1>
+                          <br>
+                          <h5><b>Superposition Theorem with independent voltage source and independent current source :-</b></h5>
+                          <br>
+                          <div class="container-fluid">
+                            <div class="row" style="justify-content: center;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(5).png">
+                            </div>
+                          </div>
+                          <br>
+                          <br>
+                          <p style="text-align: center;">[Fig. 2.1: Main Circuit]</p>
+                          <br>
+                          <br>
+                          <p><b>Step 1:</b> Compute I from main circuit, by any circuit analysis method.</p>
+                          <div class="container-fluid">
+                            <div class="row" style="justify-content: center;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(6).png">
+                            </div>
+                          </div>
+                          <br>
+                          <br>
+                          <p style="text-align: center;">[Fig.2.2: circuit diagram with ammeter]</p>
+                          <br>
+                          <span style="font-size: 1rem;">
+                            <p style="float:right;">(2.1)</p>
+                            $$ {I=\ \frac{\left(V_{s1}-I_{s1}R_2\right)R_1-\left(R_1+\ R_2\right)(I_{s2}R_3)}{\left(R_1+R_2\right)\left(R_1+R_3+R_4\right)-\ {R_1}^2}} $$
+                          </span>
+                          <br>
+                          <br>
+                          <p><b>Step 2:</b>  Compute I<sub>1</sub> ,when V<sub>s1</sub> is short circuited and I<sub>s1</sub> is acting alone.</p>
+                          <div class="container-fluid">
+                            <div class="row" style="justify-content: center;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(7).png">
+                            </div>
+                          </div>
+                          <br>
+                          <br>
+                          <p style="text-align: center;">[Fig.2.3: circuit diagram with V<sub>s1</sub> short circuited]</p>
+                          <br>
+                          <span style="font-size: 1rem;">
+                            <p style="float:right;">(2.2)</p>
+                            $$ {I_1=\ \frac{-I_{s1}R_1R_2-\left(R_1+\ R_2\right)(I_{s2}R_3)}{\left(R_1+R_2\right)\left(R_1+R_3+R_4\right)-\ {R_1}^2}} $$                   
+                          </span>
+                          <br>
+                          <br>
+                          <p><b>Step 3:</b>  Compute I<sub>2</sub> is open circuited and V<sub>s1</sub> is acting alone.</p>
+                          <div class="container-fluid">
+                            <div class="row" style="justify-content: center;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(8).png">
+                            </div>
+                          </div>
+                          <br>
+                          <br> 
+                          <p style="text-align: center;">[Fig.2.4: circuit diagram with I<sub>s1</sub> open circuited]</p>
+                          <br>
+                          <span style="font-size: 1rem;">
+                            <p style="float:right;">(2.3)</p>
+                            $$ {I_2= \frac{V_{s1}R_1}{\left(R_1+R_2\right)\left(R_1+R_3+R_4\right)-{R_1}^2}} $$                          
+                          </span>
+                          <br>
+                          <br>
+                          <p><b>Step 4:</b>As per superposition theorem,</p>
+                          <span style="font-size: 1rem;">
+                            $$ {I\ =\ I_1+I_2} $$                             
+                          </span>
+                          <br>
+                        </div>
+<!----------------TEST SYSTEM-3----------------------->                        
+                        <div>
+                          <h1>Test System-3</h1>
+                          <br>
+                          <h5><b>Superposition theorem with two Independent Current Sources :-</b></h5>
+                          <br>
+                          <div class="container-fluid">
+                            <div class="row" style="justify-content: center;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(9).png">
+                            </div>
+                          </div>
+                          <br>
+                          <br>
+                          <p style="text-align: center;">[Fig.3.1: Main Circuit]</p>
+                          <br>
+                          <br>
+                          <p><b>Step 1:</b> Computation of I from main circuit, by connecting ammeter in series with R<sub>4</sub></p>
+                          <div class="container-fluid">
+                            <div class="row" style="justify-content: center;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(10).png">
+                            </div>
+                          </div>
+                          <br>
+                          <br>
+                          <p style="text-align: center;">[Fig 3.2: circuit diagram with ammeter]</p>
+                          <br>
+                          <span style="font-size: 1rem;">
+                            <p style="float:right;">(3.1)</p>
+                            $$ {I= \frac{I_{s1}R_1-I_{s2}R_3}{R_1+R_3+R_4}} $$          
+                          </span>
+                          <br>
+                          <br>
+                          <p><b>Step 2:</b> Compute I<sub>1</sub>, when I<sub>s1</sub> is open circuited and I<sub>s2</sub> is acting alone.</p>
+                          <div class="container-fluid">
+                            <div class="row" style="justify-content: center;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(11).png">
+                            </div>
+                          </div>
+                          <br>
+                          <br>
+                          <p style="text-align: center;">[Fig.3.3: Circuit diagram with I<sub>s1</sub> open circuited]</p>
+                          <br>
+                          <span style="font-size: 1rem;">
+                            <p style="float:right;">(3.2)</p>
+                            $$ {I_1=\frac{-I_{s2}R_3}{R_1+R_3+R_4}} $$       
+                          </span>
+                          <br>
+                          <br>
+                          <p><b>Step 3: </b>Compute I<sub>2</sub>, when I<sub>s2</sub> is open circuited and I<sub>s2</sub> is acting alone</p>
+                          <div class="container-fluid">
+                            <div class="row" style="justify-content: center;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(12).png">
+                            </div>
+                          </div>
+                          <br>
+                          <br>
+                          <p style="text-align:center;">[Fig.3.4: Circuit diagram with I<sub>s2</sub> open circuited]</p>
+                          <br>
+                          <span style="font-size: 1rem;">
+                            <p style="float:right;">(3.3)</p>
+                            $$ {I_2=\frac{I_{s1}R_1}{R_1+R_3+R_4}} $$          
+                          </span>
+                          <br>
+                          <br>
+                          <p><b>Step 4:</b> As per superposition theorem,</p>
+                          <span style="font-size: 1rem;">
+                            $$ {I\ =\ I_1+I_2} $$                             
+                          </span>
+                        </div>
+                        <br>
+<!-----------------------NOTE--------------------->                        
+                        <div class="note">
+                          <h2>Note :</h2>
+                          <p>A <span style="color:red;">linear circuit</span> is that whose output is linearly related (or directly proportional) to its input.</p>
+                          <p>A <span style="color:red;">bilateral circuit</span> is that which exhibits its properties equally in either direction.</p>
+                          <p>A <span style="color:red;">short Circuit</span> is a circuit element with resistance approaching zero.</p>
+                          <p>An <span style="color:red;">open circuit</span> is a current element with resistance approaching infinity.</p>
+                        </div>
+                        <br>
+                        <br>
+                      </div>
+                    </div>
+                </div>
+            </div>
+<!-----------PROCEDURE--------------->            
+            <div id="diagram5">
+                <h4 class="exp-head">PROCEDURE</h4>
+                <hr>
+                <div class = "container-fluid">
+                    <div class = "row row-height">
+                      <div class = "col left6" style="text-align:justify">
+                        <ul>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, totam perferendis consectetur nemo asperiores qui esse expedita, distinctio ut officia nesciunt dolorem veritatis nisi quos magni, dicta libero velit quae.</li>
+                            
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, totam perferendis consectetur nemo asperiores qui esse expedita, distinctio ut officia nesciunt dolorem veritatis nisi quos magni, dicta libero velit quae.</li>
+
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, totam perferendis consectetur nemo asperiores qui esse expedita, distinctio ut officia nesciunt dolorem veritatis nisi quos magni, dicta libero velit quae.</li>
+
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, totam perferendis consectetur nemo asperiores qui esse expedita, distinctio ut officia nesciunt dolorem veritatis nisi quos magni, dicta libero velit quae.</li>
+
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, totam perferendis consectetur nemo asperiores qui esse expedita, distinctio ut officia nesciunt dolorem veritatis nisi quos magni, dicta libero velit quae.</li>
+
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+<!-----------------SIMULATOR----------------->            
+            <div id="diagram6">
+                <h4 class="exp-head">SIMULATOR</h4>
+                <hr>
+                <div class = "container-fluid">
+                    <div class = "row row-height">
+                      <div class = "col left7">
+                    <a href="https://elitesurya4.github.io/EXPERIMENT-3/"><button class="btn btn-primary">SIMULATOR 2D</button></a>
+                    <!-- <button class="btn btn-primary">SIMULATOR 3D</button> -->
+                </div>
+                </div>
+                </div>
+            </div>
+<!-----------POST-LAB--------------->            
+            <div id="diagram7">
+                <h4 class="exp-head">POST-LAB</h4>
+                <hr>
+                <div class = "container-fluid">
+                    <div class = "row row-height">
+                      <div class = "col left8" style="text-align:justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maxime quo unde? Consectetur cupiditate explicabo, eius et id similique obcaecati! Beatae explicabo nihil voluptatibus tenetur blanditiis repudiandae qui tempora dolorem.
+                        Officia officiis eveniet voluptatem vero deleniti! Tempora, ipsa autem sed excepturi veritatis nemo iure laudantium. Nulla possimus porro fuga. Nam dicta amet officiis dolorum reprehenderit architecto tempora at odio corporis?
+                        Est omnis ab facilis commodi porro dicta, laborum laudantium placeat quas magnam officiis sunt veritatis quisquam expedita corrupti, eum at voluptatem itaque ducimus libero necessitatibus neque hic obcaecati. Cumque, repellendus?
+                        Dignissimos obcaecati corporis itaque, blanditiis voluptas, ipsum nobis aliquam ex possimus excepturi quos porro ad! Perspiciatis modi eligendi consectetur ipsa vel molestiae sequi deserunt repudiandae dolore atque, possimus eum hic?
+                        Totam sit maxime distinctio voluptates sapiente optio provident odit, reiciendis ea corporis ab consectetur odio animi quidem architecto deserunt officia tenetur quam in ipsum molestiae unde quae error. Minus, accusantium?
+                        Voluptate sed earum repellendus iste fugit veniam qui maxime hic atque natus debitis corporis illo molestiae nemo quasi, accusamus non deserunt in quam, voluptatum laborum velit corrupti laboriosam! Fugit, pariatur.
+                        Repellendus reiciendis corrupti soluta quidem. Non animi nam corrupti aperiam optio, ipsum qui voluptates, molestias, sint maiores ratione exercitationem iure eius sit cumque? Obcaecati quo aliquam asperiores excepturi nam voluptates?
+                        Vero voluptas tenetur magnam eos, libero dolorem doloribus? Similique quo delectus explicabo, quibusdam, possimus nobis impedit repellendus aliquam voluptatum natus praesentium laudantium consequuntur illum voluptate enim ullam veritatis ipsum tempora.
+                        Consequatur, eum odio sequi itaque aut odit dolore optio ab quos facere reprehenderit modi est ea harum aliquam ad dolorem numquam aliquid quasi enim, illo vero sint repellendus? Consequuntur, voluptatem.
+                        Aspernatur, excepturi quibusdam. Veritatis temporibus non nostrum ipsam expedita labore nesciunt, voluptate obcaecati illum esse est. Magnam cum suscipit voluptatem accusantium fugiat. Quam dolore, tenetur animi veritatis illo libero natus!
+                        Assumenda velit, ipsa accusamus asperiores obcaecati expedita quod, error modi reiciendis omnis facilis unde, fuga nisi ipsam fugiat tenetur nulla. Cum, vel nam. Fugit aut nemo, facilis quasi dolore omnis?
+                        Optio, numquam! Omnis mollitia nobis ducimus tenetur cum doloribus porro laborum, quos, dolor eum temporibus itaque, repellendus eius culpa? Nemo corporis blanditiis optio beatae, aperiam vel unde iste inventore ullam!
+                        Qui quae adipisci commodi et ducimus velit inventore doloremque sunt tempore, nihil quam soluta eaque vitae hic, illo maxime, repudiandae aspernatur vero! Magnam, optio tempore. Harum consequuntur voluptates aut quisquam.
+                        Cumque totam tempora aliquam adipisci dicta quod quidem ab impedit similique inventore saepe veniam tenetur ipsa iste, eos illum, perspiciatis facere alias? Quibusdam ex consectetur repellendus velit cum sapiente error.
+                        Atque dolorum facere reprehenderit quidem, aliquid id ex, est, porro eligendi vel laboriosam maxime unde natus ducimus doloremque. Suscipit, consectetur iusto distinctio voluptatum sequi quod corporis sint porro excepturi culpa?
+                        Vel, accusamus. Tempore perspiciatis nam obcaecati alias illum nulla, necessitatibus beatae cumque dicta repudiandae excepturi est, voluptate aliquid, harum aspernatur quae praesentium inventore! Reprehenderit voluptatum id, nesciunt magni nihil consectetur.
+                        Veniam voluptate pariatur libero labore numquam ut quaerat illum tempora facere reiciendis ad dolor, voluptates magni ducimus sed impedit distinctio nostrum quae. Laborum voluptates accusantium itaque nam a cupiditate voluptatum?
+                        Doloremque, laudantium! Enim sit minus cum id provident sapiente natus iure quisquam commodi porro voluptas quae vel molestiae maxime repudiandae dicta distinctio, laboriosam facilis explicabo asperiores perspiciatis beatae illo. Beatae.
+                        Qui voluptatem consequatur natus, vitae quisquam minima unde asperiores obcaecati officiis, assumenda inventore ipsum sed, ad doloribus. Impedit repellat, inventore quia unde dignissimos expedita reiciendis iusto aliquam iure? Ipsum, animi?
+                        Quaerat, veritatis. Porro nobis enim, laboriosam aut dolore itaque sequi quia sunt rerum adipisci quam, perferendis neque non magnam, recusandae voluptatibus earum temporibus at. Pariatur esse numquam obcaecati expedita unde! 
+                      </div>
+                    </div>
+                </div>
+            </div>
+<!-----------VIDEO-LECTURE--------------->            
+            <div id="diagram8">
+                <h4 class="exp-head">VIDEO-LECTURE</h4>
+                <hr>
+                <div class = "container-fluid">
+                    <div class = "row row-height">
+                      <div class = "col left9" style="text-align:justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maxime quo unde? Consectetur cupiditate explicabo, eius et id similique obcaecati! Beatae explicabo nihil voluptatibus tenetur blanditiis repudiandae qui tempora dolorem.
+                        Officia officiis eveniet voluptatem vero deleniti! Tempora, ipsa autem sed excepturi veritatis nemo iure laudantium. Nulla possimus porro fuga. Nam dicta amet officiis dolorum reprehenderit architecto tempora at odio corporis?
+                        Est omnis ab facilis commodi porro dicta, laborum laudantium placeat quas magnam officiis sunt veritatis quisquam expedita corrupti, eum at voluptatem itaque ducimus libero necessitatibus neque hic obcaecati. Cumque, repellendus?
+                        Dignissimos obcaecati corporis itaque, blanditiis voluptas, ipsum nobis aliquam ex possimus excepturi quos porro ad! Perspiciatis modi eligendi consectetur ipsa vel molestiae sequi deserunt repudiandae dolore atque, possimus eum hic?
+                        Totam sit maxime distinctio voluptates sapiente optio provident odit, reiciendis ea corporis ab consectetur odio animi quidem architecto deserunt officia tenetur quam in ipsum molestiae unde quae error. Minus, accusantium?
+                        Voluptate sed earum repellendus iste fugit veniam qui maxime hic atque natus debitis corporis illo molestiae nemo quasi, accusamus non deserunt in quam, voluptatum laborum velit corrupti laboriosam! Fugit, pariatur.
+                        Repellendus reiciendis corrupti soluta quidem. Non animi nam corrupti aperiam optio, ipsum qui voluptates, molestias, sint maiores ratione exercitationem iure eius sit cumque? Obcaecati quo aliquam asperiores excepturi nam voluptates?
+                        Vero voluptas tenetur magnam eos, libero dolorem doloribus? Similique quo delectus explicabo, quibusdam, possimus nobis impedit repellendus aliquam voluptatum natus praesentium laudantium consequuntur illum voluptate enim ullam veritatis ipsum tempora.
+                        Consequatur, eum odio sequi itaque aut odit dolore optio ab quos facere reprehenderit modi est ea harum aliquam ad dolorem numquam aliquid quasi enim, illo vero sint repellendus? Consequuntur, voluptatem.
+                        Aspernatur, excepturi quibusdam. Veritatis temporibus non nostrum ipsam expedita labore nesciunt, voluptate obcaecati illum esse est. Magnam cum suscipit voluptatem accusantium fugiat. Quam dolore, tenetur animi veritatis illo libero natus!
+                        Assumenda velit, ipsa accusamus asperiores obcaecati expedita quod, error modi reiciendis omnis facilis unde, fuga nisi ipsam fugiat tenetur nulla. Cum, vel nam. Fugit aut nemo, facilis quasi dolore omnis?
+                        Optio, numquam! Omnis mollitia nobis ducimus tenetur cum doloribus porro laborum, quos, dolor eum temporibus itaque, repellendus eius culpa? Nemo corporis blanditiis optio beatae, aperiam vel unde iste inventore ullam!
+                        Qui quae adipisci commodi et ducimus velit inventore doloremque sunt tempore, nihil quam soluta eaque vitae hic, illo maxime, repudiandae aspernatur vero! Magnam, optio tempore. Harum consequuntur voluptates aut quisquam.
+                        Cumque totam tempora aliquam adipisci dicta quod quidem ab impedit similique inventore saepe veniam tenetur ipsa iste, eos illum, perspiciatis facere alias? Quibusdam ex consectetur repellendus velit cum sapiente error.
+                        Atque dolorum facere reprehenderit quidem, aliquid id ex, est, porro eligendi vel laboriosam maxime unde natus ducimus doloremque. Suscipit, consectetur iusto distinctio voluptatum sequi quod corporis sint porro excepturi culpa?
+                        Vel, accusamus. Tempore perspiciatis nam obcaecati alias illum nulla, necessitatibus beatae cumque dicta repudiandae excepturi est, voluptate aliquid, harum aspernatur quae praesentium inventore! Reprehenderit voluptatum id, nesciunt magni nihil consectetur.
+                        Veniam voluptate pariatur libero labore numquam ut quaerat illum tempora facere reiciendis ad dolor, voluptates magni ducimus sed impedit distinctio nostrum quae. Laborum voluptates accusantium itaque nam a cupiditate voluptatum?
+                        Doloremque, laudantium! Enim sit minus cum id provident sapiente natus iure quisquam commodi porro voluptas quae vel molestiae maxime repudiandae dicta distinctio, laboriosam facilis explicabo asperiores perspiciatis beatae illo. Beatae.
+                        Qui voluptatem consequatur natus, vitae quisquam minima unde asperiores obcaecati officiis, assumenda inventore ipsum sed, ad doloribus. Impedit repellat, inventore quia unde dignissimos expedita reiciendis iusto aliquam iure? Ipsum, animi?
+                        Quaerat, veritatis. Porro nobis enim, laboriosam aut dolore itaque sequi quia sunt rerum adipisci quam, perferendis neque non magnam, recusandae voluptatibus earum temporibus at. Pariatur esse numquam obcaecati expedita unde! 
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1917,5 +1917,26 @@ height: 43vw;
   height:300px;
   /* align-items: center !important; */
   /* justify-content: center !important; */
-  text-align: center !important;
+  /* text-align: center !important; */
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+@media (max-width: 541px){
+  #table-mob{
+    
+  }
 }
