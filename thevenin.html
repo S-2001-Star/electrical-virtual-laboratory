@@ -213,12 +213,16 @@
                     <div class = "row row-height">
                       <div class = "col left5" style="text-align:justify">
                         <h1>Thevenin Theorem: :</h1>
-                        <p>According to Thevenin's theorem any linear* bilateral* network irrespective of its complexity, can be simplified into a Thevenin's equivalent circuit consisting of a Thevenin's Voltage V<sub>Th</sub> in series with the Thevenin's equivalent resistance R<sub>Th</sub> connected to a load resistor R<sub>L</sub></p>
+                        <p>According to Thevenin's theorem any linear<span style="color:red;">*</span> bilateral<span style="color:red;">*</span> network irrespective of its complexity, can be simplified into a Thevenin's equivalent circuit consisting of a Thevenin's Voltage V<sub>Th</sub> in series with the Thevenin's equivalent resistance R<sub>Th</sub> connected to a load resistor R<sub>L</sub></p>
                         <br>
-                        <img class="img-fluid" src="assets/EXPT-4/th1.png">
+                        <div class="container-fluid">
+                            <div class="row" style="justify-content: center;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\th1.png">
+                            </div>
+                          </div>
                         <h4>Steps to solve :</h4>
                         <ol>
-                            <li>Identify the load resistor <sub>l</sub>.</li>
+                            <li>Identify the load resistor R<sub>L</sub>.</li>
                             <li>
                                 <ul>
                                     <li>remove the load resistor and replace all the active sources by their internal resistances.</li>
@@ -278,27 +282,40 @@
                           <br>
                           <p style="text-align: center;">[Fig.1.3: Circuit with V<sub>s</sub> and R<sub>L</sub> removed.]</p>
                           <br>
-<!-- ------------------------------------------------------------------------------------ -->
-                          <p><b>Step 3:</b> Compute I<sub>2</sub> , when V<sub>s2</sub> is short circuited and V<sub>s1</sub> is acting alone.</p>
+                          <br>
+                          <span style="font-size: 1rem;">
+                            <p style="float:right;">(1.2)</p>
+                            $$ {R_{Th}= \frac{V_{DC}}{I_{DC}}} $$                             
+                          </span>
+                          <p><b>Step 3:</b> Calculate V<sub>Th</sub> by removing load resistance R<sub>L</sub> with an open circuit.</p>
                           <div class="container-fluid">
                             <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(4).png">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\th5.png">
                             </div>
                           </div>
                           <br>
                           <br>
-                          <p style="text-align: center;">[Fig.1.4: Circuit diagram with V<sub>s2</sub> is short circuited]</p>
+                          <p style="text-align: center;">[Fig.1.4: Circuit with R<sub>L</sub> removed]</p>
                           <br>
                           <span style="font-size: 1rem;">
                             <p style="float:right;">(1.3)</p>
-                            $$ {I_2=\frac{\ V_{s1}-0}{R_4} = \frac{V_{s1}}{R_4}} $$
+                            $$ {V_{Th}=V_S-V_X} $$
                           </span>
                           <br>
                           <br>
-                          <p><b>Step 4:</b> As per superposition theorem,</p>
+                          <p><b>Step 4:</b> Redraw circuit as per Thevenin's Equivalent Circuit.</p>
+                          <div class="container-fluid">
+                            <div class="row" style="justify-content: center;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\th6.png">
+                            </div>
+                          </div>
+                          <br>
+                          <br>
+                          <p style="text-align: center;">[Fig.1.5: Thevenin's Equivalent Circuit]</p>
                           <br>
                           <span style="font-size: 1rem;">
-                            $$ {I\ =\ I_1+I_2} $$                             
+                            <p style="float:right;">(1.4)</p>
+                            $$ {I_{L=}\frac{V_{Th}}{R_{Th}+R_L}} $$                             
                           </span>
                           <br>
                         </div>
@@ -306,153 +323,98 @@
                         <div>
                           <h1>Test System-2</h1>
                           <br>
-                          <h5><b>Superposition Theorem with independent voltage source and independent current source :-</b></h5>
+                          <h5><b>Thevenin's theorem without dependent source :-</b></h5>
                           <br>
                           <div class="container-fluid">
                             <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(5).png">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\th7.png">
                             </div>
                           </div>
                           <br>
                           <br>
-                          <p style="text-align: center;">[Fig. 2.1: Main Circuit]</p>
+                          <p style="text-align: center;">[Fig. 2.1: Circuit diagram for Thevenin's Theorem]</p>
                           <br>
                           <br>
-                          <p><b>Step 1:</b> Compute I from main circuit, by any circuit analysis method.</p>
+                          <p><b>Step 1:</b> Calculate the load current I<sub>L</sub> from the main circuit.</p>
                           <div class="container-fluid">
                             <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(6).png">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\th8.png">
                             </div>
                           </div>
                           <br>
                           <br>
-                          <p style="text-align: center;">[Fig.2.2: circuit diagram with ammeter]</p>
+                          <p style="text-align: center;">[Fig.2.2: Circuit with source V<sub>s</sub> and load R<sub>L</sub>]</p>
                           <br>
                           <span style="font-size: 1rem;">
                             <p style="float:right;">(2.1)</p>
-                            $$ {I=\ \frac{\left(V_{s1}-I_{s1}R_2\right)R_1-\left(R_1+\ R_2\right)(I_{s2}R_3)}{\left(R_1+R_2\right)\left(R_1+R_3+R_4\right)-\ {R_1}^2}} $$
+                            $$ {I_L= \frac{V_S\ast R_2}{R_1R_2+(R_3+R_L)(R_1+R_2)}} $$
                           </span>
                           <br>
                           <br>
-                          <p><b>Step 2:</b>  Compute I<sub>1</sub> ,when V<sub>s1</sub> is short circuited and I<sub>s1</sub> is acting alone.</p>
+                          <p><b>Step 2:</b>  Calculate R<sub>Th</sub> by replacing Voltage source  V<sub>s</sub> by short circuit, removing R<sub>L</sub> and connecting a constant 1v voltage source and finding its corresponding I<sub>DC</sub>.</p>
                           <div class="container-fluid">
                             <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(7).png">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\th9.png">
                             </div>
                           </div>
                           <br>
                           <br>
-                          <p style="text-align: center;">[Fig.2.3: circuit diagram with V<sub>s1</sub> short circuited]</p>
+                          <p style="text-align: center;">[Fig.2.3: Circuit with V<sub>s</sub> and R<sub>L</sub> removed.]</p>
                           <br>
                           <span style="font-size: 1rem;">
                             <p style="float:right;">(2.2)</p>
-                            $$ {I_1=\ \frac{-I_{s1}R_1R_2-\left(R_1+\ R_2\right)(I_{s2}R_3)}{\left(R_1+R_2\right)\left(R_1+R_3+R_4\right)-\ {R_1}^2}} $$                   
+                            $$ {I_{DC\ }=\ \frac{R_1+R_2}{R_1R_2+R_2R_3+R_1R_3}} $$                   
                           </span>
                           <br>
                           <br>
-                          <p><b>Step 3:</b>  Compute I<sub>2</sub> is open circuited and V<sub>s1</sub> is acting alone.</p>
+                          <span style="font-size: 1rem;">
+                            <p style="float:right;">(2.3)</p>
+                            $$ {R_{Th}= \frac{R_1R_2+R_2R_3+R_1R_3}{R_1{+R}_2}} $$                   
+                          </span>
+                          <br>
+                          <br>
+                          <p><b>Step 3:</b> Calculate V<sub>Th</sub> by removing load resistance R<sub>L</sub> with an open circuit.</p>
                           <div class="container-fluid">
                             <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(8).png">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\th10.png">
                             </div>
                           </div>
                           <br>
                           <br> 
-                          <p style="text-align: center;">[Fig.2.4: circuit diagram with I<sub>s1</sub> open circuited]</p>
+                          <p style="text-align: center;">[Fig.2.4: circuit diagram with R<sub>L</sub> removed]</p>
                           <br>
                           <span style="font-size: 1rem;">
-                            <p style="float:right;">(2.3)</p>
-                            $$ {I_2= \frac{V_{s1}R_1}{\left(R_1+R_2\right)\left(R_1+R_3+R_4\right)-{R_1}^2}} $$                          
+                            <p style="float:right;">(2.4)</p>
+                            $$ {V_{Th}=\frac{V_S\ast R_2}{R_1+R_2}} $$                          
                           </span>
                           <br>
                           <br>
-                          <p><b>Step 4:</b>As per superposition theorem,</p>
+                          <p><b>Step 4:</b>Redraw circuit as per Thevenin's Equivalent Circuit.</p>
+                          <div class="container-fluid">
+                            <div class="row" style="justify-content: center;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\th11.png">
+                            </div>
+                          </div>
+                          <br>
+                          <br> 
+                          <p style="text-align: center;">[Fig.2.5: Thevenin's Equivalent Circuit]</p>
+                          <br>
                           <span style="font-size: 1rem;">
-                            $$ {I\ =\ I_1+I_2} $$                             
+                            $$ {I_{L=}\frac{V_{Th}}{R_{Th}+R_L}} $$                             
                           </span>
+                          <br>
+                          <br>
+<!-----------------------NOTE--------------------->
+                          <div class="note">
+                            <h2>Note :</h2>
+                            <p>A <span style="color:red;">linear circuit</span> is that whose output is linearly related (or directly proportional) to its input.</p>
+                            <p>A <span style="color:red;">bilateral circuit</span> is that which exhibits its properties equally in either direction.</p>
+                            <p>A <span style="color:red;">short Circuit</span> is a circuit element with resistance approaching zero.</p>
+                            <p>An <span style="color:red;">open circuit</span> is a current element with resistance approaching infinity.</p>
+                          </div>
+                          <br>
                           <br>
                         </div>
-<!----------------TEST SYSTEM-3----------------------->                        
-                        <div>
-                          <h1>Test System-3</h1>
-                          <br>
-                          <h5><b>Superposition theorem with two Independent Current Sources :-</b></h5>
-                          <br>
-                          <div class="container-fluid">
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(9).png">
-                            </div>
-                          </div>
-                          <br>
-                          <br>
-                          <p style="text-align: center;">[Fig.3.1: Main Circuit]</p>
-                          <br>
-                          <br>
-                          <p><b>Step 1:</b> Computation of I from main circuit, by connecting ammeter in series with R<sub>4</sub></p>
-                          <div class="container-fluid">
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(10).png">
-                            </div>
-                          </div>
-                          <br>
-                          <br>
-                          <p style="text-align: center;">[Fig 3.2: circuit diagram with ammeter]</p>
-                          <br>
-                          <span style="font-size: 1rem;">
-                            <p style="float:right;">(3.1)</p>
-                            $$ {I= \frac{I_{s1}R_1-I_{s2}R_3}{R_1+R_3+R_4}} $$          
-                          </span>
-                          <br>
-                          <br>
-                          <p><b>Step 2:</b> Compute I<sub>1</sub>, when I<sub>s1</sub> is open circuited and I<sub>s2</sub> is acting alone.</p>
-                          <div class="container-fluid">
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(11).png">
-                            </div>
-                          </div>
-                          <br>
-                          <br>
-                          <p style="text-align: center;">[Fig.3.3: Circuit diagram with I<sub>s1</sub> open circuited]</p>
-                          <br>
-                          <span style="font-size: 1rem;">
-                            <p style="float:right;">(3.2)</p>
-                            $$ {I_1=\frac{-I_{s2}R_3}{R_1+R_3+R_4}} $$       
-                          </span>
-                          <br>
-                          <br>
-                          <p><b>Step 3: </b>Compute I<sub>2</sub>, when I<sub>s2</sub> is open circuited and I<sub>s2</sub> is acting alone</p>
-                          <div class="container-fluid">
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(12).png">
-                            </div>
-                          </div>
-                          <br>
-                          <br>
-                          <p style="text-align:center;">[Fig.3.4: Circuit diagram with I<sub>s2</sub> open circuited]</p>
-                          <br>
-                          <span style="font-size: 1rem;">
-                            <p style="float:right;">(3.3)</p>
-                            $$ {I_2=\frac{I_{s1}R_1}{R_1+R_3+R_4}} $$          
-                          </span>
-                          <br>
-                          <br>
-                          <p><b>Step 4:</b> As per superposition theorem,</p>
-                          <span style="font-size: 1rem;">
-                            $$ {I\ =\ I_1+I_2} $$                             
-                          </span>
-                        </div>
-                        <br>
-<!-----------------------NOTE--------------------->                        
-                        <div class="note">
-                          <h2>Note :</h2>
-                          <p>A <span style="color:red;">linear circuit</span> is that whose output is linearly related (or directly proportional) to its input.</p>
-                          <p>A <span style="color:red;">bilateral circuit</span> is that which exhibits its properties equally in either direction.</p>
-                          <p>A <span style="color:red;">short Circuit</span> is a circuit element with resistance approaching zero.</p>
-                          <p>An <span style="color:red;">open circuit</span> is a current element with resistance approaching infinity.</p>
-                        </div>
-                        <br>
-                        <br>
-                      </div>
                     </div>
                 </div>
             </div>
@@ -465,7 +427,7 @@
                       <div class = "col left6" style="text-align:justify">
                         <ul>
                             <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, totam perferendis consectetur nemo asperiores qui esse expedita, distinctio ut officia nesciunt dolorem veritatis nisi quos magni, dicta libero velit quae.</li>
-                            
+                
                             <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, totam perferendis consectetur nemo asperiores qui esse expedita, distinctio ut officia nesciunt dolorem veritatis nisi quos magni, dicta libero velit quae.</li>
 
                             <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, totam perferendis consectetur nemo asperiores qui esse expedita, distinctio ut officia nesciunt dolorem veritatis nisi quos magni, dicta libero velit quae.</li>
@@ -473,7 +435,6 @@
                             <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, totam perferendis consectetur nemo asperiores qui esse expedita, distinctio ut officia nesciunt dolorem veritatis nisi quos magni, dicta libero velit quae.</li>
 
                             <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, totam perferendis consectetur nemo asperiores qui esse expedita, distinctio ut officia nesciunt dolorem veritatis nisi quos magni, dicta libero velit quae.</li>
-
                         </ul>
                       </div>
                     </div>

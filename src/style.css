@@ -1940,3 +1940,11 @@ tr:nth-child(even) {
     font-size: 2.5vw;
   }
 }
+
+#options{
+  padding: 1vw;
+  font-weight: normal !important;
+}
+#answer-area{
+  padding:1vw;
+}
