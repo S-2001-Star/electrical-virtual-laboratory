@@ -1954,5 +1954,19 @@ tr:nth-child(even) {
 }
 #ans1,#ans2,#ans3,#ans4,#ans5,#ans6{
   font-weight: bold;
-  color: green;
+  display: none;
+  text-align: justify;
+}
+#ques_4_div,#ques_6_div{
+  font-weight: bold;
+  text-align: justify;
+}
+
+#post-submit{
+  float: right;
+  margin-bottom: 1vw;
+  margin-top: -1vw;
+}
+#ques_4_ans_div,#ques_6_ans_div{
+  display: none;
 }
