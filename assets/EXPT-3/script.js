@@ -73,5 +73,5 @@ function postlabsubmit(){
         document.getElementById("ques_6_ans_div").style.color = "red";
         document.getElementById("ques_6_ans_div").style.border = "0.066vw solid black"
     }
-
+    alert("Your answers has been submitted.")
 }
