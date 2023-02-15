@@ -498,167 +498,169 @@
                 <div class = "container-fluid">
                     <div class = "row row-height">
                       <div class = "col left8" style="text-align:justify">
-                        <ol style="font-weight: bold;">
+                        <form>
+                          <ol style="font-weight: bold;">
 
-                          <li>For superposition theorem, it is not required that only one independent source to be considered at a time, any number of independent sources may be considered simultaneously.</li>
-                          <div id="options">
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="qs1" id="qs1_op1">
-                              <label class="form-check-label" for="qs1_op1">
-                                True
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="qs1" id="qs1_op2">
-                              <label class="form-check-label" for="qs1_op2">
-                                False
-                              </label>
-                            </div>
-                          </div>
-                          <div id="answer-area">
-                            <div class="form-group blue-border-focus">
-                              <textarea class="form-control" id="ans1" rows="5" readonly></textarea>
-                            </div>
-                          </div>
-                          <li>The superposition theorem principle applies to power calculation.</li>
-                          <div id="options">
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="qs2" id="qs2_op1">
-                              <label class="form-check-label" for="qs2_op1">
-                                True
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="qs2" id="qs2_op2">
-                              <label class="form-check-label" for="qs2_op2">
-                                False
-                              </label>
-                            </div>
-                          </div>
-                          <div id="answer-area">
-                            <div class="form-group blue-border-focus">
-                              <textarea class="form-control" id="ans2" rows="5" readonly></textarea>
-                            </div>
-                          </div>
-                          <li>What is the major advantage of implementing this theorem ?</li>
-                          <div id="answer-area">
-                            <div class="form-group blue-border-focus">
-                              <textarea class="form-control" id="text-area1" rows="5"></textarea>
-                            </div>
-                          </div>
-                          <div id="answer-area">
-                            <div class="form-group blue-border-focus">
-                              <textarea class="form-control" id="ans3" rows="5" readonly></textarea>
-                            </div>
-                          </div>
-                          
-                          <li>Using superposition theorem, find current I across 5Ω from the below figure</li>
-                          <div class="container-fluid">
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\Qstn1Sp.png">
-                            </div>
-                          </div>
-                          <div id="options">
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="qs4" id="qs4_op1">
-                              <label class="form-check-label" for="qs4_op1">
-                                -0.65
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="qs4" id="qs4_op2">
-                              <label class="form-check-label" for="qs4_op2">
-                                -0.625
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="qs4" id="qs4_op3">
-                              <label class="form-check-label" for="qs4_op3">
-                                -0.256
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="qs4" id="qs4_op4">
-                              <label class="form-check-label" for="qs4_op4">
-                                +0.652
-                              </label>
-                            </div>
-                          </div>
-                              <div class="container-fluid" id="ques_4_ans_div">
-                                <p class="h6" id="ques_4_div">Ans:</p>
-                                <br>
-                                <p class="h6" id="ques_4_div">Step 1 - Consider 5A current source alone and short-circuit by replacing 20V voltage source.</p>
-                                <div class="row" style="justify-content: center;">
-                                  <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\SP qsn1a.png">
-                                </div>
-                                <br>
-                                <p class="h6" id="ques_4_div">Using current division rule,</p>
-                                <span style="font-size: 1rem;" id="ques_4_div">
-                                  $$ {I_1=\ \frac{5\times3}{8}=\frac{15}{8}A} $$          
-                                </span>
-                                <p class="h6" id="ques_4_div">Step 2 - Consider 20V voltage source alone and short-circuit by replacing 50A current source.</p>
-                                <div class="row" style="justify-content: center;">
-                                  <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\SP qsn1b.png">
-                                </div>
-                                <br>
-                                <p class="h6" id="ques_4_div">BY KVL,</p>
-                                <span style="font-size: 1rem;" id="ques_4_div">
-                                  $$ {I_2=\frac{20}{8}A} $$          
-                                </span>
-                                <p class="h6" id="ques_4_div">According to direction assigned in the main circuit, the net current I across 5Ω is given by,</p>
-                                <span style="font-size: 1rem;" id="ques_4_div">
-                                  $$ {I=I_1+\left(-I_2\right)=\frac{15}{8}+\frac{-20}{8}A=-0.625A} $$          
-                                </span>
+                            <li>For superposition theorem, it is not required that only one independent source to be considered at a time, any number of independent sources may be considered simultaneously.</li>
+                            <div id="options">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="qs1" id="qs1_op1">
+                                <label class="form-check-label" for="qs1_op1">
+                                  True
+                                </label>
                               </div>
-                          <li>Why dependent sources are not killed ?</li>
-                          <div id="answer-area">
-                            <div class="form-group blue-border-focus">
-                              <textarea class="form-control" id="text-area2" rows="5"></textarea>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="qs1" id="qs1_op2">
+                                <label class="form-check-label" for="qs1_op2">
+                                  False
+                                </label>
+                              </div>
                             </div>
-                          </div>
-                          <div id="answer-area">
-                            <div class="form-group blue-border-focus">
-                              <textarea class="form-control" id="ans5" rows="5" readonly></textarea>
+                            <div id="answer-area">
+                              <div class="form-group blue-border-focus">
+                                <textarea class="form-control" id="ans1" rows="5" readonly></textarea>
+                              </div>
                             </div>
-                          </div>
-                          <li>Use superposition theorem to calculate the voltage drop across the 3Ω resistor from the below circuit</li>
-                          <div class="container-fluid">
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\Qstn2Sp.png">
+                            <li>The superposition theorem principle applies to power calculation.</li>
+                            <div id="options">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="qs2" id="qs2_op1">
+                                <label class="form-check-label" for="qs2_op1">
+                                  True
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="qs2" id="qs2_op2">
+                                <label class="form-check-label" for="qs2_op2">
+                                  False
+                                </label>
+                              </div>
                             </div>
-                          </div>
-                          <div id="options">
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="qs6" id="qs6_op1">
-                              <label class="form-check-label" for="qs4_op1">
-                                16 V
-                              </label>
+                            <div id="answer-area">
+                              <div class="form-group blue-border-focus">
+                                <textarea class="form-control" id="ans2" rows="5" readonly></textarea>
+                              </div>
                             </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="qs6" id="qs6_op2">
-                              <label class="form-check-label" for="qs4_op2">
-                                -16 V
-                              </label>
+                            <li>What is the major advantage of implementing this theorem ?</li>
+                            <div id="answer-area">
+                              <div class="form-group blue-border-focus">
+                                <textarea class="form-control" id="text-area1" rows="5"></textarea>
+                              </div>
                             </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="qs6" id="qs6_op3">
-                              <label class="form-check-label" for="qs4_op3">
-                                18 V
-                              </label>
+                            <div id="answer-area">
+                              <div class="form-group blue-border-focus">
+                                <textarea class="form-control" id="ans3" rows="5" readonly></textarea>
+                              </div>
                             </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="qs6" id="qs6_op4">
-                              <label class="form-check-label" for="qs4_op4">
-                                -18 V
-                              </label>
+                            
+                            <li>Using superposition theorem, find current I across 5Ω from the below figure</li>
+                            <div class="container-fluid">
+                              <div class="row" style="justify-content: center;">
+                                <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\Qstn1Sp.png">
+                              </div>
                             </div>
-                          </div>
-                          <div class="container-fluid" id="ques_6_ans_div">
-                            <p class="h6" id="ques_6_div">Ans:</p>
-                            <br>
-                          </div>
-                        </ol>
-                          <input class="btn btn-primary" type="submit" value="Submit" id="post-submit" onclick="postlabsubmit()">
+                            <div id="options">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="qs4" id="qs4_op1">
+                                <label class="form-check-label" for="qs4_op1">
+                                  -0.65
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="qs4" id="qs4_op2">
+                                <label class="form-check-label" for="qs4_op2">
+                                  -0.625
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="qs4" id="qs4_op3">
+                                <label class="form-check-label" for="qs4_op3">
+                                  -0.256
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="qs4" id="qs4_op4">
+                                <label class="form-check-label" for="qs4_op4">
+                                  +0.652
+                                </label>
+                              </div>
+                            </div>
+                                <div class="container-fluid" id="ques_4_ans_div">
+                                  <p class="h6" id="ques_4_div">Ans:</p>
+                                  <br>
+                                  <p class="h6" id="ques_4_div">Step 1 - Consider 5A current source alone and short-circuit by replacing 20V voltage source.</p>
+                                  <div class="row" style="justify-content: center;">
+                                    <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\SP qsn1a.png">
+                                  </div>
+                                  <br>
+                                  <p class="h6" id="ques_4_div">Using current division rule,</p>
+                                  <span style="font-size: 1rem;" id="ques_4_div">
+                                    $$ {I_1=\ \frac{5\times3}{8}=\frac{15}{8}A} $$          
+                                  </span>
+                                  <p class="h6" id="ques_4_div">Step 2 - Consider 20V voltage source alone and short-circuit by replacing 50A current source.</p>
+                                  <div class="row" style="justify-content: center;">
+                                    <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\SP qsn1b.png">
+                                  </div>
+                                  <br>
+                                  <p class="h6" id="ques_4_div">BY KVL,</p>
+                                  <span style="font-size: 1rem;" id="ques_4_div">
+                                    $$ {I_2=\frac{20}{8}A} $$          
+                                  </span>
+                                  <p class="h6" id="ques_4_div">According to direction assigned in the main circuit, the net current I across 5Ω is given by,</p>
+                                  <span style="font-size: 1rem;" id="ques_4_div">
+                                    $$ {I=I_1+\left(-I_2\right)=\frac{15}{8}+\frac{-20}{8}A=-0.625A} $$          
+                                  </span>
+                                </div>
+                            <li>Why dependent sources are not killed ?</li>
+                            <div id="answer-area">
+                              <div class="form-group blue-border-focus">
+                                <textarea class="form-control" id="text-area2" rows="5"></textarea>
+                              </div>
+                            </div>
+                            <div id="answer-area">
+                              <div class="form-group blue-border-focus">
+                                <textarea class="form-control" id="ans5" rows="5" readonly></textarea>
+                              </div>
+                            </div>
+                            <li>Use superposition theorem to calculate the voltage drop across the 3Ω resistor from the below circuit</li>
+                            <div class="container-fluid">
+                              <div class="row" style="justify-content: center;">
+                                <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\Qstn2Sp.png">
+                              </div>
+                            </div>
+                            <div id="options">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="qs6" id="qs6_op1">
+                                <label class="form-check-label" for="qs4_op1">
+                                  16 V
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="qs6" id="qs6_op2">
+                                <label class="form-check-label" for="qs4_op2">
+                                  -16 V
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="qs6" id="qs6_op3">
+                                <label class="form-check-label" for="qs4_op3">
+                                  18 V
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="qs6" id="qs6_op4">
+                                <label class="form-check-label" for="qs4_op4">
+                                  -18 V
+                                </label>
+                              </div>
+                            </div>
+                            <div class="container-fluid" id="ques_6_ans_div">
+                              <p class="h6" id="ques_6_div">Ans:</p>
+                              <br>
+                            </div>
+                          </ol>
+                            <input class="btn btn-primary" type="submit" value="Submit" id="post-submit" onclick="postlabsubmit()">
+                        </form>
                       </div>
                     </div>
                 </div>
