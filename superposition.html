@@ -51,7 +51,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav navbar-float" id="nav-items-1">
                         <li class="nav-item" id="nav-home"><a class="nav-link" href="index.html">HOME</a></li> 
-                        <li class="nav-item" id="nav-labs"><a class="nav-link" href="index.html">eV&nbsp;LABS</a></li>
+                        <li class="nav-item" id="nav-labs"><a class="nav-link" href="be.html">eV&nbsp;LABS</a></li>
                         <li class="nav-item" id="nav-log"><a class="nav-link" id="cust_btn">LOG&nbsp;IN</a></li>
                         <li class="nav-item" id="nav-sign"><a class="nav-link" id="cust_btn1">SIGN&nbsp;UP</a></li>
                     </ul>
@@ -221,7 +221,7 @@
                     <div class = "row row-height">
                       <div class = "col left5" style="text-align:justify">
                         <h1>Superposition Theorem :</h1>
-                        <p>According to superposition theorem, in any linear bilateral multisource network, the current or voltages across any branch can be determined by taking algebric sum of values calculated by selecting one source at a time and replacing other active sources by their internal resistances.</p>
+                        <p>According to superposition theorem, in any linear bilateral multisource network, the current across and voltages through any branch can be determined by taking algebric sum of values calculated by selecting one source at a time and replacing other active sources by their internal resistances.</p>
                         <h3>Steps to solve :</h3>
                         <ol>
                             <li>Identify the branch and quantity to be calculated along with the presence of more than one active source.</li>
@@ -236,7 +236,7 @@
                           <br>
                           <h5><b>Superposition Theorem with two independent voltage source :-</b></h5>
                           <br>
-                          <p>Computing current through R<sub>4</sub>, denoted by I.</p>
+                          <p>Computing current across R<sub>4</sub>, denoted by I.</p>
                           <div class="container-fluid">
                             <div class="row" style="justify-content: center;">
                               <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(1).png">
@@ -447,7 +447,7 @@
                           <h2>Note :</h2>
                           <p>A <span style="color:red;">linear circuit</span> is that whose output is linearly related (or directly proportional) to its input.</p>
                           <p>A <span style="color:red;">bilateral circuit</span> is that which exhibits its properties equally in either direction.</p>
-                          <p>A <span style="color:red;">short Circuit</span> is a circuit element with resistance approaching zero.</p>
+                          <p>A <span style="color:red;">short circuit</span> is a circuit element with resistance approaching zero.</p>
                           <p>An <span style="color:red;">open circuit</span> is a current element with resistance approaching infinity.</p>
                         </div>
                         <br>
@@ -485,8 +485,18 @@
                 <div class = "container-fluid">
                     <div class = "row row-height">
                       <div class = "col left7">
-                    <a href="https://elitesurya4.github.io/EXPERIMENT-3/"><button class="btn btn-primary">SIMULATOR 2D</button></a>
-                    <!-- <button class="btn btn-primary">SIMULATOR 3D</button> -->
+                        <p>Verification of Superposition Theorem using two independent voltage sources 
+                          <br>
+                          <a href="https://elitesurya4.github.io/EXPERIMENT-3/EXPERIMENT%203(a)/index.html" target="_blank"><button class="btn btn-primary">CLICK HERE</button></a>
+                        </p>
+                        <p>Verification of Superposition Theorem using one independent voltage source and one independent current source 
+                          <br>
+                          <a href="https://elitesurya4.github.io/EXPERIMENT-3/EXPERIMENT%203(b)/index.html" target="_blank"><button class="btn btn-primary">CLICK HERE</button></a>
+                        </p>
+                        <p>Verification of Superposition Theorem using two independent current sources 
+                          <br>
+                          <a href="https://elitesurya4.github.io/EXPERIMENT-3/EXPERIMENT%203(c)/index.html" target="_blank"><button class="btn btn-primary">CLICK HERE</button></a>
+                        </p>
                 </div>
                 </div>
                 </div>
@@ -503,13 +513,13 @@
                             <li>For superposition theorem, it is not required that only one independent source to be considered at a time, any number of independent sources may be considered simultaneously.</li>
                             <div id="options">
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="qs1" id="qs1_op1">
+                                <input class="form-check-input" type="radio" name="qs1" id="qs1_op1" required>
                                 <label class="form-check-label" for="qs1_op1">
                                   True
                                 </label>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="qs1" id="qs1_op2">
+                                <input class="form-check-input" type="radio" name="qs1" id="qs1_op2" required>
                                 <label class="form-check-label" for="qs1_op2">
                                   False
                                 </label>
@@ -523,13 +533,13 @@
                             <li>The superposition theorem principle applies to power calculation.</li>
                             <div id="options">
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="qs2" id="qs2_op1">
+                                <input class="form-check-input" type="radio" name="qs2" id="qs2_op1" required>
                                 <label class="form-check-label" for="qs2_op1">
                                   True
                                 </label>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="qs2" id="qs2_op2">
+                                <input class="form-check-input" type="radio" name="qs2" id="qs2_op2" required>
                                 <label class="form-check-label" for="qs2_op2">
                                   False
                                 </label>
@@ -543,7 +553,7 @@
                             <li>What is the major advantage of implementing this theorem ?</li>
                             <div id="answer-area">
                               <div class="form-group blue-border-focus">
-                                <textarea class="form-control" id="text-area1" rows="5"></textarea>
+                                <textarea class="form-control" id="text-area1" rows="5" required></textarea>
                               </div>
                             </div>
                             <div id="answer-area">
@@ -560,25 +570,25 @@
                             </div>
                             <div id="options">
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="qs4" id="qs4_op1">
+                                <input class="form-check-input" type="radio" name="qs4" id="qs4_op1" required>
                                 <label class="form-check-label" for="qs4_op1">
                                   -0.65
                                 </label>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="qs4" id="qs4_op2">
+                                <input class="form-check-input" type="radio" name="qs4" id="qs4_op2" required>
                                 <label class="form-check-label" for="qs4_op2">
                                   -0.625
                                 </label>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="qs4" id="qs4_op3">
+                                <input class="form-check-input" type="radio" name="qs4" id="qs4_op3" required>
                                 <label class="form-check-label" for="qs4_op3">
                                   -0.256
                                 </label>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="qs4" id="qs4_op4">
+                                <input class="form-check-input" type="radio" name="qs4" id="qs4_op4" required>
                                 <label class="form-check-label" for="qs4_op4">
                                   +0.652
                                 </label>
@@ -613,7 +623,7 @@
                             <li>Why dependent sources are not killed ?</li>
                             <div id="answer-area">
                               <div class="form-group blue-border-focus">
-                                <textarea class="form-control" id="text-area2" rows="5"></textarea>
+                                <textarea class="form-control" id="text-area2" rows="5" required></textarea>
                               </div>
                             </div>
                             <div id="answer-area">
@@ -629,37 +639,103 @@
                             </div>
                             <div id="options">
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="qs6" id="qs6_op1">
+                                <input class="form-check-input" type="radio" name="qs6" id="qs6_op1" required>
                                 <label class="form-check-label" for="qs4_op1">
                                   16 V
                                 </label>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="qs6" id="qs6_op2">
+                                <input class="form-check-input" type="radio" name="qs6" id="qs6_op2" required>
                                 <label class="form-check-label" for="qs4_op2">
                                   -16 V
                                 </label>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="qs6" id="qs6_op3">
+                                <input class="form-check-input" type="radio" name="qs6" id="qs6_op3" required>
                                 <label class="form-check-label" for="qs4_op3">
                                   18 V
                                 </label>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="qs6" id="qs6_op4">
+                                <input class="form-check-input" type="radio" name="qs6" id="qs6_op4" required>
                                 <label class="form-check-label" for="qs4_op4">
                                   -18 V
                                 </label>
                               </div>
                             </div>
                             <div class="container-fluid" id="ques_6_ans_div">
-                              <p class="h6" id="ques_6_div">Ans:</p>
+                              <p class="h6" id="ques_6_div">Ans: </p>
                               <br>
+                              <p class="h6" id="ques_6_div">Consider 20V source alone and open circuiting the other two current sources.</p>
+                              <div class="container-fluid">
+                                <div class="row" style="justify-content: center;">
+                                  <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\SP qsn2a.png">
+                                </div>
+                              </div>
+                              <div class="container-fluid">
+                                <div class="row" style="justify-content: center;">
+                                  <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\SP qsn2b.png">
+                                </div>
+                              </div>
+                              <span style="font-size: 1rem;" id="ques_4_div">
+                                $$ {V_{3 \Omega}=V_1=\frac{20 \times 3}{5}=12} $$          
+                              </span>
+                              <br>
+                              <p class="h6" id="ques_6_div">Considering upper 15A sources alone, and short-circuiting and open-circuiting the voltage and current sources respectively.</p>
+                              <div class="container-fluid">
+                                <div class="row" style="justify-content: center;">
+                                  <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\SP qsn2c.png">
+                                </div>
+                              </div>
+                              <div class="container-fluid">
+                                <div class="row" style="justify-content: center;">
+                                  <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\SP qsn2d.png">
+                                </div>
+                              </div>
+                              <span style="font-size: 1rem;" id="ques_4_div">
+                                $$ {I_x=\frac{15\times2}{5}=6A} $$          
+                              </span>
+                              <br>
+                              <div class="container-fluid">
+                                <div class="col" style="display: flex; flex-direction: row;">
+                                  <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\SP qsn2e.png">
+                                  <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\SP qsn2f.png" style="margin-top: -1.5vw;">
+                                </div>
+                              </div>
+                              <br>
+                              <p class="h6" id="ques_6_div">So,$${V_{3 \Omega}=V_2=6 \times 2=12 \mathrm{~V}}$$ [Voltages in parallel are same]</p>
+                              <p class="h6" id="ques_6_div">Consider lower 15A sources alone, and short-circuiting the other two sources respectively.</p>
+                              <br>
+                              <div class="container-fluid">
+                                <div class="row" style="justify-content: center;">
+                                  <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\SP qsn2g.png">
+                                </div>
+                              </div>
+                              <div class="container-fluid">
+                                <div class="row" style="justify-content: center;">
+                                  <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\SP qsn2h.png">
+                                </div>
+                              </div>
+                              <div class="container-fluid">
+                                <div class="row" style="justify-content: center;">
+                                  <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\SP qsn2i.png">
+                                </div>
+                              </div>
+                              <span style="font-size: 1rem;" id="ques_4_div">
+                                $$ {V_{3 \Omega}=V_3=\frac{-15 \times 2}{5}=-3 \times 2=-6 V} $$          
+                              </span>
+                              <p class="h6" id="ques_6_div">Now, to get the final answer we add up the voltages</p>
+                              <span style="font-size: 1rem;" id="ques_4_div">
+                                $$ {V_{3 \Omega}=V_1+V_2+V_3=12+12-6=18} $$          
+                              </span>
+                              <span style="font-size: 1rem;" id="ques_4_div">
+                                $$ {V_{3 \Omega}=18 \mathrm{~V}} $$          
+                              </span>
+                            </div>
                             </div>
                           </ol>
-                            <input class="btn btn-primary" type="submit" value="Submit" id="post-submit" onclick="postlabsubmit()">
                       </div>
+                      <input class="btn btn-primary" type="submit" value="Submit" id="post-submit" onclick="postlabsubmit()">
                     </div>
                 </div>
             </div>

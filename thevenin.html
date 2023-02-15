@@ -50,7 +50,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav navbar-float" id="nav-items-1">
                         <li class="nav-item" id="nav-home"><a class="nav-link" href="index.html">HOME</a></li> 
-                        <li class="nav-item" id="nav-labs"><a class="nav-link" href="index.html">eV&nbsp;LABS</a></li>
+                        <li class="nav-item" id="nav-labs"><a class="nav-link" href="be.html">eV&nbsp;LABS</a></li>
                         <li class="nav-item" id="nav-log"><a class="nav-link" id="cust_btn">LOG&nbsp;IN</a></li>
                         <li class="nav-item" id="nav-sign"><a class="nav-link" id="cust_btn1">SIGN&nbsp;UP</a></li>
                     </ul>
@@ -221,8 +221,9 @@
                         <p>According to Thevenin's theorem any linear<span style="color:red;">*</span> bilateral<span style="color:red;">*</span> network irrespective of its complexity, can be simplified into a Thevenin's equivalent circuit consisting of a Thevenin's Voltage V<sub>Th</sub> in series with the Thevenin's equivalent resistance R<sub>Th</sub> connected to a load resistor R<sub>L</sub></p>
                         <br>
                         <div class="container-fluid">
-                            <div class="row" style="justify-content: center;">
+                            <div class="row" style="display: flex; flex-direction: row;">
                               <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\th1.png">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Thevenin_s Theory.png" style="margin-top: -1.5vw;">
                             </div>
                           </div>
                         <h4>Steps to solve :</h4>
@@ -230,7 +231,7 @@
                             <li>Identify the load resistor R<sub>L</sub>.</li>
                             <li>
                                 <ul>
-                                    <li>remove the load resistor and replace all the active sources by their internal resistances.</li>
+                                    <li>Remove the load resistor and replace all the active sources by their internal resistances.</li>
                                     <li>Calculate the equivalent resistance across the open ends. This will be the equivalent resistance R<sub>th</sub>.</li>
                                 </ul>
                             </li>
@@ -352,7 +353,7 @@
                           <br>
                           <span style="font-size: 1rem;">
                             <p style="float:right;">(2.1)</p>
-                            $$ {I_L= \frac{V_S\ast R_2}{R_1R_2+(R_3+R_L)(R_1+R_2)}} $$
+                            $$ {I_L= \frac{V_S\times R_2}{R_1R_2+(R_3+R_L)(R_1+R_2)}} $$
                           </span>
                           <br>
                           <br>
@@ -390,7 +391,7 @@
                           <br>
                           <span style="font-size: 1rem;">
                             <p style="float:right;">(2.4)</p>
-                            $$ {V_{Th}=\frac{V_S\ast R_2}{R_1+R_2}} $$                          
+                            $$ {V_{Th}=\frac{V_S\times R_2}{R_1+R_2}} $$                          
                           </span>
                           <br>
                           <br>
@@ -407,6 +408,7 @@
                           <span style="font-size: 1rem;">
                             $$ {I_{L=}\frac{V_{Th}}{R_{Th}+R_L}} $$                             
                           </span>
+                        </div>
                           <br>
                           <br>
 <!-----------------------NOTE--------------------->
@@ -414,7 +416,7 @@
                             <h2>Note :</h2>
                             <p>A <span style="color:red;">linear circuit</span> is that whose output is linearly related (or directly proportional) to its input.</p>
                             <p>A <span style="color:red;">bilateral circuit</span> is that which exhibits its properties equally in either direction.</p>
-                            <p>A <span style="color:red;">short Circuit</span> is a circuit element with resistance approaching zero.</p>
+                            <p>A <span style="color:red;">short circuit</span> is a circuit element with resistance approaching zero.</p>
                             <p>An <span style="color:red;">open circuit</span> is a current element with resistance approaching infinity.</p>
                           </div>
                           <br>
@@ -430,17 +432,55 @@
                 <div class = "container-fluid">
                     <div class = "row row-height">
                       <div class = "col left6" style="text-align:justify">
-                        <ul>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, totam perferendis consectetur nemo asperiores qui esse expedita, distinctio ut officia nesciunt dolorem veritatis nisi quos magni, dicta libero velit quae.</li>
-                
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, totam perferendis consectetur nemo asperiores qui esse expedita, distinctio ut officia nesciunt dolorem veritatis nisi quos magni, dicta libero velit quae.</li>
+                        <p>Read the procedures given below before performing this virtual experiment. 
+                          Don't Switch of the power supply throughout the experiment, otherwise the 
+                          performed simulation data will be lost. It is mandatory to submit the attendance 
+                          form after performing the experiment to keep the track of the experiments performed.
+                        </p>
+                        <ol>
+                            <li>Switch on the power supply switch on the control panel.</li>
+                            <li>Click Stage 1 to Find Load Current (I<sub>L</sub>) across load resistance (R<sub>L</sub>).</li>
 
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, totam perferendis consectetur nemo asperiores qui esse expedita, distinctio ut officia nesciunt dolorem veritatis nisi quos magni, dicta libero velit quae.</li>
+                            <li>Enter the source voltage (V<sub>S</sub>), Resistance 1 (R<sub>1</sub>), Resistance 2 (R<sub>2</sub>), Resistance 3 (R<sub>3</sub>) and Load Resistance (R<sub>L</sub>).</li>
 
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, totam perferendis consectetur nemo asperiores qui esse expedita, distinctio ut officia nesciunt dolorem veritatis nisi quos magni, dicta libero velit quae.</li>
+                            <li>Click the simulate button to simulate stage 1.
+                              <br>
+                              (<b>NB :-</b> The values of R<sub>1</sub>, R<sub>2</sub> & R<sub>3</sub> will get fixed after clicking simulate button on stage 1. These values will remain same throughout the experiment. This fields can be edited after clicking the reset button present in the control panel.)</li>
 
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, totam perferendis consectetur nemo asperiores qui esse expedita, distinctio ut officia nesciunt dolorem veritatis nisi quos magni, dicta libero velit quae.</li>
-                        </ul>
+                            <li>After clicking the simulate button on stage 1, the value of I<sub>L</sub> across R<sub>L</sub> will be displayed on the ammeter and at the same time the values will also get reflected in the tabulation section.</li>
+
+                            <li>Next, click on stage 2 to find Thevenin Resistance (R<sub>TH</sub>).</li>
+
+                            <li>Click simulate button to simulate stage 2.</li>
+
+                            <li>After clicking the simulate button on stage 2, the value of R<sub>TH</sub> will be displayed on the ammeter and at the same time the value will also get reflected in the tabulation section.</li>
+
+                            <li>Next, click on stage 3 to find Thevenin Voltage (V<sub>TH</sub>).</li>
+
+                            <li>Click simulate button to simulate stage 3.</li>
+
+                            <li>After clicking the simulate button on stage 3, the value of V<sub>TH</sub> will be displayed on the voltmeter and at the same time the value will also get reflected in the tabulation section.</li>
+
+                            <li>Next, click on stage 4 to find Load Current (I<sub>L</sub>) from Thevenin's equivalent circuit.</li>
+
+                            <li>Click simulate button to simulate stage 4.</li>
+
+                            <li>After clicking the simulate button on stage 4, the value of I<sub>L</sub> will be displayed on the ammeter and at the same time the values will also get reflected in the tabulation section.
+                              <br>
+                              If the value of I<sub>L</sub> from stage 4 is found to be identical with the value of I<sub>L</sub> from stage 1, then Thevenin's theorem is verified.
+                            </li>
+
+                            <li>Go back to stage 1, change the values of V<sub>S</sub> and R<sub>L</sub> and then repeat step 4 to step 14 upto 5 times to activate stage 5.
+                            <br>
+                            (<b>NB :-</b> Take different values of V<sub>S</sub> and R<sub>L</sub> all the 5 times during simulation for proper result.)
+                            </li>
+
+                            <li>After activation of stage 5, click plot button on stage 5 to plot the source voltage (V<sub>S</sub>) versus Thevenin voltage (V<sub>TH</sub>) characteristics.</li>
+
+                            <li>After clicking plot button, the output will be displayed on the plot area present in the simulator.</li>
+
+                            <li>After plotting, click next button present in the bottom of the simulator to fill the attendance form and to download the results of the experiment performed along with lab manual in portable document format.</li>
+                        </ol>
                       </div>
                     </div>
                 </div>
