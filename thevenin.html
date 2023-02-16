@@ -635,32 +635,11 @@
 
                           <div class="container-fluid">
                             <div class="col" style="display: flex; flex-direction: row;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Quiz-Qstn-7a.png">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Quiz-Qstn-7b.png" style="margin-top: -1.5vw;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\th-qstn7.png">
                             </div>
                           </div>
 
-                          <div class="container-fluid">
-                            <div class="col" style="display: flex; flex-direction: row;">
-                              <p style="justify-content: center; padding-right:15vw;">(a)</p>
-                              <p style="text-align: center; padding-right:-15vw;">(b)</p>
-                            </div>
-                          </div>
-                          <br>
-                          <div class="container-fluid">
-                            <div class="col" style="display: flex; flex-direction: row;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Quiz-Qstn-7c.png">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Quiz-Qstn-7d.png" style="margin-top: -1.5vw;">
-                            </div>
-                          </div>
-
-                          <div class="container-fluid">
-                            <div class="col" style="display: flex; flex-direction: row; justify-content:center; padding-left:-15vw;">
-                              <p>(c)</p>
-                              <p>(d)</p>
-                            </div>
-                          </div>
-
+                        
                           <div class="container-fluid" id="thans7">
                             <div class="form-group blue-border-focus">
                             <p>Ans: </p>
@@ -685,6 +664,8 @@
                           </div>
                           </div>
                         </div>
+
+                        <!------Ques 8------->
                         <li>When and why V<sub>Th</sub>=0?</li>
                         <div id="answer-area">
                           <div class="form-group blue-border-focus">
@@ -702,38 +683,128 @@
                         <li>Find the thevenin equivalent circuit of the following Figure?
                           <br>
                           <div class="container-fluid">
-                            <div class="col" style="display: flex; flex-direction: row;">
+                            <div class="row" style="justify-content: center;">
                               <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\qstn-9.png">
                             </div>
                           </div>
-                          <p style="justify-content: center;">[fig.1]</p>
+                          <p style="text-align: center;">[fig.1]</p>
                         </li>
                         <div id="options">
                           <div class="form-check">
                             <input class="form-check-input" type="radio" name="thqs9" id="thqs9_op1">
                             <label class="form-check-label" for="thqs9_op1">
                               a
+                              <div class="container-fluid">
+                                <div class="col" style="display: flex; flex-direction: row;">
+                                  <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Qstn 9 (a).png">
+                                </div>
+                              </div>
                             </label>
                           </div>
                           <div class="form-check">
                             <input class="form-check-input" type="radio" name="thqs9" id="thqs9_op2">
                             <label class="form-check-label" for="thqs9_op2">
                               b
+                              <div class="container-fluid">
+                                <div class="col" style="display: flex; flex-direction: row;">
+                                  <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\qstn-9b.png">
+                                </div>
+                              </div>
                             </label>
                           </div>
                           <div class="form-check">
                             <input class="form-check-input" type="radio" name="thqs9" id="thqs9_op3">
                             <label class="form-check-label" for="thqs9_op3">
                               c
+                              <div class="container-fluid">
+                                <div class="col" style="display: flex; flex-direction: row;">
+                                  <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Qstn (c).png">
+                                </div>
+                              </div>
                             </label>
                           </div>
                           <div class="form-check">
                             <input class="form-check-input" type="radio" name="thqs9" id="thqs9_op4">
                             <label class="form-check-label" for="thqs9_op4">
                               d
+                              <div class="container-fluid">
+                                <div class="col" style="display: flex; flex-direction: row;">
+                                  <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\9(d).png">
+                                </div>
+                              </div>
                             </label>
                           </div>
 
+                          <div class="container-fluid" id="thans9">
+                            <div class="row" style="justify-content: center;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\qstn-9.png">
+                            </div>
+                            <p>Calculation of R<sub>Th</sub>( Independent sources are turned off)</p>
+                            <div class="row" style="justify-content: center;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\qstn-9ans1.png">
+                            </div>
+                            <span style="font-size: 1rem;">
+                              $$ {{\ R}_{th} = 12 || 4} $$          
+                            </span>
+                            <span style="font-size: 1rem;">
+                              $$ {\frac{4\ast12}{16}  = 3Ω} $$          
+                            </span>
+                            <p>Calculation of V<sub>Th</sub></p>
+                            <div class="row" style="justify-content: center;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Thevenin quest.png">
+                            </div>
+                            <p>Applying KCL at node 'x', we get</p>
+                            <span style="font-size: 1rem;">
+                              $$ {\frac{V_x-12}{6}\ +\frac{V_x-V_{th}}{6}-2 = 0} $$          
+                            </span>
+                            <span style="font-size: 1rem;">
+                              <p>→</p>$$ {V_x-12 + V_x-V_{th}-12=0} $$          
+                            </span>
+                            <span style="font-size: 1rem;">
+                              <p style="float:right;">(1)</p>
+                              <p>→</p>$$ {2V_x-V_{th}=2} $$          
+                            </span>
+                            <span style="font-size: 1rem;">
+                              <p>Also from fig.</p>$$ {\frac{V_x-V_{th}}{6}=\ \frac{V_{th}}{4}} $$          
+                            </span>
+                            <span style="font-size: 1rem;">
+                              <p>→</p>$$ {4V_x-4=6V_{th}} $$          
+                            </span>
+                            <span style="font-size: 1rem;">
+                              <p style="float:right;">(4)</p>
+                              <p>→</p>$$ {10V_{th}-4V_x=0 } $$          
+                            </span>
+                            <p>Solving equation (1) and (2), we get</p>
+                            <span style="font-size: 1rem;">
+                              $$ {2V_x-V_{th}=24} $$          
+                            </span>
+                            <span style="font-size: 1rem;">
+                              $$ {-2V_x+5V_{th}=0} $$          
+                            </span>
+                            <p style="justify-content: center;">------------------------</p>
+                            <span style="font-size: 1rem;">
+                              $$ {4V_{th}=24} $$          
+                            </span>
+                            <span style="font-size: 1rem;">
+                              $$ {\mathbit{V}_{\mathbit{th}}=\\mathbit{mathbf}{\mathbf{6}}\\mathbit{mathbit}{\mathbit{V}}} $$          
+                            </span>
+                            <p>So, equivalent circuit is,</p>
+                            <div class="container-fluid">
+                              <div class="col" style="display: flex; flex-direction: row;">
+                                <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Qstn (c).png">
+                              </div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!------Ques-10------>
+                        <li>Find equivalent resistance R<sub>Th</sub> ?</li>
+                        <div class="container-fluid">
+                          <div class="row" style="justify-content: center;">
+                            <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Thevenin_s quiz question 10.png">
+                          </div>
+                        </div>
                         </ol>
                       </div>
                       <input class="btn btn-primary" type="submit" value="Submit" id="post-submit" onclick="thpostlabsubmit()">

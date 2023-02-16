@@ -63,5 +63,31 @@ function thpostlabsubmit(){
     }
     document.getElementById("thans8").style.display = "block";
     document.getElementById("thans8").style.color = "green";
-    document.getElementById("thans8").style.border = "0.066vw solid black"
+    document.getElementById("thans8").style.border = "0.066vw solid black";
+
+
+    if(document.getElementById("thqs9_op1").checked == true){
+        document.getElementById("thans9").style.display = "block";
+        document.getElementById("thans9").style.color = "red";
+        document.getElementById("thans9").style.border = "0.066vw solid black"
+
+    }
+    if(document.getElementById("thqs9_op2").checked == true){
+        document.getElementById("thans9").style.display = "block";
+        document.getElementById("thans9").style.color = "red";
+        document.getElementById("thans9").style.border = "0.066vw solid black"
+
+    }
+    if(document.getElementById("thqs9_op3").checked == true){
+        document.getElementById("thans9").style.display = "block";
+        document.getElementById("thans9").style.color = "green";
+        document.getElementById("thans9").style.border = "0.066vw solid black"
+
+    }
+    if(document.getElementById("thqs9_op4").checked == true){
+        document.getElementById("thans9").style.display = "block";
+        document.getElementById("thans9").style.color = "red";
+        document.getElementById("thans9").style.border = "0.066vw solid black"
+
+    }
 }
