@@ -493,7 +493,7 @@
                 <div class = "container-fluid">
                     <div class = "row row-height">
                       <div class = "col left7">
-                    <a href="https://elitesurya4.github.io/EXPERIMENT-3/"><button class="btn btn-primary">SIMULATOR 2D</button></a>
+                    <a href="https://elitesurya4.github.io/EXPERIMENT-1/"><button class="btn btn-primary">SIMULATOR 2D</button></a>
                     <!-- <button class="btn btn-primary">SIMULATOR 3D</button> -->
                 </div>
                 </div>
@@ -558,7 +558,7 @@
                           </div>
                           <div class="container-fluid" id="thans4">
                             <div class="form-group blue-border-focus">
-                            <p>Ans: 		Circuit containing only dependent sources, the value of R<sub>Th</sub> is negative.
+                            <p>Ans: Circuit containing only dependent sources, the value of R<sub>Th</sub> is negative.
                               The negative value of R<sub>Th</sub> conveys us that the circuit is supplying power i.e. the dependent source supplies the power as resistor is a passive element.
                             </p>
                           </div>
@@ -591,11 +591,149 @@
                               </label>
                             </div>
                           </div>
-                          <div id="answer-area">
+
+                          <div class="container-fluid" id="thans6_op1">
                             <div class="form-group blue-border-focus">
-                              <textarea class="form-control" id="thans6" rows="5" readonly></textarea>
+                            <p>Ans: Yes,it is correct.The single resistor is called the Norton resistance (R<sub>N</sub>) and is equal to the Thevenin resistance in the Thevenin equivalent circuit.
+                            </p>
+                          </div>
+                          </div>
+
+                          <div class="container-fluid" id="thans6_op2">
+                            <div class="form-group blue-border-focus">
+                            <p>Ans: No,it is not correct.The single resistor is called the Norton resistance (R<sub>N</sub>) and is equal to the Thevenin resistance in the Thevenin equivalent circuit.
+                            </p>
+                          </div>
+                          </div>
+                        <!------Ques 7------->
+                        <li>Which pairs of circuit are equivalent?</li>
+                        <div id="options">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="thqs7" id="thqs7_op1">
+                            <label class="form-check-label" for="thqs7_op1">
+                              a & b
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="thqs7" id="thqs7_op2">
+                            <label class="form-check-label" for="thqs7_op2">
+                              b & c
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="thqs7" id="thqs7_op3">
+                            <label class="form-check-label" for="thqs7_op3">
+                              a & c
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="thqs7" id="thqs7_op4">
+                            <label class="form-check-label" for="thqs7_op4">
+                              b & d
+                            </label>
+                          </div>
+
+                          <div class="container-fluid">
+                            <div class="col" style="display: flex; flex-direction: row;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Quiz-Qstn-7a.png">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Quiz-Qstn-7b.png" style="margin-top: -1.5vw;">
                             </div>
                           </div>
+
+                          <div class="container-fluid">
+                            <div class="col" style="display: flex; flex-direction: row;">
+                              <p style="justify-content: center; padding-right:15vw;">(a)</p>
+                              <p style="text-align: center; padding-right:-15vw;">(b)</p>
+                            </div>
+                          </div>
+                          <br>
+                          <div class="container-fluid">
+                            <div class="col" style="display: flex; flex-direction: row;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Quiz-Qstn-7c.png">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Quiz-Qstn-7d.png" style="margin-top: -1.5vw;">
+                            </div>
+                          </div>
+
+                          <div class="container-fluid">
+                            <div class="col" style="display: flex; flex-direction: row; justify-content:center; padding-left:-15vw;">
+                              <p>(c)</p>
+                              <p>(d)</p>
+                            </div>
+                          </div>
+
+                          <div class="container-fluid" id="thans7">
+                            <div class="form-group blue-border-focus">
+                            <p>Ans: </p>
+                            <span style="font-size: 1rem;">
+                              $$ {I_N= I_{SC}} $$          
+                            </span>
+                            <span style="font-size: 1rem;">
+                              $$ {R_{Th}= R_N} $$          
+                            </span>
+                            <span style="font-size: 1rem;">
+                              $$ {V_{Th}= V_{OC}} $$          
+                            </span>
+                            <span style="font-size: 1rem;">
+                              $$ {V_{Th}= 25Ω} $$          
+                            </span>
+                            <span style="font-size: 1rem;">
+                              $$ {R_{Th}= 5Ω} $$          
+                            </span>
+                            <span style="font-size: 1rem;">
+                              $$ {I_N=\frac{25}{5}  = 5A} $$          
+                            </span>
+                          </div>
+                          </div>
+                        </div>
+                        <li>When and why V<sub>Th</sub>=0?</li>
+                        <div id="answer-area">
+                          <div class="form-group blue-border-focus">
+                            <textarea class="form-control" id="thtext-area4" rows="5"></textarea>
+                          </div>
+                        </div>
+                        <div class="container-fluid" id="thans8">
+                          <div class="form-group blue-border-focus">
+                          <p>Ans: As V<sub>Th</sub> is a function of independent sources so, V<sub>Th</sub>=0 is valid in a circuit where no independent sources are present.
+                          </p>
+                        </div>
+                        </div>
+
+                        <!------Ques-9------>
+                        <li>Find the thevenin equivalent circuit of the following Figure?
+                          <br>
+                          <div class="container-fluid">
+                            <div class="col" style="display: flex; flex-direction: row;">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\qstn-9.png">
+                            </div>
+                          </div>
+                          <p style="justify-content: center;">[fig.1]</p>
+                        </li>
+                        <div id="options">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="thqs9" id="thqs9_op1">
+                            <label class="form-check-label" for="thqs9_op1">
+                              a
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="thqs9" id="thqs9_op2">
+                            <label class="form-check-label" for="thqs9_op2">
+                              b
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="thqs9" id="thqs9_op3">
+                            <label class="form-check-label" for="thqs9_op3">
+                              c
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="thqs9" id="thqs9_op4">
+                            <label class="form-check-label" for="thqs9_op4">
+                              d
+                            </label>
+                          </div>
+
                         </ol>
                       </div>
                       <input class="btn btn-primary" type="submit" value="Submit" id="post-submit" onclick="thpostlabsubmit()">
