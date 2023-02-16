@@ -90,4 +90,31 @@ function thpostlabsubmit(){
         document.getElementById("thans9").style.border = "0.066vw solid black"
 
     }
+
+    if(document.getElementById("thqs10_op1").checked == true){
+        document.getElementById("thans10").style.display = "block";
+        document.getElementById("thans10").style.color = "green";
+        document.getElementById("thans10").style.border = "0.066vw solid black"
+
+    }
+    if(document.getElementById("thqs10_op2").checked == true){
+        document.getElementById("thans10").style.display = "block";
+        document.getElementById("thans10").style.color = "red";
+        document.getElementById("thans10").style.border = "0.066vw solid black"
+
+    }
+    if(document.getElementById("thqs10_op3").checked == true){
+        document.getElementById("thans10").style.display = "block";
+        document.getElementById("thans10").style.color = "red";
+        document.getElementById("thans10").style.border = "0.066vw solid black"
+
+    }
+    if(document.getElementById("thqs10_op4").checked == true){
+        document.getElementById("thans10").style.display = "block";
+        document.getElementById("thans10").style.color = "red";
+        document.getElementById("thans10").style.border = "0.066vw solid black"
+
+    }
+
+
 }
