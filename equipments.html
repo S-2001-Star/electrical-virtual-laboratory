@@ -46,7 +46,7 @@
         </nav>
     </header>
     <div class="exp-bg" style="overflow:hidden;">
-        <h1 class="exp-heading">Verification of Superposition Theorem</h1>
+        <h1 class="exp-heading">Familiarization with electrical components and equipments.</h1>
     </div>
 
     <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -126,7 +126,7 @@
             </div>
 <!--------------------APPARATUS----------------------->            
             <div id="diagram2">
-              <h4 class="exp-head">APPARATUS REQUIRED</h4>
+              <!-- <h4 class="exp-head">APPARATUS REQUIRED</h4>
               <hr>
               <div id="table-mob" class = "container-fluid">
                   <div class = "row row-height">
@@ -136,52 +136,40 @@
                               <th>SL.NO</th>
                               <th>EQUIPMENTS</th>
                               <th>RANGE</th>
-                              <!-- <th>TYPE</th> -->
                               <th>QUANTITY</th>
                           </tr>
                           <tr>
                               <td>1</td>
                               <td>Resistor</td>
                               <td></td>
-                              <!-- <td></td> -->
                               <td>4</td>
                           </tr>
                           <tr>
                               <td>2</td>
                               <td>DC Power Supply</td>
                               <td>(0-30)V</td>
-                              <!-- <td></td> -->
                               <td></td>
                           </tr>
                           <tr>
                               <td>3</td>
                               <td>Voltmeter</td>
                               <td>(0-600)V</td>
-                              <!-- <td>MC</td> -->
                               <td></td>
                           </tr>
                           <tr>
                               <td>4</td>
                               <td>Ammeter</td>
                               <td>(0-10A)</td>
-                              <!-- <td>MI</td> -->
                               <td></td>
                           </tr>
-                          <!-- <tr>
-                              <td>5</td>
-                              <td>Wires</td>
-                              <td></td>
-                              <td>Copper</td>
-                              <td></td>
-                          </tr> -->
                       </table>
                     </div>
                   </div>
-              </div>
+              </div> -->
             </div>
 <!-----------PRE-LAB--------------->            
             <div id="diagram3">
-                <h4 class="exp-head">PRE-LAB</h4>
+                <!-- <h4 class="exp-head">PRE-LAB</h4>
                 <hr>
                 <div class = "container-fluid">
                     <div class = "row row-height">
@@ -197,7 +185,7 @@
                         </ol>
                       </div>
                     </div>
-                </div>
+                </div> -->
             </div>
 <!-----------THEORY--------------->            
             <div id="diagram4">
@@ -206,237 +194,81 @@
                 <div class = "container-fluid">
                     <div class = "row row-height">
                       <div class = "col left5" style="text-align:justify">
-                        <h1>Superposition Theorem :</h1>
-                        <p>According to superposition theorem, in any linear bilateral multisource network, the current through and voltages across any branch can be determined by taking algebric sum of values calculated by selecting one source at a time and replacing other active sources by their internal resistances.</p>
-                        <h3>Steps to solve :</h3>
-                        <ol>
-                            <li>Identify the branch and quantity to be calculated along with the presence of more than one active source.</li>
-                            <li>Consider any one active source and replace the other sources by their internal resistances. Calculate the required electrical quantity for that particular source.</li>
-                            <li>Repeat the last two steps for all active source.</li>
-                            <li>The required electrical quantity for all the sources functioning together will equal the algebraic sum of all these individual values.</li>
-                        </ol>
-                        <br>
-<!----------------TEST SYSTEM-1----------------------->                        
+<!----------------RESISTOR----------------------->
                         <div>
-                          <h1>Test System-1</h1>
-                          <br>
-                          <h5><b>Superposition Theorem with two independent voltage source :-</b></h5>
-                          <br>
-                          <p>Computing current across R<sub>4</sub>, denoted by I.</p>
-                          <div class="container-fluid">
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(1).png">
-                            </div>
-                          </div>
-                          <br>
-                          <br>
-                          <p style="text-align: center;">[Fig.1.1: Main circuit Diagram]</p>
-                          <br>
-                          <br>
-                          <p><b>Step 1:</b> compute I from the main circuit by any circuit analysis method.</p>
-                          <div class="container-fluid">
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(2).png">
-                            </div>
-                          </div>
-                          <br>
-                          <p style="text-align: center;">[Fig.1.2: circuit dig. With ammeter]</p>
-                          <br>
-                          <span style="font-size: 1rem;">
-                              <p style="float:right;">(1.1)</p>
-                              $$ {I\ =\ \frac{V_{s1-V_{s2}}}{R_4}} $$                             
-                          </span>
-                          <br>
-                          <br>
-                          <p><b>Step 2:</b> compute I<sub>1</sub>,when V<sub>s1</sub>is short circuited and V<sub>s2</sub> is acting alone. </p>
-                          <br>
-                          <span style="font-size: 1rem;">
-                              <p style="float:right;">(1.2)</p>
-                                $$ {I_1 = \frac{0-V_{s2}}{R_4}= \frac{{-V}_{s2}}{R_4}} $$                             
-                            </span>                            
-                          <br>
-                          <div class="container-fluid">
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(3).png">
-                            </div>
-                          </div>
-                          <br>
-                          <br>
-                          <p style="text-align: center;">[Fig.1.3: Circuit diagram with V<sub>s1</sub> short circuited]</p>
-                          <br>
-                          <br>
-                          <p><b>Step 3:</b> Compute I<sub>2</sub> , when V<sub>s2</sub> is short circuited and V<sub>s1</sub> is acting alone.</p>
-                          <div class="container-fluid">
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(4).png">
-                            </div>
-                          </div>
-                          <br>
-                          <br>
-                          <p style="text-align: center;">[Fig.1.4: Circuit diagram with V<sub>s2</sub> is short circuited]</p>
-                          <br>
-                          <span style="font-size: 1rem;">
-                            <p style="float:right;">(1.3)</p>
-                            $$ {I_2=\frac{\ V_{s1}-0}{R_4} = \frac{V_{s1}}{R_4}} $$
-                          </span>
-                          <br>
-                          <br>
-                          <p><b>Step 4:</b> As per superposition theorem,</p>
-                          <br>
-                          <span style="font-size: 1rem;">
-                            $$ {I\ =\ I_1+I_2} $$                             
-                          </span>
-                          <br>
-                        </div>
-<!----------------TEST SYSTEM-2----------------------->                        
-                        <div>
-                          <h1>Test System-2</h1>
-                          <br>
-                          <h5><b>Superposition Theorem with independent voltage source and independent current source :-</b></h5>
-                          <br>
-                          <div class="container-fluid">
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(5).png">
-                            </div>
-                          </div>
-                          <br>
-                          <br>
-                          <p style="text-align: center;">[Fig. 2.1: Main Circuit]</p>
-                          <br>
-                          <br>
-                          <p><b>Step 1:</b> Compute I from main circuit, by any circuit analysis method.</p>
-                          <div class="container-fluid">
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(6).png">
-                            </div>
-                          </div>
-                          <br>
-                          <br>
-                          <p style="text-align: center;">[Fig.2.2: circuit diagram with ammeter]</p>
-                          <br>
-                          <span style="font-size: 1rem;">
-                            <p style="float:right;">(2.1)</p>
-                            $$ {I=\ \frac{\left(V_{s1}-I_{s1}R_2\right)R_1-\left(R_1+\ R_2\right)(I_{s2}R_3)}{\left(R_1+R_2\right)\left(R_1+R_3+R_4\right)-\ {R_1}^2}} $$
-                          </span>
-                          <br>
-                          <br>
-                          <p><b>Step 2:</b>  Compute I<sub>1</sub> ,when V<sub>s1</sub> is short circuited and I<sub>s1</sub> is acting alone.</p>
-                          <div class="container-fluid">
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(7).png">
-                            </div>
-                          </div>
-                          <br>
-                          <br>
-                          <p style="text-align: center;">[Fig.2.3: circuit diagram with V<sub>s1</sub> short circuited]</p>
-                          <br>
-                          <span style="font-size: 1rem;">
-                            <p style="float:right;">(2.2)</p>
-                            $$ {I_1=\ \frac{-I_{s1}R_1R_2-\left(R_1+\ R_2\right)(I_{s2}R_3)}{\left(R_1+R_2\right)\left(R_1+R_3+R_4\right)-\ {R_1}^2}} $$                   
-                          </span>
-                          <br>
-                          <br>
-                          <p><b>Step 3:</b>  Compute I<sub>2</sub> is open circuited and V<sub>s1</sub> is acting alone.</p>
-                          <div class="container-fluid">
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(8).png">
-                            </div>
-                          </div>
-                          <br>
-                          <br> 
-                          <p style="text-align: center;">[Fig.2.4: circuit diagram with I<sub>s1</sub> open circuited]</p>
-                          <br>
-                          <span style="font-size: 1rem;">
-                            <p style="float:right;">(2.3)</p>
-                            $$ {I_2= \frac{V_{s1}R_1}{\left(R_1+R_2\right)\left(R_1+R_3+R_4\right)-{R_1}^2}} $$                          
-                          </span>
-                          <br>
-                          <br>
-                          <p><b>Step 4:</b>As per superposition theorem,</p>
-                          <span style="font-size: 1rem;">
-                            $$ {I\ =\ I_1+I_2} $$                             
-                          </span>
-                          <br>
-                        </div>
-<!----------------TEST SYSTEM-3----------------------->                        
-                        <div>
-                          <h1>Test System-3</h1>
-                          <br>
-                          <h5><b>Superposition theorem with two Independent Current Sources :-</b></h5>
-                          <br>
-                          <div class="container-fluid">
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(9).png">
-                            </div>
-                          </div>
-                          <br>
-                          <br>
-                          <p style="text-align: center;">[Fig.3.1: Main Circuit]</p>
-                          <br>
-                          <br>
-                          <p><b>Step 1:</b> Computation of I from main circuit, by connecting ammeter in series with R<sub>4</sub></p>
-                          <div class="container-fluid">
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(10).png">
-                            </div>
-                          </div>
-                          <br>
-                          <br>
-                          <p style="text-align: center;">[Fig 3.2: circuit diagram with ammeter]</p>
-                          <br>
-                          <span style="font-size: 1rem;">
-                            <p style="float:right;">(3.1)</p>
-                            $$ {I= \frac{I_{s1}R_1-I_{s2}R_3}{R_1+R_3+R_4}} $$          
-                          </span>
-                          <br>
-                          <br>
-                          <p><b>Step 2:</b> Compute I<sub>1</sub>, when I<sub>s1</sub> is open circuited and I<sub>s2</sub> is acting alone.</p>
-                          <div class="container-fluid">
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(11).png">
-                            </div>
-                          </div>
-                          <br>
-                          <br>
-                          <p style="text-align: center;">[Fig.3.3: Circuit diagram with I<sub>s1</sub> open circuited]</p>
-                          <br>
-                          <span style="font-size: 1rem;">
-                            <p style="float:right;">(3.2)</p>
-                            $$ {I_1=\frac{-I_{s2}R_3}{R_1+R_3+R_4}} $$       
-                          </span>
-                          <br>
-                          <br>
-                          <p><b>Step 3: </b>Compute I<sub>2</sub>, when I<sub>s2</sub> is open circuited and I<sub>s2</sub> is acting alone</p>
-                          <div class="container-fluid">
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-3\fig(12).png">
-                            </div>
-                          </div>
-                          <br>
-                          <br>
-                          <p style="text-align:center;">[Fig.3.4: Circuit diagram with I<sub>s2</sub> open circuited]</p>
-                          <br>
-                          <span style="font-size: 1rem;">
-                            <p style="float:right;">(3.3)</p>
-                            $$ {I_2=\frac{I_{s1}R_1}{R_1+R_3+R_4}} $$          
-                          </span>
-                          <br>
-                          <br>
-                          <p><b>Step 4:</b> As per superposition theorem,</p>
-                          <span style="font-size: 1rem;">
-                            $$ {I\ =\ I_1+I_2} $$                             
-                          </span>
+                            <h1>RESISTOR</h1>
+                            <p>A resistor is an electronic component that is used to impede the flow of electrical 
+                            current in a circuit.Resistors are used to control the amount of current that flows 
+                            through a circuit, to limit voltage, to divide voltage, to reduce current noise, and 
+                            to create voltage drops.A resistor has a specific value of resistance, which is measured 
+                            in ohms (Ω).Resistors come in different types, including fixed resistors, variable resistors 
+                            (potentiometers), and thermistors, which are resistors that change their resistance with temperature. 
+                            Resistors are commonly found in many electronic devices, such as power supplies, amplifiers, and computers.
+                            </p>
                         </div>
                         <br>
-<!-----------------------NOTE--------------------->                        
-                        <div class="note">
-                          <h2>Note :</h2>
-                          <p>A <span style="color:red;">linear circuit</span> is that whose output is linearly related (or directly proportional) to its input.</p>
-                          <p>A <span style="color:red;">bilateral circuit</span> is that which exhibits its properties equally in either direction.</p>
-                          <p>A <span style="color:red;">short circuit</span> is a circuit element with resistance approaching zero.</p>
-                          <p>An <span style="color:red;">open circuit</span> is a current element with resistance approaching infinity.</p>
+<!----------------AMMETER----------------------->                        
+                        <div>
+                          <h1>AMMETER</h1>
+                          <p>An ammeter is an electrical measuring instrument used to measure the flow of electric 
+                            current in a circuit. It is connected in series with the circuit, so the current flows 
+                            through the ammeter and its internal resistance, and the instrument provides a reading of 
+                            the current flow.They are used to measure the amount of current flowing through a circuit, 
+                            which is expressed in units of amperes (A) or milliamperes (mA). Ammeters can be analog or 
+                            digital, with digital ammeters being more common in modern electronic applications.Ammeters 
+                            are an important tool for circuit analysis and troubleshooting, allowing engineers and technicians 
+                            to identify problems such as short circuits or excessive current draw.
+                           </p>
                         </div>
                         <br>
+<!----------------VOLTMETER----------------------->                        
+                        <div>
+                          <h1>VOLTMETER</h1>
+                          <p>A voltmeter is an electrical measuring instrument used to measure the voltage, or electric 
+                            potential difference, between two points in an electric circuit.They are used to measure the 
+                            voltage across a component, such as a resistor, capacitor, or diode. The unit of voltage is volts 
+                            (V) or millivolts (mV).hey are commonly used in electrical and electronics testing and in various 
+                            applications such as power supplies, batteries, and automotive systems.Using a voltmeter in conjunction 
+                            with an ammeter, engineers and technicians can analyze circuit performance and identify problems such as 
+                            voltage drops or excessive current draw. Voltmeters are an important tool for circuit analysis and troubleshooting.
+                          </p>
+                        </div>
+<!----------------WATTMETER----------------------->                        
+                        <div>
+                          <h1>WATTMETER</h1>
+                          <p>
+                            A wattmeter is an electrical measuring instrument used to measure the electrical power in a circuit. It is used to 
+                            measure the product of the voltage and current in an electrical circuit, which is expressed in units of watts (W) or 
+                            kilowatts (kW).Wattmeters are used to measure the power consumed by an electrical load, such as a light bulb or an 
+                            electric motor. They can also be used to measure the power produced by a generator or other power source.Wattmeters are 
+                            important tools for engineers and technicians to measure and analyze the performance of electrical circuits, and to identify 
+                            problems such as excessive power consumption or power loss.
+                          </p>
+                        </div>
+                        <br>
+<!-----------------------DC POWER SUPPLY--------------------->                        
+                        <div>
+                          <h2>DC POWER SUPPLY</h2>
+                          <p>
+                            A DC power supply is an electronic device that provides a constant and stable output voltage or current in a direct current 
+                            (DC) electrical circuit. It is used to power and operate various electronic devices and components, such as transistors, 
+                            integrated circuits, and other electronic systems.They are commonly used in electronic testing and development, as well as 
+                            in various applications such as battery charging, electroplating, and welding.DC power supplies are an essential tool for 
+                            engineers and technicians working with electronics, as they provide a reliable and stable source of power for testing and 
+                            operating electronic systems.
+                          </p>
+                        </div>
+<!-----------------------CONNECTING WIRES--------------------->  
+                        <div>
+                            <h1>CONNECTING WIRES</h1>
+                            <p>In the context of electrical and electronic systems, wires are conductive cables or strands of metal that are used to 
+                                carry and transmit electrical signals or power between different components, devices, or systems. Wires are typically 
+                                made of copper or aluminum, which are excellent conductors of electricity.Wires can be used for a variety of applications, 
+                                such as connecting electronic components on a printed circuit board, transmitting power to a motor or other load, or carrying 
+                                audio or video signals between devices.Wires are an essential component of most electrical and electronic systems, and proper 
+                                selection and installation is important for ensuring safe and reliable operation of the system.
+                            </p>
+                        </div>                      
                         <br>
                       </div>
                     </div>
