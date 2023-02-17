@@ -25,6 +25,7 @@ function exp_intro_body(){
     document.getElementById("diagram6").style.display = "none";
     document.getElementById("diagram7").style.display = "none";
     document.getElementById("diagram8").style.display = "none";
+    document.getElementById("diagram9").style.display = "none";
 }
 function exp_ob_body(){
     document.getElementById("diagram").style.display = "none";
@@ -36,6 +37,7 @@ function exp_ob_body(){
     document.getElementById("diagram6").style.display = "none";
     document.getElementById("diagram7").style.display = "none";
     document.getElementById("diagram8").style.display = "none";
+    document.getElementById("diagram9").style.display = "none";
 }
 function exp_app_body(){
     document.getElementById("diagram").style.display = "none";
@@ -47,6 +49,7 @@ function exp_app_body(){
     document.getElementById("diagram6").style.display = "none";
     document.getElementById("diagram7").style.display = "none";
     document.getElementById("diagram8").style.display = "none";
+    document.getElementById("diagram9").style.display = "none";
 }
 function exp_pre_body(){
     document.getElementById("diagram").style.display = "none";
@@ -58,6 +61,7 @@ function exp_pre_body(){
     document.getElementById("diagram6").style.display = "none";
     document.getElementById("diagram7").style.display = "none";
     document.getElementById("diagram8").style.display = "none";
+    document.getElementById("diagram9").style.display = "none";
 }
 function exp_theory_body(){
     document.getElementById("diagram").style.display = "none";
@@ -69,6 +73,7 @@ function exp_theory_body(){
     document.getElementById("diagram6").style.display = "none";
     document.getElementById("diagram7").style.display = "none";
     document.getElementById("diagram8").style.display = "none";
+    document.getElementById("diagram9").style.display = "none";
 }
 function exp_pr_body(){
     document.getElementById("diagram").style.display = "none";
@@ -80,6 +85,7 @@ function exp_pr_body(){
     document.getElementById("diagram6").style.display = "none";
     document.getElementById("diagram7").style.display = "none";
     document.getElementById("diagram8").style.display = "none";
+    document.getElementById("diagram9").style.display = "none";
 }
 function exp_sim_body(){
     document.getElementById("diagram").style.display = "none";
@@ -91,6 +97,7 @@ function exp_sim_body(){
     document.getElementById("diagram6").style.display = "block";
     document.getElementById("diagram7").style.display = "none";
     document.getElementById("diagram8").style.display = "none";
+    document.getElementById("diagram9").style.display = "none";
 }
 function exp_post_body(){
     document.getElementById("diagram").style.display = "none";
@@ -102,6 +109,7 @@ function exp_post_body(){
     document.getElementById("diagram6").style.display = "none";
     document.getElementById("diagram7").style.display = "block";
     document.getElementById("diagram8").style.display = "none";
+    document.getElementById("diagram9").style.display = "none";
 }
 function exp_vd_body(){
     document.getElementById("diagram").style.display = "none";
@@ -113,4 +121,17 @@ function exp_vd_body(){
     document.getElementById("diagram6").style.display = "none";
     document.getElementById("diagram7").style.display = "none";
     document.getElementById("diagram8").style.display = "block";
+    document.getElementById("diagram9").style.display = "none";
+}
+function exp_load_body(){
+    document.getElementById("diagram").style.display = "none";
+    document.getElementById("diagram1").style.display = "none";
+    document.getElementById("diagram2").style.display = "none";
+    document.getElementById("diagram3").style.display = "none";
+    document.getElementById("diagram4").style.display = "none";
+    document.getElementById("diagram5").style.display = "none";
+    document.getElementById("diagram6").style.display = "none";
+    document.getElementById("diagram7").style.display = "none";
+    document.getElementById("diagram8").style.display = "none";
+    document.getElementById("diagram9").style.display = "block";
 }
