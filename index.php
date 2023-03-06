@@ -1,3 +1,4 @@
+<?php require('connection.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,17 +65,16 @@
     <div class="modal-content">
       <div class="modal-body">
        <h2 class="login-head">LOGIN</h2><br>
-        <form id="form_design" action="#" method="post">
-
+      <form id="form_design" action="login_register.php" method="post">
         <div class="container-fluid">
           <div class="form-floating" id="place1">
-            <input type="email" placeholder="name@example.com" class="form-control" id="floatingInput">
-            <label for="floatingInput" id="label-id">Your email address</label>
+            <input type="text" placeholder="name@example.com" name="email_contno" class="form-control" id="floatingInput">
+            <label for="floatingInput" id="label-id">Email address/Contact Number</label>
           </div>
         </div>
         <div class="container-fluid">
           <div class="form-floating" id="place1">
-            <input type="password" placeholder="Password" class="form-control" id="floatingPassword">
+            <input type="password" placeholder="Password" name="password" class="form-control" id="floatingPassword">
             <label for="floatingPassword" id="label-id">Password</label>
           </div>
         </div>
@@ -87,7 +87,7 @@
         </div>
 
         <div class="container-fluid">
-          <button class="gradient" id="gradient_submit" type="submit" name="sign-in" value="Sign In">LOGIN</button><br>
+          <button class="gradient" id="gradient_submit" type="submit" name="login" value="submit">LOGIN</button><br>
         </div>
 
         <div id="go-captcha">
@@ -96,13 +96,13 @@
             <div class="g-signin2" id="google_login" data-onsuccess="onSignIn"></div>
           </div>
         </div>
-      </div>
+        </div>
           <a class="pass-font" href="forgot_password.html"> Forgot Password ?</a>
           <div>
             <p>Don't have an account ? <a class="pass-font" id="cust_btn1">Create account</a></p>
           </div>
          <div><br></div>
-       </form>
+      </form>
      </div>
    </div>
   </div>
@@ -113,73 +113,73 @@
     <div class="modal-content">
       <div class="modal-body">
         <h2 class="login-head">SIGN UP</h2><br>
-        <form id="form_design" action="#" method="post">
+        <form id="form_design" action="login_register.php" method="post">
           <div class="container-fluid">
             <div class="form-floating" id="place1">
-              <input type="name" placeholder="Name" class="form-control" id="floatingName" required>
+              <input type="name" placeholder="Name" name="name" class="form-control" id="floatingName" required>
               <label for="floatingName" id="label-id">Name</label>
             </div>
           </div>
           <div class="container-fluid">
             <div class="form-floating" id="place1">
-              <input type="name" placeholder="University/Institute name" class="form-control" id="floatingInstitute" required>
+              <input type="name" placeholder="University/Institute name" name="inst_name" class="form-control" id="floatingInstitute" required>
               <label for="floatingInstitute" id="label-id">University/Institute name</label>
             </div>
           </div>
           <div class="container-fluid">
             <div class="form-floating" id="place1">
-              <input type="number" placeholder="Registration number" class="form-control" id="floatingRegistration" required>
-              <label for="floatingRegistration" id="label-id">University Registration number</label>
+              <input type="text" placeholder="Registration number" name="inst_regdno" class="form-control" id="floatingRegistration" required>
+              <label for="floatingRegistration" id="label-id">University/Institute Registration number</label>
             </div>
           </div>  
           <div class="container-fluid">
             <div class="form-floating" id="place1">
-              <input type="number" placeholder="Contact Number" class="form-control" id="floatingContact" required>
+              <input type="number" placeholder="Contact Number" name="cont_no" class="form-control" id="floatingContact" required>
               <label for="floatingContact" id="label-id">Contact Number</label>
             </div>
           </div>
           <div class="container-fluid">
             <div class="form-floating" id="place1">
-              <input type="email" placeholder="name@example.com" class="form-control" id="floatingEmail" required>
-              <label for="floatingEmail" id="label-id">Your email address</label>
+              <input type="email" placeholder="name@example.com" name="email" class="form-control" id="floatingEmail" required>
+              <label for="floatingEmail" id="label-id">Email address</label>
             </div>
           </div> 
           <div class="container-fluid">
             <div class="form-check" id="rd-form">
               <label class="form-check-label" id="rd-btn1" for="flexRadioDefault1">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault1" value="Male">
               Male
               </label>
               <label class="form-check-label" id="rd-btn2" for="flexRadioDefault2">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault2" value="Female">
               Female
               </label>
               <label class="form-check-label" id="rd-btn3" for="flexRadioDefault3">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault3" value="Others">
               Others
               </label>
             </div>
           </div>
           <div class="container-fluid">
             <div class="form-floating" id="place1">
-              <input type="text" placeholder="Branch/Stream" class="form-control" id="floatingBranch" required>
+              <input type="text" placeholder="Branch/Stream" name="branch_stream" class="form-control" id="floatingBranch" required>
               <label for="floatingBranch" id="label-id">Branch/Stream</label>
             </div>
           </div>
           <div class="container-fluid">  
             <div class="form-floating" id="place1">
-              <input type="password"  placeholder="Password" class="form-control" aria-describedby="passwordHelpInline" id="floatingPass" required>
+              <input type="password"  placeholder="Password" name="password" class="form-control" aria-describedby="passwordHelpInline" id="floatingPass" required>
               <label for="floatingPass" id="label-id">Password</label>
             </div>
           </div> 
-          <div class="container-fluid"> 
+          <!-- <div class="container-fluid"> 
             <div class="form-floating" id="place1">
               <input type="password" placeholder="Confirm Password" class="form-control" id="floatingConfirm" required>
               <label for="floatingConfirm" id="label-id">Confirm Password</label>
             </div>
-         </div>
+         </div> -->
          <div class="container-fluid">
-           <button class="gradient" id="gradient_submit" type="submit" name="save" value="submit">SIGN UP</button><br>
+           <button class="gradient" id="gradient_submit" type="submit" name="register" value="submit">SIGN UP</button><br>
          </div>
           <a class="pass-font" href="forgot_password.html"> Sign up with Google</a>
          <div><br></div>
