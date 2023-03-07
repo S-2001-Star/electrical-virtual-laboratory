@@ -5,14 +5,14 @@ require('connection.php');
 
 // ----------------LOGIN----------------
 if(isset($_POST['login'])){
-    $query = "SELECT * FROM `registered_users` WHERE `email` = '$_POST[email_username]' OR `cont_no` = '$_POST[email_username]'";
+    $query = "SELECT * FROM `registered_users` WHERE `email` = '$_POST[email_contno]' OR `cont_no` = '$_POST[email_contno]'";
     $result = mysqli_query($con,$query);
 
     if($result){
         if(mysqli_num_rows($result)==1){
             $result_fetch=mysqli_fetch_assoc($result);
             if(password_verify($_POST['password'],$result_fetch['password'])){
-                echo 'right';
+                echo "right";
             }
             else{
                 echo"

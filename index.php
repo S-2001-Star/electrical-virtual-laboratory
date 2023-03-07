@@ -79,24 +79,24 @@
           </div>
         </div>
 
-        <div class="container-fluid" id="go-captcha">
+        <!-- <div class="container-fluid" id="go-captcha">
            <form id="google_captcha" action="?" method="POST">
              <div class="g-recaptcha" id="google_captcha_1" data-sitekey="your_site_key"></div>
            </form>
            <br>
-        </div>
+        </div> -->
 
         <div class="container-fluid">
           <button class="gradient" id="gradient_submit" type="submit" name="login" value="submit">LOGIN</button><br>
         </div>
 
-        <div id="go-captcha">
+        <!-- <div id="go-captcha">
         <div class="container-fluid">
           <div class="col">
             <div class="g-signin2" id="google_login" data-onsuccess="onSignIn"></div>
           </div>
         </div>
-        </div>
+        </div> -->
           <a class="pass-font" href="forgot_password.html"> Forgot Password ?</a>
           <div>
             <p>Don't have an account ? <a class="pass-font" id="cust_btn1">Create account</a></p>
