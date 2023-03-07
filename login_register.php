@@ -1,6 +1,7 @@
 <?php
 
 require('connection.php');
+session_start();
 
 
 // ----------------LOGIN----------------
@@ -12,7 +13,9 @@ if(isset($_POST['login'])){
         if(mysqli_num_rows($result)==1){
             $result_fetch=mysqli_fetch_assoc($result);
             if(password_verify($_POST['password'],$result_fetch['password'])){
-                echo "right";
+                $_SESSION['logged_in']=true;
+                $_SESSION['name']=$result_fetch['name'];
+                header("location:index.php");
             }
             else{
                 echo"

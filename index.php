@@ -1,4 +1,7 @@
-<?php require('connection.php');?>
+<?php
+  require('connection.php');
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,8 +42,19 @@
         <ul class="navbar-nav navbar-float" id="nav-items">
           <li class="nav-item" id="nav-home"><a class="nav-link" href="index.html">HOME</a></li> 
           <li class="nav-item" id="nav-labs"><a class="nav-link" href="#evlabs">eV&nbsp;LABS</a></li>
-          <li class="nav-item" id="nav-log"><a class="nav-link" id="cust_btn">LOG&nbsp;IN</a></li>
-          <li class="nav-item" id="nav-sign"><a class="nav-link" id="cust_btn1">SIGN&nbsp;UP</a></li>
+
+          <?php
+            if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']==true){
+              echo "Welcome, $_SESSION[name] - <a href='logout.php'>LOGOUT</a>";
+            }
+            else{
+              echo "<li class='nav-item' id='nav-log'><a class='nav-link' id='cust_btn'>LOG&nbsp;IN</a></li>
+              <li class='nav-item' id='nav-sign'><a class='nav-link' id='cust_btn1'>SIGN&nbsp;UP</a></li>";
+            }
+          ?>
+
+          <!-- <li class="nav-item" id="nav-log"><a class="nav-link" id="cust_btn">LOG&nbsp;IN</a></li>
+          <li class="nav-item" id="nav-sign"><a class="nav-link" id="cust_btn1">SIGN&nbsp;UP</a></li> -->
         </ul>
 
 
