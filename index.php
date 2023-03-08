@@ -40,19 +40,30 @@
             </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav navbar-float" id="nav-items">
-          <li class="nav-item" id="nav-home"><a class="nav-link" href="index.html">HOME</a></li> 
+          <li class="nav-item" id="nav-home"><a class="nav-link" href="index.php">HOME</a></li> 
           <li class="nav-item" id="nav-labs"><a class="nav-link" href="#evlabs">eV&nbsp;LABS</a></li>
 
           <?php
             if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']==true){
-              echo "Welcome, $_SESSION[name] - <a href='logout.php'>LOGOUT</a>";
+              // echo "Welcome, $_SESSION[name] - <a href='logout.php'>LOGOUT</a>";\
+              echo "<li class='nav-item dropdown'>
+              <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown2' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+              Dropdown
+              </a>
+              <div class='dropdown-menu' aria-labelledby='navbarDropdown2'>
+                <a class='dropdown-item' href='#'>Action</a>
+                <a class='dropdown-item' href='#'>Another action</a>
+                <div class='dropdown-divider'></div>
+                <a class='dropdown-item' href='#'>Something else here</a>
+              </div>
+            </li>";
             }
             else{
               echo "<li class='nav-item' id='nav-log'><a class='nav-link' id='cust_btn'>LOG&nbsp;IN</a></li>
               <li class='nav-item' id='nav-sign'><a class='nav-link' id='cust_btn1'>SIGN&nbsp;UP</a></li>";
             }
           ?>
-
+          <script src="js\login_register.js"></script>
           <!-- <li class="nav-item" id="nav-log"><a class="nav-link" id="cust_btn">LOG&nbsp;IN</a></li>
           <li class="nav-item" id="nav-sign"><a class="nav-link" id="cust_btn1">SIGN&nbsp;UP</a></li> -->
         </ul>
@@ -251,7 +262,7 @@
     <div class="row">
       <div class="col animateMe" data-animation="fadeInLeft" id="lab-container">
         <div class="lab-1" id="lab-id">
-          <p class="lab-class-be" id="lab_label-1"><a id="be-lab" href="be.html">BASIC ELECTRICAL LAB</a></p>
+          <p class="lab-class-be" id="lab_label-1"><a id="be-lab" href="be.php">BASIC ELECTRICAL LAB</a></p>
         </div>
       </div>
       <div class="col animateMe" data-animation="fadeInRight">
