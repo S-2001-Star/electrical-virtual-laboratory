@@ -17,7 +17,7 @@
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <script src="js/script.js"></script>
   <script src="js/lab-section.js"></script>
-  <script src="assets\EXPT-4\script.js"></script>
+  <script src="assets\EXPT-5\script.js"></script>
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
@@ -499,349 +499,204 @@
 
                         <ol style="font-weight: bold;">
                         <!------Ques 1------->  
-                          <li>What is linearity and what are two properties it describes?</li>
-                          <div id="answer-area">
-                            <div class="form-group blue-border-focus">
-                              <textarea class="form-control" id="thtext-area1" rows="5"></textarea>
-                            </div>
-                          </div>
-                          <div class="container-fluid" id="thans1">
-                            <div class="form-group blue-border-focus">
-                            <p><b>Ans:</b> A linear circuit is one whose output is linear relates (or directly proportional) to its input.</p>
-                            <ul>
-                              <li>The property is a combination is a combination of both homogeneity (scaling) property and Additive property.</li>
-                              <li>Homogeneity property says if input is multiplied by a constant, then the output is multiplied by the same constant.</li>
-                              <li>Additive property says that response to a sum of input is the sum of responses to each input applied separately.</li>
-                            </ul>
-                          </div>
-                          </div>
-                        <!------Ques 2------->
-                          <li>Why in the calculation of thevenin's resistance all the independent sources are turned off?</li>
-                          <div id="answer-area">
-                            <div class="form-group blue-border-focus">
-                              <textarea class="form-control" id="thtext-area2" rows="5"></textarea>
-                            </div>
-                          </div>
-                          <div class="container-fluid" id="thans2">
-                            <div class="form-group blue-border-focus">
-                            <p>Ans: 	In order to prove the equivalent circuit and original circuit as equal, the independent sources are turned off, so that exact calculations of R<sub>th</sub> is possible.</p>
-                          </div>
-                          </div>
-                        <!------Ques 3------->
-                          <li>In circuit consisting dependent as well as independent source, why dependent source are not turned off in calculation of R<sub>TH</sub> ?</li>
-                          <div id="answer-area">
-                            <div class="form-group blue-border-focus">
-                              <textarea class="form-control" id="thtext-area3" rows="5"></textarea>
-                            </div>
-                          </div>
-                          <div id="answer-area">
-                            <div class="form-group blue-border-focus">
-                              <textarea class="form-control" id="thans3" rows="5" readonly></textarea>
-                            </div>
-                          </div>
-                        <!------Ques 4------->
-                          <li>When and why the values of R<sub>TH</sub> is negative? What is the significance of it?</li>
-                          <div id="answer-area">
-                            <div class="form-group blue-border-focus">
-                              <textarea class="form-control" id="thtext-area4" rows="5"></textarea>
-                            </div>
-                          </div>
-                          <div class="container-fluid" id="thans4">
-                            <div class="form-group blue-border-focus">
-                            <p>Ans: Circuit containing only dependent sources, the value of R<sub>Th</sub> is negative.
-                              The negative value of R<sub>Th</sub> conveys us that the circuit is supplying power i.e. the dependent source supplies the power as resistor is a passive element.
-                            </p>
-                          </div>
-                          </div>
-                        <!------Ques 5------->
-                          <li>What is the main advantage of using thevenin's theorem?</li>
-                          <div id="answer-area">
-                            <div class="form-group blue-border-focus">
-                              <textarea class="form-control" id="thtext-area5" rows="5"></textarea>
-                            </div>
-                          </div>
-                          <div id="answer-area">
-                            <div class="form-group blue-border-focus">
-                              <textarea class="form-control" id="thans5" rows="5" readonly></textarea>
-                            </div>
-                          </div>
-                        <!------Ques 6------->
-                          <li>The Norton resistance R<sub>N</sub> is exactly equal to the thevenin resistance  R<sub>TH</sub> ?</li>
+                          <li>What is Norton's theorem used for in electrical circuit analysis?</li>
                           <div id="options">
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="thqs6" id="thqs6_op1">
-                              <label class="form-check-label" for="thqs6_op1">
-                                True
+                              <input class="form-check-input" type="radio" name="noqs1" id="noqs1_op1">
+                              <label class="form-check-label" for="noqs1_op1">
+                                To simplify complex circuits 
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="thqs6" id="thqs6_op2">
-                              <label class="form-check-label" for="thqs6_op2">
-                                False
+                              <input class="form-check-input" type="radio" name="noqs1" id="noqs1_op2">
+                              <label class="form-check-label" for="noqs1_op2">
+                                To find equivalent resistance in a circuit
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="noqs1" id="noqs1_op3">
+                              <label class="form-check-label" for="noqs1_op3">
+                                To determine voltage in a circuit
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="noqs1" id="noqs1_op4">
+                              <label class="form-check-label" for="noqs1_op4">
+                                To find current in a circuit
                               </label>
                             </div>
                           </div>
-
-                          <div class="container-fluid" id="thans6_op1">
+                          <div id="answer-area">
                             <div class="form-group blue-border-focus">
-                            <p>Ans: Yes,it is correct.The single resistor is called the Norton resistance (R<sub>N</sub>) and is equal to the Thevenin resistance in the Thevenin equivalent circuit.
-                            </p>
-                          </div>
-                          </div>
-
-                          <div class="container-fluid" id="thans6_op2">
-                            <div class="form-group blue-border-focus">
-                            <p>Ans: No,it is not correct.The single resistor is called the Norton resistance (R<sub>N</sub>) and is equal to the Thevenin resistance in the Thevenin equivalent circuit.
-                            </p>
-                          </div>
-                          </div>
-                        <!------Ques 7------->
-                        <li>Which pairs of circuit are equivalent?</li>
-                        <div id="options">
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="thqs7" id="thqs7_op1">
-                            <label class="form-check-label" for="thqs7_op1">
-                              a & b
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="thqs7" id="thqs7_op2">
-                            <label class="form-check-label" for="thqs7_op2">
-                              b & c
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="thqs7" id="thqs7_op3">
-                            <label class="form-check-label" for="thqs7_op3">
-                              a & c
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="thqs7" id="thqs7_op4">
-                            <label class="form-check-label" for="thqs7_op4">
-                              b & d
-                            </label>
-                          </div>
-
-                          <div class="container-fluid">
-                            <div class="col" style="display: flex; flex-direction: row;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\th-qstn7.png">
+                              <textarea class="form-control" id="noans1" rows="5" readonly></textarea>
                             </div>
                           </div>
-
-                        
-                          <div class="container-fluid" id="thans7">
-                            <div class="form-group blue-border-focus">
-                            <p>Ans: </p>
-                            <span style="font-size: 1rem;">
-                              $$ {I_N= I_{SC}} $$          
-                            </span>
-                            <span style="font-size: 1rem;">
-                              $$ {R_{Th}= R_N} $$          
-                            </span>
-                            <span style="font-size: 1rem;">
-                              $$ {V_{Th}= V_{OC}} $$          
-                            </span>
-                            <span style="font-size: 1rem;">
-                              $$ {V_{Th}= 25Ω} $$          
-                            </span>
-                            <span style="font-size: 1rem;">
-                              $$ {R_{Th}= 5Ω} $$          
-                            </span>
-                            <span style="font-size: 1rem;">
-                              $$ {I_N=\frac{25}{5}  = 5A} $$          
-                            </span>
+                        <!------Ques 2------->
+                        <li>What is the relationship between Norton's theorem and Thevenin's theorem?</li>
+                          <div id="options">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="noqs2" id="noqs2_op1">
+                              <label class="form-check-label" for="noqs2_op1">
+                                They are the same thing 
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="noqs2" id="noqs2_op2">
+                              <label class="form-check-label" for="noqs2_op2">
+                                Norton's theorem is an improvement over Thevenin's theorem
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="noqs2" id="noqs2_op3">
+                              <label class="form-check-label" for="noqs2_op3">
+                                Norton's theorem is a simplified version of Thevenin's theorem 
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="noqs2" id="noqs2_op4">
+                              <label class="form-check-label" for="noqs2_op4">
+                                They are completely independent of each other
+                              </label>
+                            </div>
                           </div>
+                          <div id="answer-area">
+                            <div class="form-group blue-border-focus">
+                              <textarea class="form-control" id="noans2" rows="5" readonly></textarea>
+                            </div>
+                          </div>
+                          
+                        <!------Ques 3------->
+                        <li>Which of the following is NOT a variable in the Norton's theorem formula?</li>
+                        <div id="options">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="noqs3" id="noqs3_op1">
+                            <label class="form-check-label" for="noqs3_op1">
+                              Short-circuit current  
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="noqs3" id="noqs3_op2">
+                            <label class="form-check-label" for="noqs3_op2">
+                              Open-circuit voltage 
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="noqs3" id="noqs3_op3">
+                            <label class="form-check-label" for="noqs3_op3">
+                              Thevenin's equivalent resistance
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="noqs3" id="noqs3_op4">
+                            <label class="form-check-label" for="noqs3_op4">
+                              Total resistance
+                            </label>
                           </div>
                         </div>
-
-                        <!------Ques 8------->
-                        <li>When and why V<sub>Th</sub>=0?</li>
                         <div id="answer-area">
                           <div class="form-group blue-border-focus">
-                            <textarea class="form-control" id="thtext-area4" rows="5"></textarea>
+                            <textarea class="form-control" id="noans3" rows="5" readonly></textarea>
                           </div>
                         </div>
-                        <div class="container-fluid" id="thans8">
-                          <div class="form-group blue-border-focus">
-                          <p>Ans: As V<sub>Th</sub> is a function of independent sources so, V<sub>Th</sub>=0 is valid in a circuit where no independent sources are present.
-                          </p>
-                        </div>
-                        </div>
-
-                        <!------Ques-9------>
-                        <li>Find the thevenin equivalent circuit of the following Figure?
-                          <br>
+                        <!------Ques 4------->
+                          <li>Consider the following circuit diagram: [FIG 3.1] Using Norton's theorem, what is the equivalent resistance of the circuit?</li>
                           <div class="container-fluid">
                             <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\qstn-9.png">
+                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-5\Norton fig1.1.png">
                             </div>
                           </div>
-                          <p style="text-align: center;">[fig.1]</p>
-                        </li>
                         <div id="options">
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="thqs9" id="thqs9_op1">
-                            <label class="form-check-label" for="thqs9_op1">
-                              a
-                              <div class="container-fluid">
-                                <div class="col" style="display: flex; flex-direction: row;">
-                                  <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Qstn 9 (a).png">
-                                </div>
-                              </div>
+                            <input class="form-check-input" type="radio" name="noqs4" id="noqs4_op1">
+                            <label class="form-check-label" for="noqs4_op1">
+                              The sum of the resistances in the circuit  
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="thqs9" id="thqs9_op2">
-                            <label class="form-check-label" for="thqs9_op2">
-                              b
-                              <div class="container-fluid">
-                                <div class="col" style="display: flex; flex-direction: row;">
-                                  <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\qstn-9b.png">
-                                </div>
-                              </div>
+                            <input class="form-check-input" type="radio" name="noqs4" id="noqs4_op2">
+                            <label class="form-check-label" for="noqs4_op2">
+                              The parallel equivalent resistance of the resistors in the circuit 
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="thqs9" id="thqs9_op3">
-                            <label class="form-check-label" for="thqs9_op3">
-                              c
-                              <div class="container-fluid">
-                                <div class="col" style="display: flex; flex-direction: row;">
-                                  <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Qstn (c).png">
-                                </div>
-                              </div>
+                            <input class="form-check-input" type="radio" name="noqs4" id="noqs4_op3">
+                            <label class="form-check-label" for="noqs4_op3">
+                              The series equivalent resistance of the resistors in the circuit
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="thqs9" id="thqs9_op4">
-                            <label class="form-check-label" for="thqs9_op4">
-                              d
-                              <div class="container-fluid">
-                                <div class="col" style="display: flex; flex-direction: row;">
-                                  <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\9(d).png">
-                                </div>
-                              </div>
+                            <input class="form-check-input" type="radio" name="noqs4" id="noqs4_op4">
+                            <label class="form-check-label" for="noqs4_op4">
+                              The product of the resistances in the circuit
                             </label>
                           </div>
                         </div>
-                          <div class="container-fluid" id="thans9">
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\qstn-9.png">
-                            </div>
-                            <p>Calculation of R<sub>Th</sub> ( Independent sources are turned off)</p>
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\qstn-9ans1.png">
-                            </div>
-                            <span style="font-size: 1rem;">
-                              $$ {{\ R}_{th} = 12 || 4} $$          
-                            </span>
-                            <span style="font-size: 1rem;">
-                              $$ {\frac{4\times12}{16}  = 3Ω} $$          
-                            </span>
-                            <p>Calculation of V<sub>Th</sub></p>
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Thevenin quest.png">
-                            </div>
-                            <p>Applying KCL at node 'x', we get</p>
-                            <span style="font-size: 1rem;">
-                              $$ {\frac{V_x-12}{6}\ +\frac{V_x-V_{th}}{6}-2 = 0} $$          
-                            </span>
-                            <span style="font-size: 1rem;">
-                              $$ {⇒ V_x-12 + V_x-V_{th}-12=0} $$          
-                            </span>
-                            <span style="font-size: 1rem;">
-                              <p style="float:right;">(1)</p>
-                              $$ {⇒ 2V_x-V_{th}=2} $$          
-                            </span>
-                            <span style="font-size: 1rem;">
-                              <p>Also from fig.</p>$$ {\frac{V_x-V_{th}}{6}=\ \frac{V_{th}}{4}} $$          
-                            </span>
-                            <span style="font-size: 1rem;">
-                              $$ {⇒ 4V_x-4=6V_{th}} $$</p>          
-                            </span>
-                            <span style="font-size: 1rem;">
-                              <p style="float:right;">(2)</p>
-                              $$ {⇒ 10V_{th}-4V_x=0 } $$          
-                            </span>
-                            <p>Solving equation (1) and (2), we get</p>
-                            <span style="font-size: 1rem;">
-                              $$ {2V_x-V_{th}=24} $$          
-                            </span>
-                            <span style="font-size: 1rem;">
-                              $$ {-2V_x+5V_{th}=0} $$     
-                              <p style="text-align: center;">------------------------</p>     
-                            </span>
-                            
-                            <span style="font-size: 1rem;">
-                              $$ {4V_{th}=24} $$          
-                            </span>
-                            <span style="font-size: 1rem;">
-                              $$ {V_{th}=6V} $$          
-                            </span>
-                            <p>So, equivalent circuit is,</p>
-                            <div class="container-fluid">
-                              <div class="row" style="justify-content: center;">
-                                <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Qstn (c).png">
-                              </div>
-                            </div>
-                            </div>
-                            <!------Ques-10------>
-                        <li>Find equivalent resistance R<sub>Th</sub> ?</li>
-                        <div class="container-fluid">
-                          <div class="row" style="justify-content: center;">
-                            <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Thevenin_s quiz question 10.png">
+                        <div id="answer-area">
+                          <div class="form-group blue-border-focus">
+                            <textarea class="form-control" id="noans4" rows="5" readonly></textarea>
                           </div>
                         </div>
+                        <!------Ques 5------->
+                        <li>When is it appropriate to use Norton's theorem instead of Thevenin's theorem in electrical circuit analysis?</li>
                         <div id="options">
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="thqs10" id="thqs10_op1">
-                            <label class="form-check-label" for="thqs10_op1">
-                              1Ω
+                            <input class="form-check-input" type="radio" name="noqs5" id="noqs5_op1">
+                            <label class="form-check-label" for="noqs5_op1">
+                              When the circuit is simple and has a few components  
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="thqs10" id="thqs10_op2">
-                            <label class="form-check-label" for="thqs10_op2">
-                              3Ω
+                            <input class="form-check-input" type="radio" name="noqs5" id="noqs5_op2">
+                            <label class="form-check-label" for="noqs5_op2">
+                              When the circuit is complex and has many components 
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="thqs10" id="thqs10_op3">
-                            <label class="form-check-label" for="thqs10_op3">
-                              2Ω
+                            <input class="form-check-input" type="radio" name="noqs5" id="noqs5_op3">
+                            <label class="form-check-label" for="noqs5_op3">
+                              When the circuit is only made up of resistors
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="thqs10" id="thqs10_op4">
-                            <label class="form-check-label" for="thqs10_op4">
-                              4Ω
+                            <input class="form-check-input" type="radio" name="noqs5" id="noqs5_op4">
+                            <label class="form-check-label" for="noqs5_op4">
+                              When the circuit is only made up of capacitors and inductors.
                             </label>
                           </div>
                         </div>
-
-                        <div class="container-fluid" id="thans10">
-                          <p>Solving the two parallel pairs of 4Ω first.</p>
-                          <div class="row" style="justify-content: center;">
-                            <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Qstn 10a.png">
+                        <div id="answer-area">
+                          <div class="form-group blue-border-focus">
+                            <textarea class="form-control" id="noans5" rows="5" readonly></textarea>
                           </div>
-                            <span style="font-size: 1rem;">
-                              $$ {Now, 0 || 4Ω = \frac{0\times4}{0+4}=0Ω} $$          
-                            </span>
-                          <div class="row" style="justify-content: center;">
-                            <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Qstn no 10b.png">
+                        </div>
+                        <!------Ques 6------->
+                        <li>When is it appropriate to use Norton's theorem instead of Thevenin's theorem in electrical circuit analysis?</li>
+                        <div id="answer-area">
+                          <div class="form-group blue-border-focus">
+                            <textarea class="form-control" id="text-area1" rows="5"></textarea>
                           </div>
-                          <p>Hence, finally</p>
-                          <div class="row" style="justify-content: center;">
-                            <img class="img-fluid" id="exp-3-img" src="assets\EXPT-4\Qstn no 10 (c).png">
+                        </div>
+                        <div id="answer-area">
+                          <div class="form-group blue-border-focus">
+                            <textarea class="form-control" id="noans6" rows="5"></textarea>
                           </div>
-                          <span style="font-size: 1rem;">
-                            $$ {R_{th}=2||2=\frac{2\times2}{2+2}=\frac{4}{4}=1Ω} $$          
-                          </span>
-                      </ol>
+                        </div>
+                        <!------Ques 7------->
+                        <li>What is the difference between Norton's theorem and Thevenin's theorem?</li>
+                        <div id="answer-area">
+                          <div class="form-group blue-border-focus">
+                            <textarea class="form-control" id="text-area1" rows="5"></textarea>
+                          </div>
+                        </div>
+                        <div id="answer-area">
+                          <div class="form-group blue-border-focus">
+                            <textarea class="form-control" id="noans7" rows="5"></textarea>
+                          </div>
+                        </div>
+              
                       </div>
                       </div>
-                      <input class="btn btn-primary" type="submit" value="Submit" id="post-submit" onclick="thpostlabsubmit()">
+                      <input class="btn btn-primary" type="submit" value="Submit" id="post-submit" onclick="nopostlabsubmit()">
                     </div>
             </div>
 <!-----------VIDEO-LECTURE--------------->            
