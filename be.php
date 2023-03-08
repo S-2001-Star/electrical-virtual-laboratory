@@ -245,7 +245,7 @@
             <a href="#" id="exp-list"><li>Power and phase measurements in the three phase system by two wattmeter method.</li></a>
             <a href="superposition.html" id="exp-list"><li>Verification of Superposition Theorem</li></a>
             <a href="thevenin.html" id="exp-list"><li>Verification of Thevenin Theorem</li></a>
-            <a href="#" id="exp-list"><li>Verification of Norton Theorem</li></a>
+            <a href="norton.html" id="exp-list"><li>Verification of Norton Theorem</li></a>
             <a href="#" id="exp-list"><li>Plotting of B-H curve of magnetic material and Calculation of hysterisis loss.</li></a>
             <a href="#" id="exp-list"><li>Series RLC circuit (Power measurement, Phasor Diagram)</li></a>
             <a href="#" id="exp-list"><li>OC and SC test of single-phase transformer.</li></a>
