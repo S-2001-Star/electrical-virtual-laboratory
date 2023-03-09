@@ -66,6 +66,12 @@ body{
   color:aliceblue !important;
   font-family: 'Zen Dots', cursive;
 }
+.profile_btn{
+  color: green !important;
+}
+.logout_btn{
+  color: red !important;
+}
 #nav-home :hover,#nav-labs :hover,#nav-log :hover,#nav-sign :hover{
   background:rgb(68, 61, 61);
 }
@@ -174,7 +180,7 @@ body{
       font-size:small;
   }
 }
-/* ---------------------------LOGIN----------------------------- */
+/* ---------------------------PROFILE SECTION----------------------------- */
 
 
 

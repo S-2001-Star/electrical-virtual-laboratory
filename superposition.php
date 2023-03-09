@@ -1,3 +1,7 @@
+<?php
+  require('connection.php');
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,27 +28,54 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body> 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark" id="nav_bar">
-            <div class="container-fluid">
-                <div href="#" class="navbar-brand">
-                    <img src="src\nav-logo.png" width="100" alt="" class="d-inline-block align-middle">
-                    <a class="text font-weight-bold" id="items-2" href="#">eV LAB</a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav navbar-float" id="nav-items-1">
-                        <li class="nav-item" id="nav-home"><a class="nav-link" href="index.html">HOME</a></li> 
-                        <li class="nav-item" id="nav-labs"><a class="nav-link" href="be.html">eV&nbsp;LABS</a></li>
-                        <li class="nav-item" id="nav-log"><a class="nav-link" id="cust_btn">LOG&nbsp;IN</a></li>
-                        <li class="nav-item" id="nav-sign"><a class="nav-link" id="cust_btn1">SIGN&nbsp;UP</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" id="nav_bar">
+      <div class="container-fluid">
+        <div href="#" class="navbar-brand">
+          <img src="src\nav-logo.png" width="70" alt="" class="d-inline-block align-middle">
+          <a class="text font-weight-bold" id="items-1" href="#">eV LAB</a>
+          <a class="text-uppercase font-weight-bold" id="items" href="index.php#about-us">ABOUT US</a>
+        </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav navbar-float" id="nav-items">
+          <li class="nav-item" id="nav-home"><a class="nav-link" href="index.php">HOME</a></li> 
+          <li class="nav-item" id="nav-labs"><a class="nav-link" href="#evlabs">eV&nbsp;LABS</a></li>
+
+          <?php
+            if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']==true){
+              // echo "Welcome, $_SESSION[name] - <a href='logout.php'>LOGOUT</a>";\
+              echo "<li class='nav-item' id='nav-log'><a class='nav-link profile_btn' href='profile.php'>PROFILE</a></li>
+              <li class='nav-item' id='nav-sign'><a class='nav-link logout_btn' href='logout.php'>LOGOUT</a></li>";
+            }
+            else{
+              echo "<li class='nav-item' id='nav-log'><a class='nav-link' id='cust_btn'>LOG&nbsp;IN</a></li>
+              <li class='nav-item' id='nav-sign'><a class='nav-link' id='cust_btn1'>SIGN&nbsp;UP</a></li>";
+            }
+          ?>
+          <script src="js\login_register.js"></script>
+          <!-- <li class="nav-item" id="nav-log"><a class="nav-link" id="cust_btn">LOG&nbsp;IN</a></li>
+          <li class="nav-item" id="nav-sign"><a class="nav-link" id="cust_btn1">SIGN&nbsp;UP</a></li> -->
+        </ul>
+
+
+        <!-- <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            Log In
+          </a>
+        
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div> -->
+      </div>
+      </div>
+    </nav>
+  </header>
     <div class="exp-bg" style="overflow:hidden;">
         <h1 class="exp-heading">Verification of Superposition Theorem</h1>
     </div>

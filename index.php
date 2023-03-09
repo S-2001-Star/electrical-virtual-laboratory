@@ -46,17 +46,8 @@
           <?php
             if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']==true){
               // echo "Welcome, $_SESSION[name] - <a href='logout.php'>LOGOUT</a>";\
-              echo "<li class='nav-item dropdown'>
-              <a class='nav-link dropdown-toggle' href='#' id='navbarDropdown2' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
-              Dropdown
-              </a>
-              <div class='dropdown-menu' aria-labelledby='navbarDropdown2'>
-                <a class='dropdown-item' href='#'>Action</a>
-                <a class='dropdown-item' href='#'>Another action</a>
-                <div class='dropdown-divider'></div>
-                <a class='dropdown-item' href='#'>Something else here</a>
-              </div>
-            </li>";
+              echo "<li class='nav-item' id='nav-log'><a class='nav-link profile_btn' href='profile.php'>PROFILE</a></li>
+              <li class='nav-item' id='nav-sign'><a class='nav-link logout_btn' href='logout.php'>LOGOUT</a></li>";
             }
             else{
               echo "<li class='nav-item' id='nav-log'><a class='nav-link' id='cust_btn'>LOG&nbsp;IN</a></li>

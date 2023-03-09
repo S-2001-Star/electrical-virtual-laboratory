@@ -211,56 +211,18 @@
   </div>
 </div>
 <script  src="js/lightbox.js"></script>
-<!--------------------------BACKGROUND---------------------------------> 
-<div id="lab-bg">
-  <div class="bg">
-  <div class="bg-container">
-    <div class="lab">
-      <h1 class='lab-title'>BASIC ELECTRICAL LAB</h1>
-      <div class="exp-button">
-        <button class="btn btn-primary ml-3" id="be-button" onclick="intro_body()">INTRODUCTION</button>
-        <button class="btn btn-primary ml-5" id="be-button-1"onclick="object_body()">OBJECTIVE</button>
-        <button class="btn btn-primary ml-3" id="be-button-2" onclick="list_body()">LIST OF EXPERIMENTS</button>
-      </div>
-<div id="lab-border" class="container-fluid">
-  <div class="container-fluid" id="be-lab-box">
-    <!----------INTRODUCTION------------->
-          <div id="para">
-            <h4 class="be-heading">INTRODUCTION</h4><br>
-            <p class="h5">An electrical virtual laboratory is a specialized workspace where students can 
-              perform experiments, develop new technologies, and test electrical systems and components. This type 
-              of laboratory is equipped with various tools, instruments, and equipment that are specifically designed 
-              for measuring, analyzing, and testing electrical systems.</p>
-          </div>
-    <!----------OBJECTIVE------------->
-          <div id="para1" class="container">
-            <h4 class="be-heading">OBJECTIVE</h4><br>
-            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ratione fugit sit inventore explicabo commodi similique? Repellendus libero deserunt, nemo necessitatibus est quod quam dolorem nam optio odio? Rerum, laudantium?
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea est placeat, alias magni incidunt excepturi hic similique in ab sunt corporis odio quidem dolores vel. Veniam voluptates molestiae accusantium veritatis.
-            Quaerat doloremque repudiandae perspiciatis vel tempora. Quasi veritatis nobis dolore alias beatae nostrum voluptas eum repellendus quibusdam ipsam, culpa dolor itaque nisi sunt sequi non reiciendis quod quae aliquid repellat!</h5>
-          </div>
-    <!----------LIST OF EXPERIMENTS------------->
-    <div id="para2">
-      <h4 class="be-heading">LIST OF EXPERIMENTS</h4><br>
-        <ul class="h5">
-            <a href="equipments.php" id="exp-list"><li>Familiarization with electrical components and equipments.</li></a>
-            <a href="#" id="exp-list"><li>Power and phase measurements in the three phase system by two wattmeter method.</li></a>
-            <a href="superposition.php" id="exp-list"><li>Verification of Superposition Theorem</li></a>
-            <a href="thevenin.php" id="exp-list"><li>Verification of Thevenin Theorem</li></a>
-            <a href="norton.html" id="exp-list"><li>Verification of Norton Theorem</li></a>
-            <a href="#" id="exp-list"><li>Plotting of B-H curve of magnetic material and Calculation of hysterisis loss.</li></a>
-            <a href="#" id="exp-list"><li>Series RLC circuit (Power measurement, Phasor Diagram)</li></a>
-            <a href="#" id="exp-list"><li>OC and SC test of single-phase transformer.</li></a>
-        </ul>
-    </div>
-  </div>
-</div>
-      <script src="js/lab-section.js"></script>
-    </div>
-  </div>
-</div>
-</div>
-<br>  
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
 <footer class="text-center text-lg-start" id="footer-section">
   <div class="container-fluid text-center pt-4 pb-0">
 <section class="pt-0" id="internal-footer">
