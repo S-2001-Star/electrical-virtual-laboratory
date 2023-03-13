@@ -1,11 +1,6 @@
 <?php
   require('connection.php');
   session_start();
-  $data = [];
-while ($row = $result -> fetch_assoc()){
-  $data = '1';
-}
-$_SESSION['question'] = $data;
 ?>
 <!DOCTYPE html>
 <html lang="en">
