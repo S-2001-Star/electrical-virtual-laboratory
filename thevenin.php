@@ -511,7 +511,7 @@
                     <div class = "row row-height">
                       <div class = "col left7">
                         <p>Verification of Thevenin's Theorem using Independent source</p>
-                    <a href="https://elitesurya4.github.io/EXPERIMENT-1/EXPERIMENT%201(a)/index.html" target="blank"><button class="btn btn-primary">Click Here</button></a>
+                    <a href="simulator\EXPT-4_1-main\index.html" target="blank"><button class="btn btn-primary">Click Here</button></a>
                     <br>
                     <br>
                     <p>Verification of Thevenin's Theorem using Dependent source</p>

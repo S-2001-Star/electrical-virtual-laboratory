@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css">
+    <script src="node_modules\jsplumb\dist\js\jsplumb.min.js"></script>
+    <script src="node_modules\jsplumb\dist\js\jsplumb.js"></script>
+    <link rel="stylesheet" href="node_modules\jsplumb\css\jsplumbtoolkit-defaults.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script type="text/javascript" src="node_modules\canvasjs\dist\canvasjs.min.js"></script>
+    <script class="include" type="text/javascript" src="node_modules\jquery\dist\jquery.min.js"></script>
+    <script class="include" type="text/javascript" src="node_modules\jqplot\jquery.jqplot.min.js"></script>
+    <script type="text/javascript" src="js\shCore.min.js"></script>
+    <script type="text/javascript" src="js\shBrushJScript.min.js"></script>
+    <script type="text/javascript" src="js\shBrushXml.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.0.1/chart.min.js" integrity="sha512-tQYZBKe34uzoeOjY9jr3MX7R/mo7n25vnqbnrkskGr4D6YOoPYSpyafUAzQVjV6xAozAqUFIEFsCO4z8mnVBXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script class="include" type="text/javascript" src="node_modules\jqplot\jqplot.meterGaugeRenderer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <link rel="stylesheet" type="text/css" href="src/style.css">
+    <script src="js\script.js"></script>
+    <script src="js/pleaserotate.js"></script>
+    <title>EXPT-4</title>
+</head>
+<body>
+<!-------------Header Section------------->
+<div class="container-fluid" id="header">
+    <div class="card card-body" id="header-glass">
+        <p class="display-6">Verification of Thevenin's Theorem</p>
+    </div>
+</div>
+
+<!-------------Scrolling Section------------->
+<div class="container-fluid" id="warning">
+    <div class="move" id="cssmarquee">
+        <div class="btn-container">
+            <button class="btn btn-primary" id="inst-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">INSTRUCTIONS</button>
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                    <h5 class="inst-title" id="offcanvasBottomLabel">INSTRUCTIONS</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body small">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid ex minus laudantium sunt obcaecati nisi eveniet. Atque voluptatum sunt quo ratione commodi. Nisi totam cupiditate iure ipsa. Laudantium, minus dolores.
+                    Nobis excepturi suscipit amet nisi, consequuntur modi itaque quia dicta sapiente delectus reiciendis rem voluptas aut dolor officia quas autem fugit quos necessitatibus? Doloribus repellat numquam voluptatem eum quis ullam!
+                    Consectetur, dolore. Accusamus repellat ipsa quia quam. Rem perferendis deleniti alias doloremque molestiae aliquam, facilis, repellendus repudiandae rerum cum explicabo? Neque laboriosam est quam soluta totam. Ab temporibus nobis corporis.
+                    Vitae, dolorem! Illum perspiciatis mollitia libero possimus voluptate, cum, placeat voluptatum pariatur maxime tempore quibusdam velit a magni beatae, incidunt quos. Repellendus quod amet maiores perferendis quam adipisci sapiente autem!
+                    Quo perferendis nisi minima quis ut quas molestiae placeat velit nemo nobis quod ducimus vero autem suscipit accusamus unde, ipsum inventore incidunt facere, blanditiis quaerat harum voluptate magnam eligendi? Eaque.
+                    Nulla aliquid sed quam, reiciendis assumenda voluptates laudantium quidem quis delectus blanditiis dignissimos accusamus nostrum ratione molestiae voluptatum, fugit at recusandae. Quos, nesciunt quia. Obcaecati dolore quisquam modi quis? Corrupti.
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ullam eveniet excepturi ut tenetur quam similique voluptate tempore quod enim molestias, aliquam ratione cum autem placeat blanditiis nesciunt ipsum explicabo!
+                    Cupiditate autem consequuntur inventore vitae repudiandae harum laborum, ipsa dolore, alias necessitatibus eius dolorum maxime dolor doloremque rerum quia, perferendis fuga? Eveniet, expedita nesciunt. Odio omnis est vel nam reiciendis.
+                    Nemo obcaecati illum, amet soluta nihil suscipit unde autem, debitis et cupiditate dolorem vitae dicta expedita porro sunt perferendis doloribus, fugit fugiat ratione atque? Atque magnam eligendi maxime sunt recusandae?
+                    Laboriosam asperiores minus labore! Natus, illum quam. Nulla eaque et doloremque maiores consequuntur! Omnis amet consectetur, id iste, quas ipsam sed neque totam laborum provident, doloribus dolores nihil? Ea, cum!
+                    Accusantium, eum doloremque cum aliquam doloribus magni nesciunt nisi enim quas totam facilis molestiae, deserunt blanditiis assumenda a inventore ducimus illum ipsa dicta dignissimos aut perferendis ex! Qui, blanditiis earum?
+                    Facilis iste, impedit veritatis assumenda obcaecati atque ea molestiae, eveniet optio autem maiores quaerat ratione, itaque sequi quae excepturi veniam voluptas esse doloribus id fugiat neque ullam fugit sit. Earum.
+                    Soluta rem repellat natus excepturi cumque quasi! Eligendi doloribus reprehenderit facere cumque, tempora officiis distinctio quaerat dolor totam veritatis esse impedit, voluptate mollitia unde ratione sequi, quibusdam commodi praesentium similique!
+                    Illo dolorem distinctio non corrupti beatae culpa quam nihil obcaecati earum. Animi consequatur id quas aperiam ad magni, at dignissimos dolorum mollitia optio deleniti, veritatis, odit unde quasi atque. Quod.
+                    Repudiandae quam vitae libero illo enim animi, beatae at quae, est omnis quod, totam facere modi? Vel fugit, laborum accusantium quae qui, ullam quaerat exercitationem ab aspernatur dolorem repellat? Aspernatur!
+                    Nihil aperiam quis corrupti dolore, odio voluptatem tempore eos odit quaerat eveniet modi expedita rerum explicabo voluptas deleniti ab est sit vel repellat animi sed! A laborum voluptates officiis quia?
+                </div>
+            </div>
+        </div>
+        <marquee><h5>Read the instructions carefully before starting the experiment. Switch on the simulator before starting simulation.</h5></marquee>
+    </div>
+</div>   
+
+
+<!-------------Simulator Section------------->
+<div id="sim-cont">
+    <div id="simulator"><p class="display-5" id="sim-header">SIMULATOR PANEL</p>
+        <img class="d-block-w-100" src="src/Vx_IL_ckt.png" id="main_ckt">
+        <img class="d-block-w-100" src="src/rth_ckt.png" id="rth_ckt">
+        <img class="d-block-w-100" src="src/vth_ckt.png" id="vth_ckt">
+        <img class="d-block-w-100" src="src/eqv_ckt.png" id="eqv_ckt">
+    </div>
+    <div id="ammeter">
+        <div id="ammeter-disp">
+            <a id="am-disp"><input id="am-value" value="" type="text" readonly=""></a>
+        </div>
+    </div>
+    <div id="ammeter1">
+        <div id="ammeter-disp1">
+            <a id="am-disp1"><input id="am-value1" value="" type="text" readonly=""></a>
+        </div>
+    </div>
+    <div id="ammeter2">
+        <div id="ammeter-disp2">
+            <a id="am-disp2"><input id="am-value2" value="" type="text" readonly=""></a>
+        </div>
+    </div>
+    <div id="ammeter3">
+        <div id="ammeter-disp3">
+            <a id="am-disp3"><input id="am-value3" value="" type="text" readonly=""></a>
+        </div>
+    </div>
+</div>
+<!-------------Control Panel Section------------->
+<div id="cont-panel">
+    <div id="control-panel">
+        <p class="display-4" id="cont-header">CONTROL PANEL</p>
+        <label class="switch">
+            <input id="power-switch" type="checkbox" onclick="poweron()">
+            <div class="button">
+              <div class="light"></div>
+              <div class="dots"></div>
+              <div class="characters"></div>
+              <div class="shine"></div>
+              <div class="shadow"></div>
+            </div>
+        </label>
+        <div id="instance-btns">
+            <button id="instance-1" onclick="vxil_ckt_sim()" disabled>STAGE 1</button>
+            <button id="instance-2" onclick="vxrth_ckt_sim()" disabled>STAGE 2</button>
+            <button id="instance-3" onclick="vxvth_ckt_sim()" disabled>STAGE 3</button>
+            <button id="instance-4" onclick="eqv_ckt_sim()" disabled>STAGE 4</button>
+            <button id="instance-5" onclick="vsvth_plot()" disabled>STAGE 5</button>
+        </div>
+        <div id="instance-5-text">
+            <p id="instance-5-text-body">CLICK THE PLOT BUTTON TO PLOT THE SOURCE VOLTAGE (V<sub>S</sub>) VERSUS THEVENIN VOLTAGE (V<sub>TH</sub>) CHARACTERISTICS</p>
+        </div>
+        <div id="input-fields-1">
+                <div class="input-group">
+                    <div class="input-group-prepend" id="vs-label">
+                        <span class="input-group-text">V<sub>S</sub></span>
+                    </div>
+                    <input type="number" id="vs-value" min="0" max="50" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF SOURCE VOLTAGE (VS)" readonly/>
+                </div>
+            </div>
+        <div id="input-fields-2">
+                <div class="input-group">
+                    <div class="input-group-prepend" id="vth-label">
+                        <span class="input-group-text">V<sub>TH</sub></span>
+                    </div>
+                    <input type="number" id="vth-value" min="0" max="50" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF THEVENIN VOLTAGE (VTH)" readonly/>
+                </div>
+            </div>
+        <div id="input-fields-3">
+                <div class="input-group">
+                    <div class="input-group-prepend" id="rth-label">
+                        <span class="input-group-text">R<sub>TH</sub></span>
+                    </div>
+                    <input type="number" id="rth-value" min="0" max="50" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF THEVENIN RESISTANCE (RTH)" readonly/>
+                </div>
+            </div>
+        <div id="input-fields-4">
+                <div class="input-group">
+                    <div class="input-group-prepend" id="r1-label">
+                        <span class="input-group-text">R<sub>1</sub></span>
+                    </div>
+                    <input type="number" id="r1-value" min="0" max="50" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF RESISTANCE 1 (R1)" readonly/>
+                </div>
+            </div>
+        <div id="input-fields-5">
+                <div class="input-group">
+                    <div class="input-group-prepend" id="r2-label">
+                        <span class="input-group-text">R<sub>2</sub></span>
+                    </div>
+                    <input type="number" id="r2-value" min="0" max="50" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF RESISTANCE 2 (R2)" readonly/>
+                </div>
+            </div>
+        <div id="input-fields-6">
+                <div class="input-group">
+                    <div class="input-group-prepend" id="r3-label">
+                        <span class="input-group-text">R<sub>3</sub></span>
+                    </div>
+                    <input type="number" id="r3-value" min="0" max="50" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF RESISTANCE 3 (R3)" readonly/>
+                </div>
+            </div>
+        <div id="input-fields-7">
+                <div class="input-group">
+                    <div class="input-group-prepend" id="rl-label">
+                        <span class="input-group-text">R<sub>L</sub></span>
+                    </div>
+                    <input type="number" id="rl-value" min="0" max="50" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF LOAD RESISTANCE (RL)" readonly/>
+                </div>
+            </div>
+        <div id="input-fields-8">
+                <div class="input-group">
+                    <div class="input-group-prepend" id="vdc-label">
+                        <span class="input-group-text">V<sub>DC</sub></span>
+                    </div>
+                    <input type="text" id="vdc-value" min="0" max="50" step="0.01" class="form-control" value="THE VALUE OF VDC IS FIXED TO 1 VOLT" readonly/>
+                </div>
+            </div>
+        <div id="instance-1-sim">
+            <button id="sim-1_s1" onclick="vxil_calc()" disabled>SIMULATE</button>
+            <button id="sim-2_s1" disabled>RESET</button>
+        </div>
+        <div id="instance-2-sim">
+            <button id="sim-1" onclick="vxrth_calc()">SIMULATE</button>
+            <button id="sim-2">RESET</button>
+        </div>
+        <div id="instance-3-sim">
+            <button id="sim-1" onclick="vxvth_calc()">SIMULATE</button>
+            <button id="sim-2">RESET</button>
+        </div>
+        <div id="instance-4-sim">
+            <button id="sim-1" onclick="eqv_calc()">SIMULATE</button>
+            <button id="sim-2">RESET</button>
+        </div>
+        <div id="instance-5-sim">
+            <button id="plot-btn" onclick="plotting()" disabled>PLOT</button>
+            <button id="sim-2">RESET</button>
+        </div>
+    </div>
+</div>
+
+
+<!-------------Tabulation Section------------->
+<div id="tab-panel">
+    <div id="tabulation-panel">
+        <p class="display-4" id="tab-header">TABULATION</p>
+        <div id="table-1">
+            <table id="obs-table">
+                <tbody>
+                    <tr>
+                        <th>Sl No.</th>
+                        <th>Source Voltage (V<sub>S</sub>)</th>
+                        <th>Load Current (I<sub>L</sub>)</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="table-2">
+            <table id="obs-table-2">
+                <tbody>
+                    <tr>
+                        <th>Sl No.</th>
+                        <th>Thevenin Resistance (R<SUB>TH</SUB>)</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="table-3">
+            <table id="obs-table-3">
+                <tbody>
+                    <tr>
+                        <th>Sl No.</th>
+                        <th>Thevenin Voltage (V<SUB>TH</SUB>)</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="table-4">
+            <table id="obs-table-4">
+                <tbody>
+                    <tr>
+                        <th>Sl No.</th>
+                        <th>Load Current (I<SUB>L</SUB>)</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-------------Plotting Section------------->
+<div id="tab-panel-1">
+    <div id="tabulation-panel-1">
+        <p class="display-6" id="tab-header-1">SOURCE VOLTAGE VERSUS THEVENIN VOLTAGE PLOT REPRESENTATION</p>
+        <div id="value-table">
+            <p id="value-tab-header">TABULATION</p>
+            <div id="table-5">
+                <table id="obs-table-5">
+                    <tbody>
+                        <tr>
+                            <th>Sl No.</th>
+                            <th>SOURCE VOLTAGE (V<sub>S</sub>)</th>
+                            <th>THEVENIN VOLTAGE (V<sub>TH</sub>)</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <figure id="plot-area">
+            <p id="plot-area-header">PLOT AREA</p>
+            <div id="pr-plot">
+
+            </div>
+        </figure>
+
+    </div>
+</div>
+
+
+<button id="next-btn">NEXT</button>
+</body>
+</html>
