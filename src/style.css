@@ -1963,7 +1963,7 @@ tr:nth-child(even) {
   margin-bottom: 1vw;
   margin-left: 1vw;
 }
-#ans1,#ans2,#ans3,#ans4,#ans5,#ans6,#thans4,#thans3,#thans5,#thans7,#thans8,#thans9,#thans10,#noans1,#noans2,#noans3,#noans4,#noans5,#noans6,#noans7{
+#ans1,#ans2,#ans3,#ans4,#ans5,#ans6,#thans4,#thans3,#thans5,#thans7,#thans8,#thans9,#thans10{
   font-weight: bold;
   display: none;
   text-align: justify;
@@ -1978,6 +1978,19 @@ tr:nth-child(even) {
   margin-bottom: 1vw;
   margin-top: -1vw;
 }
-#ques_4_ans_div,#ques_6_ans_div,#thans1,#thans2,#thans6_op1,#thans6_op2{
+#ques_4_ans_div,#ques_6_ans_div,#thans1,#thans2,#thans6_op1,#thans6_op2,#rlcans1{
   display: none;
+}
+#noans1,#noans2,#noans3,#noans4,#noans5,#noans6,#noans7{
+  font-weight: bold;
+  display: none;
+  text-align: justify;
+}
+#rlcques_2_ans_div,#rlcques_3_ans_div{
+  display: none !important;
+}
+#rlcques_2_div,#rlcques_3_div{
+  font-weight: bold;
+  text-align: justify;
+  display: none !important;
 }

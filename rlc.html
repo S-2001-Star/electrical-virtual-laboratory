@@ -17,7 +17,7 @@
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <script src="js/script.js"></script>
   <script src="js/lab-section.js"></script>
-  <script src="assets\EXPT-5\script.js"></script>
+  <script src="assets\EXPT-6\script.js"></script>
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
@@ -213,7 +213,7 @@
                                 in a pure ohmic resistor are "in-phase" with the current waveforms.
                             </p>
                             <p>
-                                The voltage waveform "leads" the current by 90 degrees in a pure inductance. The voltage waveform 
+                                The voltage waveform "leads" the current by 90° in a pure inductance. The voltage waveform 
                                 "lags" the current by 90° in a pure capacitance.
                             </p>
                             <p>
@@ -225,6 +225,100 @@
                             <p>
                                 Thus, giving their resulting impedances as:
                             </p>
+                            <br>
+                            <b><p style="text-align: center;">
+                              Table 1: Shows the resistivity, reactance, and Theta of each element in the circuit.
+                            </p></b>
+                            <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th>Circuit element</th>
+                                  <th>Resistance, R</th>
+                                  <th>Reactance, X</th>
+                                  <th>Theta 𝛉</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th>Resistor</th>
+                                  <td>R</td>
+                                  <td>0</td>
+                                  <td>0</td>
+                                </tr>
+                                <tr>
+                                  <th style="background: white;">Inductor</th>
+                                  <td  style="background: white;">0</td>
+                                  <td style="justify-content: right;background: white;">
+                                      $${2\pi\ fl}$$
+                                  </td>
+                                  <td  style="background: white;">+90˚</td>
+                                </tr>
+                                <tr>
+                                  <th>Capacitor</th>
+                                  <td>0</td>
+                                  <td>
+                                      $$ {\frac{1}{2\pi fc}} $$                             
+                                  </td>
+                                  <td>-90˚</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <p>
+                              Instead of analyzing each element individually, we can combine the three together elements into a series RLC circuit.
+                            </p>
+                            <div class="container-fluid">
+                              <div class="row" style="justify-content: center;">
+                                <img class="img-fluid" id="exp-3-img" src="assets\EXPT-6\pic1.png">
+                              </div>
+                            </div>
+                            <br>
+                            <br> 
+                            <p style="text-align: center;">[Fig.1: Illustrate the equivalent circuit or RLC in series and the voltages across each element.]</p>
+                            <br>
+                            <br>
+                            <p>
+                              Due to the presence of an inductance L and a capacitance C, which serve as two energy storage components, series RLC circuits are 
+                              categorised as second-order circuits. Take a look at the RLC circuit below. The phasor diagram for a series RLC circuit is formed 
+                              by merging the three distinct phasors above and adding these voltages vectorially. We can take this as the reference vector and draw 
+                              the three voltage vectors in relation to it at the appropriate angles as the current flowing through the circuit is shared by all three circuit components.
+                            </p>
+                            <p>
+                              Two of the vectors, V<sub>L</sub> and V<sub>C</sub>, are added together, and this sum is then added to the remaining vector V<sub>R</sub> to produce the final vector, V<sub>S</sub>. The circuits phase angle will be the resultant angle between V<sub>S</sub> and I, as indicated below.
+                            </p>
+                            <div class="container-fluid">
+                              <div class="row" style="justify-content: center;">
+                                <img class="img-fluid" id="exp-3-img" src="assets\EXPT-6\pic2.png">
+                              </div>
+                            </div>
+                            <br>
+                            <br> 
+                            <p style="text-align: center;">[Fig.2: Phasor Diagram for a Series RLC Circuit]</p>
+                            <br>
+                            <br>
+                            <p>
+                              We can see from the phasor diagram in Fig. 2 above that the voltage vectors produce a rectangular triangle, comprising of hypotenuse V<sub>S</sub>, horizontal axis V<sub>R</sub> and vertical axis V<sub>L</sub>-V<sub>C</sub>. We notice that this forms our old favourite the Voltage Triangle and we can therefore use Pythagoras’s theorem on this voltage triangle to mathematically obtain the value of V<sub>S</sub> as shown. The voltage triangle for a series RLC Circuit:
+                            </p>
+                            <span style="font-size: 1rem;">
+                              $$ {Z\left(Impedance\right)=\sqrt{R^2+\left(wl-\frac{1}{wc}\right)^2}} $$                             
+                            </span>
+                            <p>
+                              The phase difference of the RLC circuit:
+                            </p>
+                            <span style="font-size: 1rem;">
+                              $$ {\theta=tan^{-1}\left(\frac{wl-\frac{1}{wc}}{R}\right)} $$                             
+                            </span>
+                            <p>
+                              Power Factor:
+                            </p>
+                            <span style="font-size: 1rem;">
+                              $$ {cos\emptyset=\frac{R}{\sqrt{R^2+\left(wl-\frac{1}{wc}\right)^2}}} $$                             
+                            </span>
+                            <p>
+                              Power:
+                            </p>
+                            <span style="font-size: 1rem;">
+                              $$ {P=V_{in}Icos} $$                             
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -316,104 +410,120 @@
 
                         <ol style="font-weight: bold;">
                         <!------Ques 1------->  
-                          <li>What is Norton's theorem used for in electrical circuit analysis?</li>
+                          <li>What is the purpose of the RLC experiment?</li>
                           <div id="options">
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="noqs1" id="noqs1_op1">
-                              <label class="form-check-label" for="noqs1_op1">
-                                To simplify complex circuits 
+                              <input class="form-check-input" type="radio" name="rlcqs1" id="rlcqs1_op1">
+                              <label class="form-check-label" for="rrlcqs1_op1">
+                                To study the behaviour of RLC circuits under different conditions. 
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="noqs1" id="noqs1_op2">
-                              <label class="form-check-label" for="noqs1_op2">
-                                To find equivalent resistance in a circuit
+                              <input class="form-check-input" type="radio" name="rlcqs1" id="rlcqs1_op2">
+                              <label class="form-check-label" for="rlcqs1_op2">
+                                To calculate the capacitance, resistance, and inductance of the circuit components.
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="noqs1" id="noqs1_op3">
-                              <label class="form-check-label" for="noqs1_op3">
-                                To determine voltage in a circuit
+                              <input class="form-check-input" type="radio" name="rlcqs1" id="rlcqs1_op3">
+                              <label class="form-check-label" for="rlcqs1_op3">
+                                To measure the voltage and current in an RLC circuit.
                               </label>
                             </div>
                             <div class="form-check">
-                              <input class="form-check-input" type="radio" name="noqs1" id="noqs1_op4">
-                              <label class="form-check-label" for="noqs1_op4">
-                                To find current in a circuit
+                              <input class="form-check-input" type="radio" name="rlcqs1" id="rlcqs1_op4">
+                              <label class="form-check-label" for="rlcqs1_op4">
+                                None of the above.
                               </label>
                             </div>
                           </div>
                           <div id="answer-area">
                             <div class="form-group blue-border-focus">
-                              <textarea class="form-control" id="noans1" rows="5" readonly></textarea>
+                              <textarea class="form-control" id="rlcans1" rows="5" readonly></textarea>
                             </div>
                           </div>
                         <!------Ques 2------->
-                        <li>What is the relationship between Norton's theorem and Thevenin's theorem?</li>
-                          <div id="options">
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="noqs2" id="noqs2_op1">
-                              <label class="form-check-label" for="noqs2_op1">
-                                They are the same thing 
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="noqs2" id="noqs2_op2">
-                              <label class="form-check-label" for="noqs2_op2">
-                                Norton's theorem is an improvement over Thevenin's theorem
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="noqs2" id="noqs2_op3">
-                              <label class="form-check-label" for="noqs2_op3">
-                                Norton's theorem is a simplified version of Thevenin's theorem 
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="noqs2" id="noqs2_op4">
-                              <label class="form-check-label" for="noqs2_op4">
-                                They are completely independent of each other
-                              </label>
-                            </div>
-                          </div>
-                          <div id="answer-area">
-                            <div class="form-group blue-border-focus">
-                              <textarea class="form-control" id="noans2" rows="5" readonly></textarea>
-                            </div>
-                          </div>
-                          
-                        <!------Ques 3------->
-                        <li>Which of the following is NOT a variable in the Norton's theorem formula?</li>
+                        <li>What is the mathematical relationship between voltage and current in an RLC circuit?</li>
                         <div id="options">
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="noqs3" id="noqs3_op1">
-                            <label class="form-check-label" for="noqs3_op1">
-                              Short-circuit current  
+                            <input class="form-check-input" type="radio" name="rlcqs2" id="rlcqs2_op1">
+                            <label class="form-check-label" for="rlcqs2_op1">
+                              V = IR
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="noqs3" id="noqs3_op2">
-                            <label class="form-check-label" for="noqs3_op2">
-                              Open-circuit voltage 
+                            <input class="form-check-input" type="radio" name="rlcqs2" id="rlcqs2_op2">
+                            <label class="form-check-label" for="rlcqs2_op2">
+                              V = IZ
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="noqs3" id="noqs3_op3">
-                            <label class="form-check-label" for="noqs3_op3">
-                              Thevenin's equivalent resistance
+                            <input class="form-check-input" type="radio" name="rlcqs2" id="rlcqs2_op3">
+                            <label class="form-check-label" for="rlcqs2_op3">
+                              <span>
+                                $${V = L\frac{dI}{dt} + IR + \frac{1}{C\int I\ d\ t}}$$
+                              </span>
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="noqs3" id="noqs3_op4">
-                            <label class="form-check-label" for="noqs3_op4">
-                              Total resistance
+                            <input class="form-check-input" type="radio" name="rlcqs2" id="rlcqs2_op4">
+                            <label class="form-check-label" for="rlcqs2_op4">
+                              <span>
+                                $${V=\ \frac{I}{\left(RC\right)}}$$
+                              </span>
                             </label>
                           </div>
                         </div>
-                        <div id="answer-area">
-                          <div class="form-group blue-border-focus">
-                            <textarea class="form-control" id="noans3" rows="5" readonly></textarea>
+                        <div class="container-fluid" id="rlcques_2_ans_div">
+                          <p class="h6" id="rlcques_2_div">Ans:</p>
+                          <br>
+                          <span>
+                            $${V = L\frac{dI}{dt} + IR + \frac{1}{C\int I\ d\ t}}$$
+                          </span>
+                        </div>
+                          
+                        <!------Ques 3------->
+                        <li>How do you calculate the resonance frequency of an RLC circuit?</li>
+                        <div id="options">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rlcqs3" id="rlcqs3_op1">
+                            <label class="form-check-label" for="rlcqs3_op1">
+                              <span>
+                                $${f=\ \frac{1}{\left(2\pi\sqrt{\left(LC\right)}\right)}}$$
+                              </span>  
+                            </label>
                           </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rlcqs3" id="rlcqs3_op2">
+                            <label class="form-check-label" for="rlcqs3_op2">
+                              <span>
+                                $${f=\ \frac{1}{\left(2\pi\sqrt{\left(RC\right)}\right)}}$$
+                              </span> 
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rlcqs3" id="rlcqs3_op3">
+                            <label class="form-check-label" for="rlcqs3_op3">
+                              <span>
+                                $${f=\ \frac{1}{\left(2\pi\sqrt{\left(RL\right)}\right)}}$$
+                              </span>
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rlcqs3" id="rlcqs3_op4">
+                            <label class="form-check-label" for="rlcqs3_op4">
+                              <span>
+                                $${f=\ \frac{1}{\left(2\pi\sqrt{\left(LCR\right)}\right)}}$$
+                              </span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="container-fluid" id="rlcques_3_ans_div">
+                          <p class="h6" id="rlcques_3_div">Ans:</p>
+                          <br>
+                          <span>
+                            $${f=\ \frac{1}{\left(2\pi\sqrt{\left(LC\right)}\right)}}$$
+                          </span>
                         </div>
                         <!------Ques 4------->
                           <li>Consider the following circuit diagram: [FIG 3.1] Using Norton's theorem, what is the equivalent resistance of the circuit?</li>
@@ -513,7 +623,7 @@
               
                       </div>
                       </div>
-                      <input class="btn btn-primary" type="submit" value="Submit" id="post-submit" onclick="nopostlabsubmit()">
+                      <input class="btn btn-primary" type="submit" value="Submit" id="post-submit" onclick="rlcpostlabsubmit()">
                     </div>
             </div>
 <!-----------VIDEO-LECTURE--------------->            
