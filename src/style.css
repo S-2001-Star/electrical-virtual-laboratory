@@ -1968,7 +1968,7 @@ tr:nth-child(even) {
   display: none;
   text-align: justify;
 }
-#ques_4_div,#ques_6_div{
+#ques_4_div,#ques_6_div,#rlcques_2_div,#rlcques_3_div{
   font-weight: bold;
   text-align: justify;
 }
@@ -1978,19 +1978,11 @@ tr:nth-child(even) {
   margin-bottom: 1vw;
   margin-top: -1vw;
 }
-#ques_4_ans_div,#ques_6_ans_div,#thans1,#thans2,#thans6_op1,#thans6_op2,#rlcans1{
+#ques_4_ans_div,#ques_6_ans_div,#thans1,#thans2,#thans6_op1,#thans6_op2,#rlcans1,#rlcques_2_ans_div,#rlcques_3_ans_div,#rlcans4,#rlcans5,#rlcans6,#rlcans7,#rlcans8,#rlcans9,#rlcans10{
   display: none;
 }
 #noans1,#noans2,#noans3,#noans4,#noans5,#noans6,#noans7{
   font-weight: bold;
   display: none;
   text-align: justify;
-}
-#rlcques_2_ans_div,#rlcques_3_ans_div{
-  display: none !important;
-}
-#rlcques_2_div,#rlcques_3_div{
-  font-weight: bold;
-  text-align: justify;
-  display: none !important;
 }

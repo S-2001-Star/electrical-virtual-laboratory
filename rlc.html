@@ -414,7 +414,7 @@
                           <div id="options">
                             <div class="form-check">
                               <input class="form-check-input" type="radio" name="rlcqs1" id="rlcqs1_op1">
-                              <label class="form-check-label" for="rrlcqs1_op1">
+                              <label class="form-check-label" for="rlcqs1_op1">
                                 To study the behaviour of RLC circuits under different conditions. 
                               </label>
                             </div>
@@ -477,7 +477,7 @@
                         <div class="container-fluid" id="rlcques_2_ans_div">
                           <p class="h6" id="rlcques_2_div">Ans:</p>
                           <br>
-                          <span>
+                          <span style="align-items: left;">
                             $${V = L\frac{dI}{dt} + IR + \frac{1}{C\int I\ d\ t}}$$
                           </span>
                         </div>
@@ -526,98 +526,234 @@
                           </span>
                         </div>
                         <!------Ques 4------->
-                          <li>Consider the following circuit diagram: [FIG 3.1] Using Norton's theorem, what is the equivalent resistance of the circuit?</li>
-                          <div class="container-fluid">
-                            <div class="row" style="justify-content: center;">
-                              <img class="img-fluid" id="exp-3-img" src="assets\EXPT-5\Norton fig1.1.png">
-                            </div>
-                          </div>
+                          <li>What is the difference between series and parallel RLC circuits?</li>
                         <div id="options">
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="noqs4" id="noqs4_op1">
-                            <label class="form-check-label" for="noqs4_op1">
-                              The sum of the resistances in the circuit  
+                            <input class="form-check-input" type="radio" name="rlcqs4" id="rlcqs4_op1">
+                            <label class="form-check-label" for="rlcqs4_op1">
+                              In series RLC circuits, the components are connected one after another, while in parallel RLC circuits, the components are connected in branches.
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="noqs4" id="noqs4_op2">
-                            <label class="form-check-label" for="noqs4_op2">
-                              The parallel equivalent resistance of the resistors in the circuit 
+                            <input class="form-check-input" type="radio" name="rlcqs4" id="rlcqs4_op2">
+                            <label class="form-check-label" for="rlcqs4_op2">
+                              In series RLC circuits, the voltage is the same across all components, while in parallel RLC circuits, the current is the same across all components.
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="noqs4" id="noqs4_op3">
-                            <label class="form-check-label" for="noqs4_op3">
-                              The series equivalent resistance of the resistors in the circuit
+                            <input class="form-check-input" type="radio" name="rlcqs4" id="rlcqs4_op3">
+                            <label class="form-check-label" for="rlcqs4_op3">
+                              In series RLC circuits, the impedance is the sum of the individual impedances of the components, while in parallel RLC circuits, the impedance is the reciprocal of the sum of the individual impedances of the components.
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="noqs4" id="noqs4_op4">
-                            <label class="form-check-label" for="noqs4_op4">
-                              The product of the resistances in the circuit
+                            <input class="form-check-input" type="radio" name="rlcqs4" id="rlcqs4_op4">
+                            <label class="form-check-label" for="rlcqs4_op4">
+                              All of the above.
                             </label>
                           </div>
                         </div>
                         <div id="answer-area">
                           <div class="form-group blue-border-focus">
-                            <textarea class="form-control" id="noans4" rows="5" readonly></textarea>
+                            <textarea class="form-control" id="rlcans4" rows="5" readonly></textarea>
                           </div>
                         </div>
                         <!------Ques 5------->
-                        <li>When is it appropriate to use Norton's theorem instead of Thevenin's theorem in electrical circuit analysis?</li>
+                        <li>How do you measure the capacitance, resistance, and inductance of the circuit components?</li>
                         <div id="options">
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="noqs5" id="noqs5_op1">
-                            <label class="form-check-label" for="noqs5_op1">
-                              When the circuit is simple and has a few components  
+                            <input class="form-check-input" type="radio" name="rlcqs5" id="rlcqs5_op1">
+                            <label class="form-check-label" for="rlcqs5_op1">
+                              Using a multimeter
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="noqs5" id="noqs5_op2">
-                            <label class="form-check-label" for="noqs5_op2">
-                              When the circuit is complex and has many components 
+                            <input class="form-check-input" type="radio" name="rlcqs5" id="rlcqs5_op2">
+                            <label class="form-check-label" for="rlcqs5_op2">
+                              Using an oscilloscope
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="noqs5" id="noqs5_op3">
-                            <label class="form-check-label" for="noqs5_op3">
-                              When the circuit is only made up of resistors
+                            <input class="form-check-input" type="radio" name="rlcqs5" id="rlcqs5_op3">
+                            <label class="form-check-label" for="rlcqs5_op3">
+                              Using a function generator
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="noqs5" id="noqs5_op4">
-                            <label class="form-check-label" for="noqs5_op4">
-                              When the circuit is only made up of capacitors and inductors.
+                            <input class="form-check-input" type="radio" name="rlcqs5" id="rlcqs5_op4">
+                            <label class="form-check-label" for="rlcqs5_op4">
+                              Using a power supply
                             </label>
                           </div>
                         </div>
                         <div id="answer-area">
                           <div class="form-group blue-border-focus">
-                            <textarea class="form-control" id="noans5" rows="5" readonly></textarea>
+                            <textarea class="form-control" id="rlcans5" rows="5" readonly></textarea>
                           </div>
                         </div>
                         <!------Ques 6------->
-                        <li>When is it appropriate to use Norton's theorem instead of Thevenin's theorem in electrical circuit analysis?</li>
-                        <div id="answer-area">
-                          <div class="form-group blue-border-focus">
-                            <textarea class="form-control" id="text-area1" rows="5"></textarea>
+                        <li>How do you measure the voltage and current in an RLC circuit?</li>
+                        <div id="options">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rlcqs6" id="rlcqs6_op1">
+                            <label class="form-check-label" for="rlcqs6_op1">
+                              Using a multimeter
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rlcqs6" id="rlcqs6_op2">
+                            <label class="form-check-label" for="rlcqs6_op2">
+                              Using an oscilloscope
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rlcqs6" id="rlcqs6_op3">
+                            <label class="form-check-label" for="rlcqs6_op3">
+                              Using a function generator
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rlcqs6" id="rlcqs6_op4">
+                            <label class="form-check-label" for="rlcqs6_op4">
+                              Using a power supply
+                            </label>
                           </div>
                         </div>
                         <div id="answer-area">
                           <div class="form-group blue-border-focus">
-                            <textarea class="form-control" id="noans6" rows="5"></textarea>
+                            <textarea class="form-control" id="rlcans6" rows="5" readonly></textarea>
                           </div>
                         </div>
                         <!------Ques 7------->
-                        <li>What is the difference between Norton's theorem and Thevenin's theorem?</li>
-                        <div id="answer-area">
-                          <div class="form-group blue-border-focus">
-                            <textarea class="form-control" id="text-area1" rows="5"></textarea>
+                        <li>What is the effect of varying the resistance, capacitance, or inductance on the behavior of the RLC circuit?</li>
+                          <div id="options">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="rlcqs7" id="rlcqs7_op1">
+                              <label class="form-check-label" for="rlcqs7_op1">
+                                Varying the resistance changes the damping factor of the circuit.
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="rlcqs7" id="rlcqs7_op2">
+                              <label class="form-check-label" for="rlcqs7_op2">
+                                Varying the capacitance changes the resonance frequency of the circuit.
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="rlcqs7" id="rlcqs7_op3">
+                              <label class="form-check-label" for="rlcqs7_op3">
+                                Varying the inductance changes the resonance frequency of the circuit.
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="rlcqs7" id="rlcqs7_op4">
+                              <label class="form-check-label" for="rlcqs7_op4">
+                                All of the above.
+                              </label>
+                            </div>
+                          </div>
+                          <div id="answer-area">
+                            <div class="form-group blue-border-focus">
+                              <textarea class="form-control" id="rlcans7" rows="5" readonly></textarea>
+                            </div>
+                          </div>
+                          <!------Ques 8------->
+                        <li>What is the effect of the quality factor on the behavior of the RLC circuit?</li>
+                        <div id="options">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rlcqs8" id="rlcqs8_op1">
+                            <label class="form-check-label" for="rlcqs8_op1">
+                              It determines the damping factor of the circuit.
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rlcqs8" id="rlcqs8_op2">
+                            <label class="form-check-label" for="rlcqs8_op2">
+                              It determines the resonance frequency of the circuit.
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rlcqs8" id="rlcqs8_op3">
+                            <label class="form-check-label" for="rlcqs8_op3">
+                              It determines the amount of energy stored in the circuit.
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rlcqs8" id="rlcqs8_op4">
+                            <label class="form-check-label" for="rlcqs8_op4">
+                              All of the above.
+                            </label>
                           </div>
                         </div>
                         <div id="answer-area">
                           <div class="form-group blue-border-focus">
-                            <textarea class="form-control" id="noans7" rows="5"></textarea>
+                            <textarea class="form-control" id="rlcans8" rows="5" readonly></textarea>
+                          </div>
+                        </div>
+                        <!------Ques 9------->
+                        <li>How can you use an oscilloscope to visualize the voltage and current waveforms in an RLC circuit?</li>
+                        <div id="options">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rlcqs9" id="rlcqs9_op1">
+                            <label class="form-check-label" for="rlcqs9_op1">
+                              By connecting the oscilloscope in series with the circuit.
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rlcqs9" id="rlcqs9_op2">
+                            <label class="form-check-label" for="rlcqs9_op2">
+                              By connecting the oscilloscope in parallel with the circuit.
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rlcqs9" id="rlcqs9_op3">
+                            <label class="form-check-label" for="rlcqs9_op3">
+                              By using a current probe to measure the current and connecting it to the oscilloscope.
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rlcqs9" id="rlcqs9_op4">
+                            <label class="form-check-label" for="rlcqs9_op4">
+                              By using a voltage divider to measure the voltage and connecting it to the oscilloscope9
+                            </label>
+                          </div>
+                        </div>
+                        <div id="answer-area">
+                          <div class="form-group blue-border-focus">
+                            <textarea class="form-control" id="rlcans9" rows="5" readonly></textarea>
+                          </div>
+                        </div>
+                        <!------Ques 10------->
+                        <li>Which of the following statements about RLC circuits is true?</li>
+                        <div id="options">
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rlcqs10" id="rlcqs10_op1">
+                            <label class="form-check-label" for="rlcqs10_op1">
+                              RLC circuits are used in audio filters and power supplies.
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rlcqs10" id="rlcqs10_op2">
+                            <label class="form-check-label" for="rlcqs10_op2">
+                              RLC circuits can be used to store and filter electrical energy.
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rlcqs10" id="rlcqs10_op3">
+                            <label class="form-check-label" for="rlcqs10_op3">
+                              RLC circuits can be used to tune radio receivers.
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="rlcqs10" id="rlcqs10_op4">
+                            <label class="form-check-label" for="rlcqs10_op4">
+                              All of the above.
+                            </label>
+                          </div>
+                        </div>
+                        <div id="answer-area">
+                          <div class="form-group blue-border-focus">
+                            <textarea class="form-control" id="rlcans10" rows="5" readonly></textarea>
                           </div>
                         </div>
               

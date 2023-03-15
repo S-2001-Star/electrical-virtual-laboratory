@@ -57,25 +57,25 @@ function nopostlabsubmit(){
 
     if(document.getElementById("noqs3_op1").checked == true){
         document.getElementById("noans3").style.display = "block";
-        document.getElementById("noans3").innerHTML = "Ans: Short-circuit current "
+        document.getElementById("noans3").innerHTML = "Ans: Short-circuit current"
         document.getElementById("noans3").style.color = "green";
 
     }
     if(document.getElementById("noqs3_op2").checked == true){
         document.getElementById("noans3").style.display = "block";
-        document.getElementById("noans3").innerHTML = "Ans: Short-circuit current "
+        document.getElementById("noans3").innerHTML = "Ans: Short-circuit current"
         document.getElementById("noans3").style.color = "red";
 
     }
     if(document.getElementById("noqs3_op3").checked == true){
         document.getElementById("noans3").style.display = "block";
-        document.getElementById("noans3").innerHTML = "Ans: Short-circuit current  "
+        document.getElementById("noans3").innerHTML = "Ans: Short-circuit current"
         document.getElementById("noans3").style.color = "red";
 
     }
     if(document.getElementById("noqs3_op4").checked == true){
         document.getElementById("noans3").style.display = "block";
-        document.getElementById("noans3").innerHTML = "Ans: Short-circuit current "
+        document.getElementById("noans3").innerHTML = "Ans: Short-circuit current"
         document.getElementById("noans3").style.color = "red";
 
     }
