@@ -4,25 +4,25 @@ function nopostlabsubmit(){
 
     if(document.getElementById("noqs1_op1").checked == true){
         document.getElementById("noans1").style.display = "block";
-        document.getElementById("noans1").innerHTML = "Ans: To simplify complex circuits  "
+        document.getElementById("noans1").innerHTML = "Ans: To simplify complex circuits"
         document.getElementById("noans1").style.color = "green";
 
     }
     if(document.getElementById("noqs1_op2").checked == true){
         document.getElementById("noans1").style.display = "block";
-        document.getElementById("noans1").innerHTML = "Ans: To simplify complex circuits  "
+        document.getElementById("noans1").innerHTML = "Ans: To simplify complex circuits"
         document.getElementById("noans1").style.color = "red";
 
     }
     if(document.getElementById("noqs1_op3").checked == true){
         document.getElementById("noans1").style.display = "block";
-        document.getElementById("noans1").innerHTML = "Ans: To simplify complex circuits  "
+        document.getElementById("noans1").innerHTML = "Ans: To simplify complex circuits"
         document.getElementById("noans1").style.color = "red";
 
     }
     if(document.getElementById("noqs1_op4").checked == true){
         document.getElementById("noans1").style.display = "block";
-        document.getElementById("noans1").innerHTML = "Ans: To simplify complex circuits  "
+        document.getElementById("noans1").innerHTML = "Ans: To simplify complex circuits"
         document.getElementById("noans1").style.color = "red";
 
     }
@@ -31,25 +31,25 @@ function nopostlabsubmit(){
 
     if(document.getElementById("noqs2_op1").checked == true){
         document.getElementById("noans2").style.display = "block";
-        document.getElementById("noans2").innerHTML = "Ans: Norton's theorem is a simplified version of Thevenin's theorem  "
+        document.getElementById("noans2").innerHTML = "Ans: Norton's theorem is a simplified version of Thevenin's theorem"
         document.getElementById("noans2").style.color = "red";
 
     }
     if(document.getElementById("noqs2_op2").checked == true){
         document.getElementById("noans2").style.display = "block";
-        document.getElementById("noans2").innerHTML = "Ans: Norton's theorem is a simplified version of Thevenin's theorem "
+        document.getElementById("noans2").innerHTML = "Ans: Norton's theorem is a simplified version of Thevenin's theorem"
         document.getElementById("noans2").style.color = "red";
 
     }
     if(document.getElementById("noqs2_op3").checked == true){
         document.getElementById("noans2").style.display = "block";
-        document.getElementById("noans2").innerHTML = "Ans: Norton's theorem is a simplified version of Thevenin's theorem  "
+        document.getElementById("noans2").innerHTML = "Ans: Norton's theorem is a simplified version of Thevenin's theorem"
         document.getElementById("noans2").style.color = "green";
 
     }
     if(document.getElementById("noqs2_op4").checked == true){
         document.getElementById("noans2").style.display = "block";
-        document.getElementById("noans2").innerHTML = "Ans: Norton's theorem is a simplified version of Thevenin's theorem  "
+        document.getElementById("noans2").innerHTML = "Ans: Norton's theorem is a simplified version of Thevenin's theorem"
         document.getElementById("noans2").style.color = "red";
 
     }
@@ -83,25 +83,25 @@ function nopostlabsubmit(){
 
     if(document.getElementById("noqs4_op1").checked == true){
         document.getElementById("noans4").style.display = "block";
-        document.getElementById("noans4").innerHTML = "Ans: The parallel equivalent resistance of the resistors in the circuit "
+        document.getElementById("noans4").innerHTML = "Ans: The parallel equivalent resistance of the resistors in the circuit"
         document.getElementById("noans4").style.color = "red";
 
     }
     if(document.getElementById("noqs4_op2").checked == true){
         document.getElementById("noans4").style.display = "block";
-        document.getElementById("noans4").innerHTML = "Ans: The parallel equivalent resistance of the resistors in the circuit "
+        document.getElementById("noans4").innerHTML = "Ans: The parallel equivalent resistance of the resistors in the circuit"
         document.getElementById("noans4").style.color = "green";
 
     }
     if(document.getElementById("noqs4_op3").checked == true){
         document.getElementById("noans4").style.display = "block";
-        document.getElementById("noans4").innerHTML = "Ans: The parallel equivalent resistance of the resistors in the circuit  "
+        document.getElementById("noans4").innerHTML = "Ans: The parallel equivalent resistance of the resistors in the circuit"
         document.getElementById("noans4").style.color = "red";
 
     }
     if(document.getElementById("noqs4_op4").checked == true){
         document.getElementById("noans4").style.display = "block";
-        document.getElementById("noans4").innerHTML = "Ans: The parallel equivalent resistance of the resistors in the circuit "
+        document.getElementById("noans4").innerHTML = "Ans: The parallel equivalent resistance of the resistors in the circuit"
         document.getElementById("noans4").style.color = "red";
 
     }
@@ -109,25 +109,25 @@ function nopostlabsubmit(){
 
     if(document.getElementById("noqs5_op1").checked == true){
         document.getElementById("noans5").style.display = "block";
-        document.getElementById("noans5").innerHTML = "Ans: When the circuit is complex and has many components  "
+        document.getElementById("noans5").innerHTML = "Ans: When the circuit is complex and has many components"
         document.getElementById("noans5").style.color = "red";
 
     }
     if(document.getElementById("noqs5_op2").checked == true){
         document.getElementById("noans5").style.display = "block";
-        document.getElementById("noans5").innerHTML = "Ans: When the circuit is complex and has many components "
+        document.getElementById("noans5").innerHTML = "Ans: When the circuit is complex and has many components"
         document.getElementById("noans5").style.color = "green";
 
     }
     if(document.getElementById("noqs5_op3").checked == true){
         document.getElementById("noans5").style.display = "block";
-        document.getElementById("noans5").innerHTML = "Ans: When the circuit is complex and has many components  "
+        document.getElementById("noans5").innerHTML = "Ans: When the circuit is complex and has many components"
         document.getElementById("noans5").style.color = "red";
 
     }
     if(document.getElementById("noqs5_op4").checked == true){
         document.getElementById("noans5").style.display = "block";
-        document.getElementById("noans5").innerHTML = "Ans: When the circuit is complex and has many components "
+        document.getElementById("noans5").innerHTML = "Ans: When the circuit is complex and has many components"
         document.getElementById("noans5").style.color = "red";
 
     }
