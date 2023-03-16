@@ -168,6 +168,7 @@
                             <th>RANGE</th>
                             <th>TYPE</th>
                             <th>QUANTITY</th>
+                            <th>3D VIEWER</th>
                         </tr>
                         <tr>
                             <td>1</td>
@@ -175,6 +176,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td> <button class="btn btn-primary"><a href="3d_viewer\Resistor\index.html" style="text-decoration: none; color: white;">Click Here</button> </td>
                         </tr>
                         <tr>
                             <td>2</td>
@@ -182,6 +184,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
+                            <td> <button class="btn btn-primary"><a href="3d_viewer\DC Power Supply\index.html" style="text-decoration: none; color: white;">Click Here</button> </td>
                         </tr>
                         <tr>
                             <td>3</td>
@@ -189,6 +192,7 @@
                             <td>(0-600)V</td>
                             <td>MC</td>
                             <td></td>
+                            <td> <button class="btn btn-primary"><a href="3d_viewer\voltmeter\index.html" style="text-decoration: none; color: white;">Click Here</button> </td>
                         </tr>
                         <tr>
                             <td>4</td>
@@ -196,6 +200,7 @@
                             <td>(0-10A)</td>
                             <td>MI</td>
                             <td></td>
+                            <td> <button class="btn btn-primary"><a href="3d_viewer\Ammeter\index.html" style="text-decoration: none; color: white;">Click Here</button> </td>
                         </tr>
                         <tr>
                             <td>5</td>
@@ -203,6 +208,7 @@
                             <td></td>
                             <td>Copper</td>
                             <td></td>
+                            <td> <button class="btn btn-primary"><a href="3d_viewer\Wire\index.html" style="text-decoration: none; color: white;">Click Here</button> </td>
                         </tr>
                     </table>
                     </div>
@@ -429,7 +435,7 @@
                         </div>
                           <br>
                           <br>
-                          
+
 <!-----------------------NOTE--------------------->
                           <div class="note">
                             <h2>Note :</h2>
@@ -511,12 +517,14 @@
                 <div class = "container-fluid">
                     <div class = "row row-height">
                       <div class = "col left7">
-                        <p>Verification of Thevenin's Theorem using Independent source</p>
-                    <a href="simulator\EXPT-4_1-main\index.html" target="blank"><button class="btn btn-primary">Click Here</button></a>
-                    <br>
-                    <br>
-                    <p>Verification of Thevenin's Theorem using Dependent source</p>
+                        <h4>Test System-1</h4>
+                      <p>Verification of Thevenin's Theorem using Dependent source</p>
                     <a href="https://elitesurya4.github.io/EXPERIMENT-1/EXPERIMENT%201(b)/index.html" target="blank"><button class="btn btn-primary">Click Here</button></a>
+                    <br>
+                    <br>
+                    <h4>Test System-2</h4>
+                    <p>Verification of Thevenin's Theorem using Independent source</p>
+                    <a href="simulator\EXPT-4_1-main\index.html" target="blank"><button class="btn btn-primary">Click Here</button></a>
                 </div>
                 </div>
                 </div>

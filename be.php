@@ -244,13 +244,10 @@
       <h4 class="be-heading">LIST OF EXPERIMENTS</h4><br>
         <ul class="h5">
             <a href="equipments.php" id="exp-list"><li>Familiarization with electrical components and equipments.</li></a>
-            <a href="#" id="exp-list"><li>Power and phase measurements in the three phase system by two wattmeter method.</li></a>
             <a href="superposition.php" id="exp-list"><li>Verification of Superposition Theorem</li></a>
             <a href="thevenin.php" id="exp-list"><li>Verification of Thevenin Theorem</li></a>
             <a href="norton.html" id="exp-list"><li>Verification of Norton Theorem</li></a>
-            <a href="#" id="exp-list"><li>Plotting of B-H curve of magnetic material and Calculation of hysterisis loss.</li></a>
             <a href="rlc.html" id="exp-list"><li>Series RLC circuit (Power measurement, Phasor Diagram)</li></a>
-            <a href="#" id="exp-list"><li>OC and SC test of single-phase transformer.</li></a>
         </ul>
     </div>
   </div>
