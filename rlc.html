@@ -36,8 +36,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav navbar-float" id="nav-items-1">
-                        <li class="nav-item" id="nav-home"><a class="nav-link" href="index.html">HOME</a></li> 
-                        <li class="nav-item" id="nav-labs"><a class="nav-link" href="be.html">eV&nbsp;LABS</a></li>
+                        <li class="nav-item" id="nav-home"><a class="nav-link" href="index.php">HOME</a></li> 
+                        <li class="nav-item" id="nav-labs"><a class="nav-link" href="be.php">eV&nbsp;LABS</a></li>
                         <li class="nav-item" id="nav-log"><a class="nav-link" id="cust_btn">LOG&nbsp;IN</a></li>
                         <li class="nav-item" id="nav-sign"><a class="nav-link" id="cust_btn1">SIGN&nbsp;UP</a></li>
                     </ul>
@@ -64,7 +64,7 @@
                     <button class="btn btn-secondary" id="side-btn"onclick="exp_sim_body()">SIMULATOR</button>
                     <button class="btn btn-secondary" id="side-btn" onclick="exp_post_body()">POST-LAB</button>
                     <button class="btn btn-secondary" id="side-btn"onclick="exp_vd_body()">VIDEO LECTURE</button>
-                    <button class="btn btn-secondary" id="side-btn">DOWNLOAD</button>
+                    <button class="btn btn-secondary" id="side-btn" onclick="exp_load_body()">DOWNLOAD</button>
             </div>
         </div>
     </div>
@@ -83,8 +83,8 @@
                         <button class="btn btn-secondary" id="side-btn"onclick="exp_sim_body()">SIMULATOR</button>
                         <button class="btn btn-secondary" id="side-btn" onclick="exp_post_body()">POST-LAB</button>
                         <button class="btn btn-secondary" id="side-btn"onclick="exp_vd_body()">VIDEO LECTURE</button>
-                        <button class="btn btn-secondary" id="side-btn">DOWNLOAD</button>
-                </div>
+                        <button class="btn btn-secondary" id="side-btn" onclick="exp_load_body()">DOWNLOAD</button>
+                      </div>
             </div>
         </div>
         <div class="col-lg-9" id="side-cont">
@@ -138,6 +138,7 @@
                             <th>RANGE</th>
                             <th>TYPE</th>
                             <th>QUANTITY</th>
+                            <th>3D Viewer</th>
                         </tr>
                         <tr>
                             <td>1</td>
@@ -145,6 +146,7 @@
                             <td>(0-1)A</td>
                             <td>A.C</td>
                             <td>1</td>
+                            <td> <button class="btn btn-primary"><a href="3d_viewer\Ammeter\index.html" style="text-decoration: none; color: white;">Click Here</button> </td>
                         </tr>
                         <tr>
                             <td>2</td>
@@ -152,6 +154,7 @@
                             <td>(0-300)V</td>
                             <td>A.C</td>
                             <td>1</td>
+                            <td> <button class="btn btn-primary"><a href="3d_viewer\voltmeter\index.html" style="text-decoration: none; color: white;">Click Here</button> </td>
                         </tr>
                         <tr>
                             <td>3</td>
@@ -772,6 +775,16 @@
                       </div>
                     </div>
                 </div>
+            </div>
+<!------------DOMWNLOAD---------------------->
+            <div id="diagram9">
+              <h4 class="exp-head">DOWNLOAD</h4>
+              <hr>
+              <div class = "container-fluid">
+                  <div class = "row row-height">
+                    <p>To download the lab manual <button class="btn btn-primary"><a href="assets\EXPT-3\LAB - 3.pdf" type="button" style="text-decoration: none; color:white;">Click Here</a><button></p>
+                  </div>
+              </div>
             </div>
         </div>
     </div>

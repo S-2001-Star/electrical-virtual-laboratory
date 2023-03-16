@@ -42,7 +42,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav navbar-float" id="nav-items">
           <li class="nav-item" id="nav-home"><a class="nav-link" href="index.php">HOME</a></li> 
-          <li class="nav-item" id="nav-labs"><a class="nav-link" href="#evlabs">eV&nbsp;LABS</a></li>
+          <li class="nav-item" id="nav-labs"><a class="nav-link" href="be.php">eV&nbsp;LABS</a></li>
 
           <?php
             if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']==true){
@@ -168,30 +168,35 @@
                               <th>EQUIPMENTS</th>
                               <th>RANGE</th>
                               <th>QUANTITY</th>
+                              <th>3D Viewer</th>
                           </tr>
                           <tr>
                               <td>1</td>
                               <td>Resistor</td>
                               <td></td>
                               <td>4</td>
+                              <td> <button class="btn btn-primary"><a href="3d_viewer\Resistor\index.html" style="text-decoration: none; color: white;">Click Here</button> </td>
                           </tr>
                           <tr>
                               <td>2</td>
                               <td>DC Power Supply</td>
                               <td>(0-30)V</td>
                               <td></td>
+                              <td> <button class="btn btn-primary"><a href="3d_viewer\DC Power Supply\index.html" style="text-decoration: none; color: white;">Click Here</button> </td>
                           </tr>
                           <tr>
                               <td>3</td>
                               <td>Voltmeter</td>
                               <td>(0-600)V</td>
                               <td>1</td>
+                              <td> <button class="btn btn-primary"><a href="3d_viewer\voltmeter\index.html" style="text-decoration: none; color: white;">Click Here</button> </td>
                           </tr>
                           <tr>
                               <td>4</td>
                               <td>Ammeter</td>
                               <td>(0-10A)</td>
                               <td>1</td>
+                              <td> <button class="btn btn-primary"><a href="3d_viewer\Ammeter\index.html" style="text-decoration: none; color: white;">Click Here</button> </td>
                           </tr>
                       </table>
                     </div>
@@ -762,8 +767,7 @@
               <hr>
               <div class = "container-fluid">
                   <div class = "row row-height">
-                    <p>To download the lab manual</p>
-                    <a href="assets\EXPT-3\LAB - 3.pdf" type="button">Click Here</a>
+                    <p>To download the lab manual <button class="btn btn-primary"><a href="assets\EXPT-3\LAB - 3.pdf" type="button" style="text-decoration: none; color:white;">Click Here</a><button></p>
                   </div>
               </div>
             </div>

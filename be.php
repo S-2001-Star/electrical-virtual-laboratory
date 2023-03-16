@@ -235,18 +235,22 @@
     <!----------OBJECTIVE------------->
           <div id="para1" class="container">
             <h4 class="be-heading">OBJECTIVE</h4><br>
-            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ratione fugit sit inventore explicabo commodi similique? Repellendus libero deserunt, nemo necessitatibus est quod quam dolorem nam optio odio? Rerum, laudantium?
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea est placeat, alias magni incidunt excepturi hic similique in ab sunt corporis odio quidem dolores vel. Veniam voluptates molestiae accusantium veritatis.
-            Quaerat doloremque repudiandae perspiciatis vel tempora. Quasi veritatis nobis dolore alias beatae nostrum voluptas eum repellendus quibusdam ipsam, culpa dolor itaque nisi sunt sequi non reiciendis quod quae aliquid repellat!</h5>
+            <h5><ol>
+              <li>Enhancing students' understanding of fundamental electrical concepts and principles.</li>
+              <li>Providing students with a platform to apply theoretical concepts to practical situations.</li>
+              <li>Improving students' problem-solving and critical thinking skills.</li>
+              <li>Fostering an interest in electrical engineering by engaging students in interactive and immersive learning experiences.</li>
+              <li>Allowing students to experiment with different scenarios and scenarios to observe the impact of various factors on the outcomes.</li>
+            </ol></h5>
           </div>
     <!----------LIST OF EXPERIMENTS------------->
     <div id="para2">
       <h4 class="be-heading">LIST OF EXPERIMENTS</h4><br>
         <ul class="h5">
             <a href="equipments.php" id="exp-list"><li>Familiarization with electrical components and equipments.</li></a>
-            <a href="superposition.php" id="exp-list"><li>Verification of Superposition Theorem</li></a>
             <a href="thevenin.php" id="exp-list"><li>Verification of Thevenin Theorem</li></a>
             <a href="norton.html" id="exp-list"><li>Verification of Norton Theorem</li></a>
+            <a href="superposition.php" id="exp-list"><li>Verification of Superposition Theorem</li></a>
             <a href="rlc.html" id="exp-list"><li>Series RLC circuit (Power measurement, Phasor Diagram)</li></a>
         </ul>
     </div>
