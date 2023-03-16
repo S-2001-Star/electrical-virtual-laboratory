@@ -42,7 +42,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav navbar-float" id="nav-items">
               <li class="nav-item" id="nav-home"><a class="nav-link" href="index.php">HOME</a></li> 
-              <li class="nav-item" id="nav-labs"><a class="nav-link" href="#evlabs">eV&nbsp;LABS</a></li>
+              <li class="nav-item" id="nav-labs"><a class="nav-link" href="be.php">eV&nbsp;LABS</a></li>
     
               <?php
                 if(isset($_SESSION['logged_in']) && $_SESSION['logged_in']==true){
@@ -95,7 +95,7 @@
                     <button class="btn btn-secondary" id="side-btn"onclick="exp_sim_body()">SIMULATOR</button>
                     <button class="btn btn-secondary" id="side-btn" onclick="exp_post_body()">POST-LAB</button>
                     <button class="btn btn-secondary" id="side-btn"onclick="exp_vd_body()">VIDEO LECTURE</button>
-                    <button class="btn btn-secondary" id="side-btn">DOWNLOAD</button>
+                    <button class="btn btn-secondary" id="side-btn" onclick="exp_load_body()">DOWNLOAD</button>
             </div>
         </div>
     </div>
@@ -114,7 +114,7 @@
                         <button class="btn btn-secondary" id="side-btn"onclick="exp_sim_body()">SIMULATOR</button>
                         <button class="btn btn-secondary" id="side-btn" onclick="exp_post_body()">POST-LAB</button>
                         <button class="btn btn-secondary" id="side-btn"onclick="exp_vd_body()">VIDEO LECTURE</button>
-                        <button class="btn btn-secondary" id="side-btn">DOWNLOAD</button>
+                        <button class="btn btn-secondary" id="side-btn" onclick="exp_load_body()">DOWNLOAD</button>
                 </div>
             </div>
         </div>
@@ -125,8 +125,8 @@
             </div>
 <!-----------INTRODUCTION--------------->            
 <div id="diagram">
-    <h4 class="exp-head">INTRODUCTION</h4>
-    <hr>
+    <!-- <h4 class="exp-head">INTRODUCTION</h4>
+    <hr> -->
     <div class = "container-fluid">
         <div class = "row row-height">
           <div class = "col left1">

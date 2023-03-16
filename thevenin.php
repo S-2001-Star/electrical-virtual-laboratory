@@ -176,7 +176,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td> <button class="btn btn-primary"><a href="3d_viewer\Resistor\index.html" style="text-decoration: none; color: white;">Click Here</button> </td>
+                            <td> <button class="btn btn-primary"><a href="https://resistor-one.vercel.app/" style="text-decoration: none; color: white;">Click Here</button> </td>
                         </tr>
                         <tr>
                             <td>2</td>
@@ -184,7 +184,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td> <button class="btn btn-primary"><a href="3d_viewer\DC Power Supply\index.html" style="text-decoration: none; color: white;">Click Here</button> </td>
+                            <td> <button class="btn btn-primary"><a href="https://dc-power-supply.vercel.app/" style="text-decoration: none; color: white;">Click Here</button> </td>
                         </tr>
                         <tr>
                             <td>3</td>
@@ -192,7 +192,7 @@
                             <td>(0-600)V</td>
                             <td>MC</td>
                             <td></td>
-                            <td> <button class="btn btn-primary"><a href="3d_viewer\voltmeter\index.html" style="text-decoration: none; color: white;">Click Here</button> </td>
+                            <td> <button class="btn btn-primary"><a href="https://voltmeter.vercel.app/" style="text-decoration: none; color: white;">Click Here</button> </td>
                         </tr>
                         <tr>
                             <td>4</td>
@@ -200,7 +200,7 @@
                             <td>(0-10A)</td>
                             <td>MI</td>
                             <td></td>
-                            <td> <button class="btn btn-primary"><a href="3d_viewer\Ammeter\index.html" style="text-decoration: none; color: white;">Click Here</button> </td>
+                            <td> <button class="btn btn-primary"><a href="https://ammeter.vercel.app/" style="text-decoration: none; color: white;">Click Here</button> </td>
                         </tr>
                         <tr>
                             <td>5</td>
@@ -208,7 +208,7 @@
                             <td></td>
                             <td>Copper</td>
                             <td></td>
-                            <td> <button class="btn btn-primary"><a href="3d_viewer\Wire\index.html" style="text-decoration: none; color: white;">Click Here</button> </td>
+                            <td> <button class="btn btn-primary"><a href="https://wire-xi.vercel.app/" style="text-decoration: none; color: white;">Click Here</button> </td>
                         </tr>
                     </table>
                     </div>
