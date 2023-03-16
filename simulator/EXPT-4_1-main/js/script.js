@@ -483,3 +483,7 @@ function plotting() {
   alert("Graph Plotted Successfully");
   document.getElementById("next-btn").style.display = "block";
 }
+
+function refreshPage(){
+  window.location.reload();
+} 
