@@ -114,7 +114,7 @@
                         <button class="btn btn-secondary" id="side-btn"onclick="exp_sim_body()">SIMULATOR</button>
                         <button class="btn btn-secondary" id="side-btn" onclick="exp_post_body()">POST-LAB</button>
                         <button class="btn btn-secondary" id="side-btn"onclick="exp_vd_body()">VIDEO LECTURE</button>
-                        <button class="btn btn-secondary" id="side-btn">DOWNLOAD</button>
+                        <button class="btn btn-secondary" id="side-btn" onclick="exp_load_body()">DOWNLOAD</button>
                 </div>
             </div>
         </div>
