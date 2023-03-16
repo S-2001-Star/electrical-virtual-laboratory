@@ -130,7 +130,7 @@
     <div class = "container-fluid">
         <div class = "row row-height">
           <div class = "col left1">
-            Superposition theorem is a fundamental principle in electrical 
+            <!-- Superposition theorem is a fundamental principle in electrical 
             engineering that states that the response (current or voltage) of a 
             linear circuit to multiple input sources can be determined by adding
             up the individual responses to each source acting alone. This means that 
@@ -138,7 +138,7 @@
             source, while all other sources are turned off. The theorem is based on the principle 
             of linearity, which holds that the behavior of a circuit is proportional to the applied input. 
             The superposition theorem is a powerful tool for analyzing complex circuits, as it simplifies the
-            analysis by breaking down a complex circuit into smaller, more manageable parts.
+            analysis by breaking down a complex circuit into smaller, more manageable parts. -->
         </div>
         </div>
     </div>
