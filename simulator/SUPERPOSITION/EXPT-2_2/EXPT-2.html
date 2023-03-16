@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css">
+    <script src="node_modules\jsplumb\dist\js\jsplumb.min.js"></script>
+    <script src="node_modules\jsplumb\dist\js\jsplumb.js"></script>
+    <link rel="stylesheet" href="node_modules\jsplumb\css\jsplumbtoolkit-defaults.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script type="text/javascript" src="node_modules\canvasjs\dist\canvasjs.min.js"></script>
+    <script class="include" type="text/javascript" src="node_modules\jquery\dist\jquery.min.js"></script>
+    <script class="include" type="text/javascript" src="node_modules\jqplot\jquery.jqplot.min.js"></script>
+    <script type="text/javascript" src="js\shCore.min.js"></script>
+    <script type="text/javascript" src="js\shBrushJScript.min.js"></script>
+    <script type="text/javascript" src="js\shBrushXml.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.0.1/chart.min.js" integrity="sha512-tQYZBKe34uzoeOjY9jr3MX7R/mo7n25vnqbnrkskGr4D6YOoPYSpyafUAzQVjV6xAozAqUFIEFsCO4z8mnVBXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script class="include" type="text/javascript" src="node_modules\jqplot\jqplot.meterGaugeRenderer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <link rel="stylesheet" type="text/css" href="src/style.css">
+    <script src="js\pleaserotate.js"></script>
+    <script src="js\script.js"></script>
+    <title>VERIFICATION OF SUPERPOSITION THEOREM</title>
+</head>
+<body>
+<!-------------Header Section------------->
+<div class="container-fluid" id="header">
+    <div class="card card-body" id="header-glass">
+        <p class="display-6">Verification of Superposition Theorem</p>
+    </div>
+</div>
+<!-------------Scrolling Section------------->
+<div class="container-fluid" id="warning">
+    <marquee><h5>Read the instructions carefully before starting the experiment. Switch on the simulator before starting simulation.</h5></marquee>
+</div>
+<!-------------Simulator Section------------->
+<div id="sim-cont">
+    <div id="simulator"><p id="sim-header">SIMULATOR PANEL</p>
+        <img class="d-block-w-100" src="src/main_ckt.png" id="main_ckt">
+        <img class="d-block-w-100" src="src/I1_ckt.png" id="I1_ckt">
+        <img class="d-block-w-100" src="src/I2_ckt.png" id="I2_ckt">
+    </div>
+</div>
+<div id="ammeter">
+    <div id="dc-ammeter">
+        <p id="ammeter-title">DC AMMETER</p>
+        <p id="change-title">DC AMMETER</p>
+        <div id="ammeter-disp">
+            <a id="am-disp"><input id="am-value" value="" type="text" readonly=""></a>
+            <div id="po-term"></div>
+            <div id="ne-term"></div>
+        </div>
+    </div>
+</div>
+<div id="voltmeter">
+    <div id="dc-voltmeter">
+        <p id="Voltmeter-title">DC VOLTMETER</p>
+        <div id="voltmeter-disp">
+            <a id="vm-disp"><input id="vm-value" value="0" type="text" readonly=""></a>
+            <div id="p-term"></div>
+            <div id="n-term"></div>
+        </div>
+    </div>
+</div>
+<!-------------Control Panel Section------------->
+<div id="cont-panel">
+    <div id="control-panel">
+        <p id="cont-header">CONTROL PANEL</p>
+        <label class="switch">
+            <input id="power-switch" type="checkbox" onclick="poweron()">
+            <div class="button">
+              <div class="light"></div>
+              <div class="dots"></div>
+              <div class="characters"></div>
+              <div class="shine"></div>
+              <div class="shadow"></div>
+            </div>
+        </label>
+        <div id="instance-btns">
+            <button id="instance-1" onclick="st1_ckt_sim()" disabled>STAGE 1</button>
+            <button id="instance-2" onclick="st2_ckt_sim()" disabled>STAGE 2</button>
+            <button id="instance-3" onclick="st3_ckt_sim()" disabled>STAGE 3</button>
+            <button id="instance-4" onclick="st4_ckt_sim()" disabled>STAGE 4</button>
+        </div>
+        <div id="input-fields-1">
+            <div class="input-group">
+                <div class="input-group-prepend" id="vs1-label">
+                    <span class="input-group-text">V<sub>S<sub>1</sub></sub></span>
+                </div>
+                <input type="number" id="vs1-value" min="0" max="50" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF VOLTAGE SOURCE" readonly/>
+            </div>
+        </div>
+        <div id="input-fields-2">
+            <div class="input-group">
+                <div class="input-group-prepend" id="vs2-label">
+                    <span class="input-group-text">I<sub>S<sub>1</sub></sub></span>
+                </div>
+                <input type="number" id="vs2-value" min="0" max="50" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF CURRENT SOURCE" readonly/>
+            </div>
+        </div>
+    <div id="input-fields-3">
+            <div class="input-group">
+                <div class="input-group-prepend" id="r1-label">
+                    <span class="input-group-text">R<sub>1</sub></span>
+                </div>
+                <input type="number" id="r1-value" min="0" max="50" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF RESISTANCE 1 (R1)" readonly/>
+            </div>
+        </div>
+    <div id="input-fields-4">
+            <div class="input-group">
+                <div class="input-group-prepend" id="r2-label">
+                    <span class="input-group-text">R<sub>2</sub></span>
+                </div>
+                <input type="number" id="r2-value" min="0" max="50" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF RESISTANCE 2 (R2)" readonly/>
+            </div>
+        </div>
+    <div id="input-fields-5">
+            <div class="input-group">
+                <div class="input-group-prepend" id="r3-label">
+                    <span class="input-group-text">R<sub>3</sub></span>
+                </div>
+                <input type="number" id="r3-value" min="0" max="50" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF RESISTANCE 3 (R3)" readonly/>
+            </div>
+        </div>
+    <div id="input-fields-6">
+            <div class="input-group">
+                <div class="input-group-prepend" id="r4-label">
+                    <span class="input-group-text">R<sub>4</sub></span>
+                </div>
+                <input type="number" id="r4-value" min="0" max="50" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF RESISTANCE 4 (R4)" readonly/>
+            </div>
+        </div>
+    <div id="input-fields-7">
+            <div class="input-group">
+                <div class="input-group-prepend" id="I1-label">
+                    <span class="input-group-text">I<sub>1</sub></span>
+                </div>
+                <input type="number" id="I1-value" min="0" max="50" step="0.01" class="form-control" placeholder="VALUE OF I1 COMPUTED FROM STAGE 1" readonly/>
+            </div>
+        </div>
+    <div id="input-fields-8">
+            <div class="input-group">
+                <div class="input-group-prepend" id="I2-label">
+                    <span class="input-group-text">I<sub>2</sub></span>
+                </div>
+                <input type="number" id="I2-value" min="0" max="50" step="0.01" class="form-control" placeholder="VALUE OF I2 COMPUTED FROM STAGE 2" readonly/>
+            </div>
+        </div>
+    <div id="input-fields-9">
+            <div class="input-group">
+                <div class="input-group-prepend" id="I-label">
+                    <span class="input-group-text">I</span>
+                </div>
+                <input type="number" id="I-value" min="0" max="50" step="0.01" class="form-control" placeholder="I = I1 + I2" readonly/>
+            </div>
+        </div>
+        <div id="instance-2-sim">
+            <button id="sim-1_s1" onclick="I_calc()" disabled>SIMULATE</button>
+            <button id="sim-2_s2" disabled>RESET</button>
+        </div>
+        <div id="instance-3-sim">
+            <button id="sim-1" onclick="I1_calc()" disabled>SIMULATE</button>
+            <button id="sim-2" disabled>RESET</button>
+        </div>
+        <div id="instance-4-sim">
+            <button id="sim-1_s3" onclick="I2_calc()" disabled>SIMULATE</button>
+            <button id="sim-2_s4" disabled>RESET</button>
+        </div>
+        <div id="instance-5-sim">
+            <button id="sim-1_s5" onclick="I_ver_calc()" disabled>SIMULATE</button>
+            <button id="sim-2_s6" disabled>RESET</button>
+        </div>
+    </div>
+</div>
+<!-------------Tabulation Section------------->
+<div id="tab-panel">
+    <div id="tabulation-panel">
+        <p id="tab-header">TABULATION</p>
+        <div id="table-1">
+            <table id="obs-table">
+                <tbody>
+                    <tr>
+                        <th>Sl No.</th>
+                        <th>Branch Current (I) in presence of both voltage source V<sub>S<sub>1</sub></sub> & current source I<sub>S<sub>1</sub></sub></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="table-2">
+            <table id="obs-table-2">
+                <tbody>
+                    <tr>
+                        <th>Sl No.</th>
+                        <th>Branch Current (I<sub>1</sub>) in presence of current source I<sub>S<sub>1</sub></sub></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="table-3">
+            <table id="obs-table-3">
+                <tbody>
+                    <tr>
+                        <th>Sl No.</th>
+                        <th>Branch Current (I<sub>2</sub>) in presence of source voltage V<sub>S<sub>1</sub></sub></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="table-4">
+            <table id="obs-table-4">
+                <tbody>
+                    <tr>
+                        <th>Sl No.</th>
+                        <th>Verification<br>I = I<sub>1</sub> + I<sub>2</sub></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<button id="next-btn">NEXT</button>
+</body>
+</html>

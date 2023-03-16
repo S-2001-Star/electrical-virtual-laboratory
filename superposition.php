@@ -498,17 +498,17 @@
                         <h4>TEST SYSTEM-1</h4>
                         <p>Verification of Superposition Theorem using two independent voltage sources 
                           <br>
-                          <a href="https://elitesurya4.github.io/EXPERIMENT-3/EXPERIMENT%203(a)/index.html" target="_blank"><button class="btn btn-primary">CLICK HERE</button></a>
+                          <a href="simulator\SUPERPOSITION\EXPT-2_1\index.html" target="_blank"><button class="btn btn-primary">CLICK HERE</button></a>
                         </p>
                         <h4>TEST SYSTEM-2</h4>
                         <p>Verification of Superposition Theorem using one independent voltage source and one independent current source 
                           <br>
-                          <a href="https://elitesurya4.github.io/EXPERIMENT-3/EXPERIMENT%203(b)/index.html" target="_blank"><button class="btn btn-primary">CLICK HERE</button></a>
+                          <a href="simulator\SUPERPOSITION\EXPT-2_2\index.html" target="_blank"><button class="btn btn-primary">CLICK HERE</button></a>
                         </p>
                         <h4>TEST SYSTEM-3</h4>
                         <p>Verification of Superposition Theorem using two independent current sources 
                           <br>
-                          <a href="https://elitesurya4.github.io/EXPERIMENT-3/EXPERIMENT%203(c)/index.html" target="_blank"><button class="btn btn-primary">CLICK HERE</button></a>
+                          <a href="simulator\SUPERPOSITION\EXPT-2_3\index.html" target="_blank"><button class="btn btn-primary">CLICK HERE</button></a>
                         </p>
                 </div>
                 </div>

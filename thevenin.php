@@ -519,12 +519,12 @@
                       <div class = "col left7">
                         <h4>Test System-1</h4>
                       <p>Verification of Thevenin's Theorem using Dependent source</p>
-                    <a href="simulator\EXPT-4_2\index.html" target="blank"><button class="btn btn-primary">Click Here</button></a>
+                    <a href="simulator\THEVENIN\EXPT-4_2\index.html" target="blank"><button class="btn btn-primary">Click Here</button></a>
                     <br>
                     <br>
                     <h4>Test System-2</h4>
                     <p>Verification of Thevenin's Theorem using Independent source</p>
-                    <a href="simulator\EXPT-4_1\index.html" target="blank"><button class="btn btn-primary">Click Here</button></a>
+                    <a href="simulator\THEVENIN\EXPT-4_1\index.html" target="blank"><button class="btn btn-primary">Click Here</button></a>
                 </div>
                 </div>
                 </div>
